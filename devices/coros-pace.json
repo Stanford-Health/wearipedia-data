@@ -1,0 +1,61 @@
+{
+    "name": "Coros Pace",
+    "id": "coros-pace",
+    "ordering_priority": 21,
+    "picture": "/assets/coros-pace.png",
+    "description": "The Coros Pace is a lightweight, high-performance sports watch designed for athletes and fitness enthusiasts. It offers advanced tracking capabilities for various activities, including running, swimming, and cycling. The watch is equipped with GPS, a heart rate monitor, and a barometric altimeter, providing accurate data on pace, distance, heart rate, and elevation. Its battery life is notably long-lasting, making it suitable for extended training sessions and endurance events. The Coros Pace also supports customizable workout plans and provides detailed analysis of training metrics, aiding athletes in optimizing their performance. Additionally, the watch syncs with smartphones for notifications and data sharing, allowing users to keep track of their progress and share it with coaches or fitness communities. The Coros Pace stands out for its precision, durability, and utility in sports and fitness training.",
+    "tags": ["SPO2", "Pedometer", "Calorimeter"],
+    "notebooks": [],
+    "link": "https://coros.com/pace3",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "$229.00",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "N/A",
+          "long": "No public API is available."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Coros Pace includes steps tracking, distance covered, heart rate monitoring, sleep tracking, elevation gained, cadence, stride length, calories burned, VO2 max estimation, and training load tracking. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Steps tracking, distance covered, elevation gained, cadence, stride length, calories burned <br />- Sleep data: Sleep tracking <br />- Physiological data: Heart rate monitoring <br />- Physical fitness level: VO2 max estimation, training load tracking"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Coros Pace collects activity data based on the user's physical activities, including steps, distance traveled, swimming metrics, calories burned, running dynamics, cadence, stride length, elevation gain, and training load. The device also monitors heart rate, sleep cycles, and VO2 max estimation. Technical data for product and service use, such as GPS location, technical logs, battery measurement, and device configuration, are processed. <br />Heart rate, sleep, and physiological measurement data could be considered protected health information under HIPAA. <br />Coros Pace is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Coros Pace may share information about users in various circumstances, including with service providers working on their behalf, third-party services like Strava and TrainingPeaks if connected to the COROS account, or publicly if users participate in interactive areas of their Services. Data may also be disclosed in legal contexts, during business negotiations, or among COROS's corporate affiliates. Additionally, with user consent or at the user's direction, COROS may share aggregated or de-identified information, which cannot reasonably be used to identify an individual. Users can disable auto-sync settings to stop automatic data sharing with third-party platforms, though existing data on those platforms will remain unless deleted from their servers."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Coros Pace may engage third-party entities to provide analytics and advertising services for their websites and online platforms. These third parties may utilize various technologies to collect information such as IP address, web browser, mobile network information, and user behavior. COROS and other involved parties may use this information to analyze user activity, gauge feature popularity, and deliver tailored ads and content. Users who wish to opt out of interest-based ads may do so at aboutads.info/choices, and some mobile devices may offer features to restrict information collection for interest-based advertising purposes."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'advertising partners', 'professional advisors' and 'authorities and others', and 'business transferees'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        ["SPO2", "0.73", "MAE"],
+        ["HR", "13.2", "MAE"],
+        ["Pedometer-walk", "45", "MAE"],
+        ["Pedometer-run", "87", "MAE"]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": []
+}

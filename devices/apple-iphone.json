@@ -1,0 +1,73 @@
+{
+    "name": "Apple iPhone",
+    "id": "apple-iphone",
+    "ordering_priority": 4,
+    "picture": "/assets/apple-iphone.png",
+    "description": "The Apple iPhone measures physical activity and health markers. Equipped with sensors like an accelerometer and gyroscope, it tracks steps, distance traveled, and overall physical activity. The iPhone's Health app consolidates this data, offering insights into daily fitness routines and health trends. This functionality is particularly useful for individuals focused on maintaining or improving their health and fitness. Users can monitor their daily activities, set fitness goals, and track their progress over time. The iPhone's capability to integrate with other health and fitness apps and devices, like heart rate monitors and sleep trackers, further enhances its utility in personal health management. In the realm of healthcare and research, the iPhone's data collection supports studies in areas like physical activity, epidemiology, and public health, making it a valuable asset in both personal wellness and wider health research initiatives.",
+    "tags": ["App", "Pedometer"],
+    "notebooks": [],
+    "link": "https://www.apple.com/iphone/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi or bluetooth"
+        },
+        "API Access Security": {
+          "short": "N/A",
+          "long": "No public API is available. Data may be accessible through the Apple HealthKit and third party apps."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Apple iPhone includes steps, flights of stairs, and other walking data, mobility data, headphone audio levels, sleep history, and health records from healthcare providers. Health/fitness apps and devices downloaded from the App Store as well as devices such as blood pressure monitors and weight scales contribute to an aggregated data pool [1].<br />These data constitute a health data risk in the following categories:<br />- Physical Activity: Steps, flight of stairs, other walking data, mobility data<br />- Health status data: Headphone audio levels [2]<br />- Sleep data: Sleep history<br />- Health risk assessment: Health records from healthcare providers [3]<br />- Predictive health insights: Data from other apps and devices [4]"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Apple iPhone collects account and device information, contact and payment details, transaction and fraud prevention data, and usage activity. Geographical specifics, health and fitness data are also logged. The Apple iPhone also collects financial data, such as income and assets, and information related to the use of Apple-branded financial services. In certain regions, government-issued identification may be necessary for specific tasks. Interactions and communications with Apple's customer support and social media channels are monitored and stored.<br />Steps, mobility, headphone audio levels, sleep, and health data could be considered protected health information under HIPAA.<br />Apple iPhone is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Apple's privacy policy states that health data is encrypted both in transit and at rest when iCloud is used. The company has stated that it uses differential privacy, a technique that adds noise to data to protect individual user's identities when collecting other types of data, but it is not explicitly mentioned if this technique is applied to health data. <br />There is no explicit mention whether data is de-identified before sharing with third parties for research purposes. However, Apple states that it 'does not share any personal data with third parties' and personal data is defined as 'data that directly identifies you — such as your name' as well as 'data that does not directly identify you, but that can reasonably be used to identify you — such as the serial number of your device'. Aggregated data, on the other hand, is not considered personal data. "
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Apple mentions that they 'may share personal data with Apple-affiliated companies, service providers who act on our behalf, our partners, developers, and publishers, or others at your direction'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        ["Pedometer-walk", "39", "MAE"]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "IPhone_Bariatrics.txt",
+      "IPhone_Cardiology.txt",
+      "IPhone_ChronicPainOrDiseases.txt",
+      "IPhone_Endocrinology.txt",
+      "IPhone_Gastroenterology.txt",
+      "IPhone_GeneralPhysiology.txt",
+      "IPhone_Gynecology.txt",
+      "IPhone_Nephrology.txt",
+      "IPhone_Obstetrics.txt",
+      "IPhone_Oncology.txt",
+      "IPhone_Other.txt",
+      "IPhone_Psychiatry.txt",
+      "IPhone_Pulmonology.txt",
+      "IPhone_Somnology.txt"
+    ]
+}

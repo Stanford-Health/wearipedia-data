@@ -1,0 +1,74 @@
+{
+    "name": "Polar H",
+    "id": "polar-h",
+    "ordering_priority": 9,
+    "picture": "/assets/polar-h.png",
+    "description": "This device was excellent for tracking heart rate while running, is accurate even in longer distance, warmer conditions. One of the only devices reviewed which has been clinically validated for calorimetric data tracking usage. Note that Polar H10 requires integration with a Polar Watch in order to extract HRV data directly online. Otherwise, you may have to build your own app using Polar SDK or use EliteHRV (for hourlong sessions) or use Kubios.",
+    "tags": ["HR", "HRV"],
+    "notebooks": [
+      {
+        "name": "polar-h10.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/polar_h10.ipynb"
+      }
+    ],
+    "link": "https://www.polar.com/us-en/sensors/h10-heart-rate-sensor/",
+    "specs": {
+      "product_details": {
+        "Location": "Chest",
+        "Price": "$59.00",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Bluetooth or ANT+"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+      "Data Risk": {
+          "short": "No",
+          "long": "Data from the Polar H includes heart rate measurements taken during workouts and other physical activities. It provides real-time heart rate data and captures heart rate variability. When synchronized with the Polar Flow service or other compatible applications, this device helps users gain insights into their cardiovascular performance, training intensity, and recovery. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Heart rate data associated with specific exercises (duration, estimated calories, type of exercise) <br />- Physiological data: Heart rate, heart rate variability <br />- Health risk assessment: Insights related to cardiovascular health, potential arrhythmias or irregularities detected from continuous heart rate monitoring <br />- Predictive health insights: Training intensity, potential overtraining risks, and recovery status inferred from heart rate data"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Polar H collects heart rate and heart rate variability data for various fitness activities and health assessments. Data is typically synced with the Polar Flow app or other compatible fitness platforms, which further analyze and store this information. Interactions with Polar's customer support and any feedback regarding the device's usage could also be recorded. <br />Heart rate and heart rate variability could be considered protected health information under HIPAA. <br />Polar H is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Polar H is designed primarily for heart rate monitoring, and it collects data related to this function. This data is processed and can be accessed through Polar's dedicated apps and online services. Polar's documentation does not specify if the health data recorded by the Polar H undergoes de-identification at the time of collection. This leaves an uncertainty regarding their data handling practices in this regard. <br />Polar privacy policy mentions the possibility of sharing aggregated or anonymized data with third parties. However, the specific methods Polar uses for de-identification of data collected by the H are not explicitly mentioned."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Polar H's policy indicates that they 'may disclose your personal data to selected third parties, including business partners, suppliers, and sub-contractors for the performance of any contract we enter into with them or you'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'third party service providers', 'partners', 'affiliates', and 'other third parties'. <br />No mentions of specific companies, organizations, or individuals are provided."
+       
+      } }
+    },
+    "api": {
+      "daytime": [
+        ["HR", "2.3", "MAE"]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "Polar_H10_Bariatrics.txt",
+      "Polar_H10_Cardiology.txt",
+      "Polar_H10_ChronicPainOrDiseases.txt",
+      "Polar_H10_Endocrinology.txt",
+      "Polar_H10_Gastroenterology.txt",
+      "Polar_H10_GeneralPhysiology.txt",
+      "Polar_H10_Other.txt",
+      "Polar_H10_Psychiatry.txt",
+      "Polar_H10_Pulmonology.txt",
+      "Polar_H10_Somnology.txt"
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "name": "Polar Verity Sense",
+    "id": "polar-verity-sense",
+    "ordering_priority": 10,
+    "picture": "/assets/polar-verity-sense.png",
+    "description": "The Polar Verity Sense is an optical heart rate monitor designed for versatility and ease of use. It can be worn on the arm or temple, making it suitable for a wide range of sports and activities. The device tracks heart rate accurately and provides real-time data to connected devices via Bluetooth and ANT+. Its compact and comfortable design ensures it stays secure during activities, and it's water-resistant, ideal for swimming and other water sports. The Verity Sense supports up to 20 hours of training on a single charge, catering to long-duration workouts and events. This heart rate monitor is compatible with various fitness apps, sports watches, and gym equipment, offering flexibility in how users track and analyze their performance. The Polar Verity Sense is a practical choice for athletes and fitness enthusiasts who require reliable heart rate data across different training environments.",
+    "tags": ["Pedometer"],
+    "notebooks": [
+      {
+        "name": "polar-verity-sense.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/polar_verity_sense.ipynb"
+      }
+    ],
+    "link": "https://www.polar.com/en/products/accessories/polar-verity-sense",
+    "specs": {
+      "product_details": {
+        "Location": "forearm, upper arm",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Bluetooth or ANT+"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+      "Data Risk": {
+          "short": "No",
+          "long": "Data from the Polar Verity Sense includes 'account information' ('name', 'physical information', 'overall health', 'location'), 'purchase history', 'data from Polar devices', and 'training data'. This may include 'heart rate' data, heart rate variability, and sleep data. Polar Flow, the companion app, is designed to capture and analyze this data, providing insights into training sessions, activity levels, and recovery. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Training data (duration, estimated calories, type of exercise) <br />- Sleep data: Sleep tracking (if worn during sleep) <br />- Physiological data: Heart rate, heart rate variability <br />- Health risk assessment: Cardiovascular health insights from heart rate and activity data analysis <br />- Predictive health insights: Recovery times, training recommendations"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Polar Verity Sense collects account information, data from Polar devices, and training data. The Verity Sense captures specific health metrics like heart rate, heart rate variability, and, if worn during sleep, sleep data. These metrics are collected, analyzed, and stored in the Polar Flow service, which is a companion platform. Interactions with Polar's customer support may also be logged and stored. <br />Heart rate, heart rate variability, and sleep data, among other training-related metrics, could be considered protected health information under HIPAA. <br />Polar Verity Sense is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Polar Verity Sense collects health and fitness metrics, which are processed and stored in conjunction with the Polar Flow app. The documentation does not provide explicit details on whether the health-related data collected by the Verity Sense is subjected to de-identification techniques at the time of collection. This leaves a certain ambiguity regarding the exact methodologies employed to ensure user privacy. <br />While the Polar privacy policy notes the potential for sharing anonymized or aggregated data with third parties for various purposes, it does not explicitly clarify the processes or methods they employ for data de-identification."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Polar Verity Sense's policy states that they 'may disclose your personal data to selected third parties, including business partners, suppliers, and sub-contractors for the performance of any contract we enter into with them or you'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'third party service providers', 'partners', 'affiliates', and 'other third parties'. <br />No mentions of specific companies, organizations, or individuals are provided."
+       
+      } }
+    },
+    "api": {},
+    "summaries": [
+      "Polar_Verity_Sense_Cardiology.txt",
+      "Polar_Verity_Sense_GeneralPhysiology.txt",
+      "Polar_Verity_Sense_Other.txt",
+      "Polar_Verity_Sense_Psychiatry.txt"
+    ]
+}

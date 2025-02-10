@@ -1,0 +1,58 @@
+{
+    "name": "Actigraph CentrePoint Insight",
+    "id": "actigraph-centrepoint-insight",
+    "ordering_priority": 14,
+    "picture": "/assets/actigraph-centrepoint-insight.png",
+    "description": "The ActiGraph CentrePoint Insight Watch is a sophisticated tool designed for capturing real-world physical activity, functional mobility, and sleep patterns. It's equipped with advanced sensors, including an accelerometer, which accurately track movement and activity levels. This wearable device is worn on the wrist and continuously collects data on various parameters such as step count, activity intensity, and sleep quality. The CentrePoint Insight is particularly valuable for researchers and clinicians in fields like sports medicine, physical therapy, and sleep studies. It provides detailed insights into a patient's daily activity and sleep behaviors, crucial for understanding and managing conditions like obesity, cardiovascular diseases, and sleep disorders. The device's ability to monitor functional mobility also makes it useful in rehabilitation settings, helping to assess recovery progress. By offering a comprehensive view of a person's physical activity and sleep patterns, the ActiGraph CentrePoint Insight Watch plays a pivotal role in both individual health monitoring and broader clinical research. Its non-invasive, continuous data collection supports more informed healthcare decisions and contributes to advancements in various medical and research fields.",
+    "tags": [],
+    "notebooks": [],
+    "link": "https://theactigraph.com/cpiw",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth."
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "No public API is available. Data may be accessed through unofficial third-party tools."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Actigraph CentrePoint Insight includes subject identifier [1], location of the activity monitor (unconfirmed) [1], raw acceleration in G's [2], energy expenditure [2], MET rates [2], physical activity intensity [2], activity bouts [2], sedentary bouts [2], sleep latency [2], total sleep time [2], wake after sleep onset [2], and sleep efficiency [2]. <br />These data present a health data risk in the following categories: <br />- Physical Activity Data: Location of activity monitor (for context of physical activity), raw acceleration in G's, energy expenditure, MET rates, physical activity intensity, activity bouts, sedentary bouts <br />- Sleep Data: Sleep latency, total sleep time, wake after sleep onset, sleep efficiency"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Actigraph CentrePoint Insight collects subject identifiers, location of the activity monitor, and demographic specifics such as date of birth, timezone, gender, and weight. <br />Fitness and sleep data could be considered protected health information under HIPAA. <br />Acitgraph CentrePoint Insight is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "ActiGraph utilizes Amazon Web Services (AWS) and Microsoft Azure which have both undergone third-party assessments to verify their security measures. ActiGraph ensures that it doesn't provide information to third parties beyond those acting under its instructions. ActiGraph specifies that it does not have the ability to identify clinical trial participants, as it operates under the instructions of the data controller (e.g., trial sponsor). This indicates a level of data separation where individual identities might not be directly linked to their data. <br />'Personal Data' as covered by the Privacy Shield Policy is data that can be linked to specific individuals and is protected, with rights for individuals to access, correct, amend, or delete their data. However, there's no explicit mention of differential privacy techniques or specific encryption methods for data in transit and at rest. It is clear that ActiGraph does not share information with non-agent third parties unless mandated by law or if it's necessary for protection purposes, keeping data privacy at the forefront of its services."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "ActiGraph mentions that they share data with 'those which are acting on our behalf with our instructions'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'those which are acting on our behalf with our instructions'. ActiGraph's data storage systems are provided by Amazon Web Services and Microsoft Azure. They do not provide specific names of other third-party entities. <br />No mentions of other specific companies, organizations, or individuals outside of Amazon Web Services and Microsoft Azure are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Actigraph_CentrePoint_Insight_GeneralPhysiology.txt",
+      "Actigraph_CentrePoint_Insight_Obstetrics.txt",
+      "Actigraph_CentrePoint_Insight_Oncology.txt",
+      "Actigraph_CentrePoint_Insight_Pulmonology.txt",
+      "Actigraph_CentrePoint_Insight_Somnology.txt"
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "name": "Garmin Fēnix",
+    "id": "garmin-fenix",
+    "ordering_priority": 12,
+    "picture": "/assets/garmin-fenix.png",
+    "description": "Garmin Fenix line is one of the best watches for running/cycling tracking and has the best GPS system of any of the devices we have covered. The HR sensor on this device is on the upper end of accuracy, even for higher heart rates and outdoor motion.",
+    "tags": ["SPO2", "Continuous HRV", "2-Stage", "Pedometer", "Calorimeter"],
+    "notebooks": [
+      {
+        "name": "garmin_fēnix_7s.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/garmin_fēnix_7s.ipynb"
+      }
+    ],
+    "link": "https://www.garmin.com/en-US/p/735542",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "$699.99",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi or bluetooth"
+        },
+        "API Access Security": {
+          "short": "No",
+          "long": "API is available through OAuth 1.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Garmin fēnix includes name, mailing address, phone number, email address, contact preferences, device's serial numbers, purchase dates, and purchased subscriptions. Activity data like steps, distance, pace, activity time, calories burned, heart rate, sleep, location, golf stats, menstrual cycle information, hydration, and music played are also tracked. Additional voluntary data may include location, activity types (such as running, hiking, cycling, golf), gender, birthdate, height, and weight. Users can manually add activities to their account. Users may be prompted for gender, height, weight, birthdate, activity level, and normal bed and wake times [1]. <br />These data constitute a health data risk in the following categories: <br />- Physical activity: Steps, distance, pace, activity time, calories burned, activity types [2] <br />- Health status data: Heart rate, sleep, hydration, menstrual cycle information [3] <br />- Sleep data: Sleep, normal bed and wake time [4] <br />- Health risk assessment: Heart rate, sleep, hydration, activity data <br />- Predictive health insights: Heart rate, sleep data, hydration, physical activity data"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Garmin fēnix collects identity and contact data such as email address, password, and mobile phone number. This data is used for account security, providing user information about Garmin's products, services, apps, or account, marketing communications (if consent is given), customer support interaction, and violation notifications. Activity data like location on your activity course, heart rate related metrics, stress score, Body Battery, pulse oximetry, and fitness goals are processed for analysis and sharing (with user consent). This data can also be used to provide personalized Insights and recommendations (if user opts into the Insights feature), for aggregated trend analysis and feature development, and for internal research and development (if the user is opted in to product improvement). Location data is processed for providing location-based services. The processing of these data are backed by varying legal grounds, including user consent, performance of a contract, and legitimate interest. <br />Heart rate, pulse oximetry, and fitness goal data could be considered protected health information under HIPAA. <br />Garmin fēnix is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Garmin fēnix's privacy policy does not explicitly state that personal data is encrypted in transit or at rest. The policy details how personal data is used and shared with third-party service providers for various purposes like payment processing, shipping, fraud detection, and customer support, but does not mention any specific de-identification technique [1]. <br />Personal data might be transferred to affiliates or third parties in specific situations, but these entities are not permitted to process your personal data other than as described in the privacy policy without providing notice and obtaining consent, if required by applicable laws. There is no explicit mention whether data is de-identified before sharing with third parties. Garmin states that it 'does not sell, and have not sold, your personal information' and that sensitive personal information is only used or disclosed for certain purposes [2]. However, this is only stated in the California-specific privacy policy under CCPA and not in the general privacy policy page. <br />Previously, a ransomware attack was perpetuated on Garmin, affecting numerous services across the company, including Garmin Connect and portions of Garmin.com. The attack took down the flyGarmin and Garmin Pilot apps, causing days-long outages that hindered some Garmin hardware used in planes and boats. Although some pilots and athletes were temporarily affected, Garmin stating that there was 'no indication that any customer data, including payment information from Garmin Pay, was accessed, lost or stolen' during the attack [3]. This incident underscores some previous vulnerability in Garmin's security infrastructure."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Garmin fēnix states that they 'share personal data with service providers, advertising partners, professional advisors, authorities and others, and business transferees'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "Yes",
+          "long": "Garmin uses third-party services for various functions. Adobe and SendGrid assist with sending and tracking emails. SMS messages are dispatched via Vonage and Twilio, with other regional services including Alibaba Cloud (China), every8d (Taiwan), aligo sms (South Korea), fpt / chunghwa (Vietnam), and true corp (Thailand). Third-party providers are used to analyze the performance of Garmin's products, services, websites, and apps. Payment processing varies by region and includes Adyen, PayPal, Alipay (China), WeChat Pay powered by tenpay (China), UnionPay (China), NewebPay, Klarna, and Veritrans. Fraud detection utilizes Cybersource, and address verification services are provided by third parties like Google and CDYNE. <br />Garmin partners with third-party services for shipping products and customer service. Point-of-sale services for in-store purchases are facilitated by Erply. Shipment information tracking is offered through Narvar. Global Blue provides tax rebate paperwork, while VHT provides callback request functionality for customer support. Garmin also collaborates with third-party providers for generating tax regulatory reports in some countries."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        ["SPO2", "0.78", "daily (per min)"],
+        ["HRV", "11.7", "MAE"],
+        ["HR", "7.8", "MAE"],
+        ["Pedometer-walk", "40", "daily (per min)"],
+        ["Pedometer-run", "76", "daily (per min)"]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "Garmin_Fenix_7S_Cardiology.txt",
+      "Garmin_Fenix_7S_ChronicPainOrDiseases.txt",
+      "Garmin_Fenix_7S_Endocrinology.txt",
+      "Garmin_Fenix_7S_GeneralPhysiology.txt",
+      "Garmin_Fenix_7S_Gynecology.txt",
+      "Garmin_Fenix_7S_Oncology.txt",
+      "Garmin_Fenix_7S_Psychiatry.txt",
+      "Garmin_Fenix_7S_Pulmonology.txt",
+      "Garmin_Fenix_7S_Somnology.txt"
+    ]
+}

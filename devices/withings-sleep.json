@@ -1,0 +1,73 @@
+{
+    "name": "Withings Sleep",
+    "id": "withings-sleep",
+    "ordering_priority": 19,
+    "picture": "/assets/withings-sleep.png",
+    "description": "The Withings Sleep is a sleep tracking mat that provides detailed insights into sleep patterns and quality. Placed under the mattress, it monitors sleep cycles, heart rate, and snoring, offering a comprehensive analysis of sleep health. The device uses advanced algorithms to track different sleep stages, including light, deep, and REM sleep, and provides a sleep score to help users understand their sleep quality. A notable feature of Withings Sleep is its ability to detect signs of sleep apnea, a condition characterized by breathing interruptions during sleep. This feature aids in identifying potential health issues that can be further evaluated by medical professionals. The data collected by the mat syncs with the Withings Health Mate app, allowing users to view their sleep trends and receive personalized advice for improving sleep quality. The Withings Sleep is a valuable tool for anyone looking to gain deeper insights into their sleep health and make informed changes for better rest.",
+    "tags": ["HR"],
+    "notebooks": [
+      {
+        "name": "withings-sleep.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/withings_sleep.ipynb"
+      }
+    ],
+    "link": "https://www.withings.com/us/en/sleep",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Mat)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi (mainly)"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+      "Data Risk": {
+          "short": "No",
+          "long": "Data from the Withings Sleep includes sleep cycles (deep, light, and REM), heart rate, snoring detection, sleep duration, sleep interruptions, sleep score, and sleep regularity. When connected with its companion app, the device provides insights into overall sleep health and offers sleep environment analysis such as room temperature and noise levels, helping users optimize their sleep environment and schedule. <br />These data constitute a health data risk in the following categories: <br />- Sleep data: Sleep cycles (deep, light, REM), duration, interruptions, regularity, and snoring events <br />- Physiological data: Heart rate during sleep <br />- Predictive health insights: Sleep score, which assesses the overall quality of sleep based on the collected metrics"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Withings Sleep collects data on sleep cycles, heart rate, snoring events, and breathing disturbances. This information is processed and presented to users via the Health Mate app. Data interactions with Withings platforms and any communication with their customer service might also be collected. <br />Metrics such as sleep cycles, heart rate, and breathing disturbances could be considered protected health information under HIPAA. <br />Withings Sleep is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Withings Sleep is a sleep tracking pad that monitors various parameters such as sleep duration, disturbances, and sleep stages. Data collected is used in conjunction with the Withings Health Mate app. Data is encrypted in transit and at rest. However, it's not clear if Withings applies differential privacy or other specific de-identification techniques to health data. <br />Regarding data sharing, the privacy policy mentions that Withings might share anonymized and aggregated data with third parties. Yet, the specifics of their de-identification processes or how they aggregate data are not explicitly described. To get a comprehensive understanding of Withings' data handling and privacy practices, referring directly to the company's most recent privacy policy is advised."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Withings Sleep mentions that they 'may share personal data with third-party service providers for the purpose of improving their services and for operational reasons.' "
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'partners' and 'third party service providers'. <br />No mentions of specific companies, organizations, or individuals are provided."
+       
+      } }
+    },
+    "api": {
+      "daytime": [],
+      "nighttime": [
+        ["SOL", "15.9", "MAE"],
+        ["TST", "30.2", "MAE"],
+        ["Stages", "W/R", "MAE"],
+        ["Apnea", "N", ""],
+        ["Snoring", "N", ""]
+      ],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "Withings_Sleep_Cardiology.txt",
+      "Withings_Sleep_ChronicPainOrDiseases.txt",
+      "Withings_Sleep_Oncology.txt",
+      "Withings_Sleep_Pulmonology.txt",
+      "Withings_Sleep_Somnology.txt"
+    ]
+}

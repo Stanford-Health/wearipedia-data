@@ -1,0 +1,77 @@
+{
+    "name": "Whoop Strap",
+    "id": "whoop-strap",
+    "ordering_priority": 13,
+    "picture": "/assets/whoop-strap.png",
+    "description": "One of the best recovery trackers on the market- this device has good performance on SPO2, HR, HRV, and 2-stage sleep classification. It is able to automatically detect walking motions or running but is not able to detect activities such as strength training.",
+    "tags": ["SPO2", "HR", "HRV", "2-Stage", "Calorimeter"],
+    "notebooks": [
+      {
+        "name": "whoop-strap.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/whoop_strap.ipynb"
+      }
+    ],
+    "link": "https://shop.whoop.com/en-us/collections/whoop-4-0-bands/?order_by=featured",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+      "Data Risk": {
+          "short": "No",
+          "long": "Data from the WHOOP Strap includes resting heart rate, heart rate variability, skin temperature, blood oxygen saturation level, and acceleration data. It further captures workout and sleep metadata as well as details on the type and duration of physical activity engaged in. Data reflecting strain and recovery are recorded. Other data from the user's physiological profile, such as birthday, gender identity, weight, height, and fitness/athlete level, are also captured. Voluntarily submitted data about diet, medications, and female health tracking are included as part of the data pool [1]. <br />These data constitute a health data risk in the following categories: <br />- Physical activity: Workout metadata, details on the type and duration of physical activity, data reflecting strain and recovery [2] <br />- Health status data: Resting heart rate, heart rate variability, skin temperature, blood oxygen saturation level [3] <br />- Sleep data: Sleep metadata [4] <br />- Health risk assessment: Data reflecting strain and recovery <br />- Predictive health insights: Resting heart rate, heart rate variability, sleep data, strain and recovery data "
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "WHOOP Strap collects contact and profile information such as usernames, passwords, and any data users add to a WHOOP profile. Communication through various platforms is also monitored. In terms of wellness, it collects heart rate, body temperature, metadata about workouts and sleep, details about physical activities, strain, recovery, and physiological profile. This profile may include diet, medication, and female health tracking. For transactions, payment and order history are collected. Marketing data reflecting user preferences and communication engagement is recorded. Device data includes system specifications, language settings, identifiers, network information, and general location. With consent, geolocation data like GPS and movement during specific exercises are documented. It tracks online activity by monitoring pages viewed, time spent on a page, website navigation paths, and access duration. <br />Heart rate, body temperature, and physiological profile data could be considered protected health information under HIPAA. <br />WHOOP Strap is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "WHOOP's privacy policy for the use of personal data in the WHOOP Strap outlines specific definitions and practices related to Aggregated Data, De-identified Data, or other anonymous data from Personal Data for research and development purposes. Aggregated Data is data that has been gathered and summarized for statistical analysis, and when aggregated across individuals, it becomes anonymized and is no longer considered Personal Data. De-Identified Data is described as data where all personally identifiable information has been removed, rendering it anonymous. <br />The policy indicates that WHOOP may create and use both Aggregated Data and De-identified Data for research and development purposes, including to analyze the effectiveness of the Services and the general behavior of users. Additionally, WHOOP states that it does not share Wellness Data with advertising partners and typically shares only Aggregated Data with organizations connected to employer or organizational corporate wellness programs. These processes suggest a deliberate process of de-identification or aggregation to protect individual privacy. "
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "WHOOP states that they 'may share personal data with service providers, advertising partners, professional advisors, authorities and others, and business transferees'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'advertising partners', 'professional advisors' and 'authorities and others', and 'business transferees'. <br />No mentions of specific companies, organizations, or individuals are provided."
+       
+      } }
+    },
+    "api": {
+      "daytime": [
+        ["HRV", "14.2", "MAE"],
+        ["HR", "9.1", "MAE"]
+      ],
+      "nighttime": [
+        ["TST", "8.2", "MAE"],
+        ["WASO", "7.1", "MAE"],
+        ["Stages", "W/R", "MAE"],
+        ["Apnea", "N", "-"],
+        ["Snoring", "N", "-"]
+      ],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "Whoop_Strap_4.0_Cardiology.txt",
+      "Whoop_Strap_4.0_GeneralPhysiology.txt",
+      "Whoop_Strap_4.0_Oncology.txt",
+      "Whoop_Strap_4.0_Other.txt",
+      "Whoop_Strap_4.0_Psychiatry.txt",
+      "Whoop_Strap_4.0_Somnology.txt"
+    ]
+}

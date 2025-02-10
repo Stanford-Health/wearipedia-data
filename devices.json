@@ -1,0 +1,2248 @@
+[
+  {
+    "name": "Abbott Freestyle Libre",
+    "id": "abbott-freestyle-libre",
+    "ordering_priority": 6,
+    "picture": "/assets/abbott-freestyle-libre.png",
+    "description": "The Abbott FreeStyle Libre is an advanced continuous glucose monitoring (CGM) system, essential for diabetes management. It features a discreet sensor attached to the upper arm, providing real-time glucose readings for up to 14 days. The sensor measures glucose levels in interstitial fluid, offering a less invasive alternative to traditional fingerstick tests. Users can scan the sensor with a dedicated reader or a smartphone app, which also provides optional alarms for hypo- and hyperglycemia. This CGM system is crucial for individuals with diabetes, enabling them to monitor glucose trends and patterns effectively. The FreeStyle Libre 2 aids in better diabetes management by allowing patients and healthcare providers to adjust treatments based on comprehensive glucose data. Its impact on diabetes care is significant, making it a valuable tool in both personal health management and medical research in endocrinology.",
+    "tags": [
+      "CGM"
+    ],
+    "notebooks": [],
+    "link": "https://www.freestyle.abbott/us-en/products/freestyle-libre-2.html",
+    "specs": {
+      "product_details": {
+        "Location": "Back of upper arm",
+        "Price": "$0.00 - $75.00 / month",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Near-field communication."
+        },
+        "API Access Security": {
+          "short": "N/A",
+          "long": "No public API is available."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Abbott Freestyle Libre includes continuous glucose readings. The sensor captures glucose data every minute, storing 8 hours of data at a time. When the sensor is scanned by the reader or compatible smartphone, the stored data is transferred, allowing users to view their glucose trends, peaks, and lows. The system also has optional real-time glucose alarms to notify users if glucose levels are too high or too low. <br />These data constitute a health data risk in the following categories: <br />- Physiological data: The system captures data related to hyperglycemic (high) and hypoglycemic (low) events, which can indicate potential health concerns or the need for treatment adjustments. <br />- Health status data: Continuous glucose readings, reflecting the individual's real-time and historical blood sugar levels, patterns of glucose fluctuations, allowing users to understand how different factors, such as meals, stress, or physical activity, impact their glucose levels. <br />- Predictive health insights: Based on glucose trends and patterns, users can adjust their dietary, medication, or lifestyle choices to optimize their glucose management and overall health."
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Abbott Freestyle Libre collects glucose levels at frequent intervals, and this data is transmitted to its designated reader or compatible smart device. <br />Glucose data, due to its direct relevance to an individual's health status, could be considered protected health information under HIPAA. <br />Abbott Freestyle Libre is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Abbott may share your personal information with third parties with whom Abbott is jointly marketing a product or service or jointly conducting a program or activity."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Abbott Freestyle Libre mentions that they 'will not sell or license personal data to third parties except in connection with the sale or transfer of a product line or division, or in connection with a joint marketing program'. <br />This raises concerns about the specific conditions under which user data might be shared or transferred, especially since such broad provisions might encompass a variety of scenarios where data can be shared without explicit user consent."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are vaguely referenced in connection with 'the sale or transfer of a product line or division' or in connection with 'a joint marketing program'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Abbott_Freestyle_Libre_2_Bariatrics.txt",
+      "Abbott_Freestyle_Libre_2_Cardiology.txt",
+      "Abbott_Freestyle_Libre_2_ChronicPainOrDiseases.txt",
+      "Abbott_Freestyle_Libre_2_Endocrinology.txt",
+      "Abbott_Freestyle_Libre_2_Gastroenterology.txt",
+      "Abbott_Freestyle_Libre_2_GeneralPhysiology.txt",
+      "Abbott_Freestyle_Libre_2_Nephrology.txt",
+      "Abbott_Freestyle_Libre_2_Obstetrics.txt",
+      "Abbott_Freestyle_Libre_2_Oncology.txt",
+      "Abbott_Freestyle_Libre_2_Other.txt",
+      "Abbott_Freestyle_Libre_2_Psychiatry.txt",
+      "Abbott_Freestyle_Libre_2_Pulmonology.txt",
+      "Abbott_Freestyle_Libre_2_Somnology.txt"
+    ]
+  },
+  {
+    "name": "Actigraph CentrePoint Insight",
+    "id": "actigraph-centrepoint-insight",
+    "ordering_priority": 14,
+    "picture": "/assets/actigraph-centrepoint-insight.png",
+    "description": "The ActiGraph CentrePoint Insight Watch is a sophisticated tool designed for capturing real-world physical activity, functional mobility, and sleep patterns. It's equipped with advanced sensors, including an accelerometer, which accurately track movement and activity levels. This wearable device is worn on the wrist and continuously collects data on various parameters such as step count, activity intensity, and sleep quality. The CentrePoint Insight is particularly valuable for researchers and clinicians in fields like sports medicine, physical therapy, and sleep studies. It provides detailed insights into a patient's daily activity and sleep behaviors, crucial for understanding and managing conditions like obesity, cardiovascular diseases, and sleep disorders. The device's ability to monitor functional mobility also makes it useful in rehabilitation settings, helping to assess recovery progress. By offering a comprehensive view of a person's physical activity and sleep patterns, the ActiGraph CentrePoint Insight Watch plays a pivotal role in both individual health monitoring and broader clinical research. Its non-invasive, continuous data collection supports more informed healthcare decisions and contributes to advancements in various medical and research fields.",
+    "tags": [],
+    "notebooks": [],
+    "link": "https://theactigraph.com/cpiw",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth."
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "No public API is available. Data may be accessed through unofficial third-party tools."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Actigraph CentrePoint Insight includes subject identifier [1], location of the activity monitor (unconfirmed) [1], raw acceleration in G's [2], energy expenditure [2], MET rates [2], physical activity intensity [2], activity bouts [2], sedentary bouts [2], sleep latency [2], total sleep time [2], wake after sleep onset [2], and sleep efficiency [2]. <br />These data present a health data risk in the following categories: <br />- Physical Activity Data: Location of activity monitor (for context of physical activity), raw acceleration in G's, energy expenditure, MET rates, physical activity intensity, activity bouts, sedentary bouts <br />- Sleep Data: Sleep latency, total sleep time, wake after sleep onset, sleep efficiency"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Actigraph CentrePoint Insight collects subject identifiers, location of the activity monitor, and demographic specifics such as date of birth, timezone, gender, and weight. <br />Fitness and sleep data could be considered protected health information under HIPAA. <br />Acitgraph CentrePoint Insight is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "ActiGraph utilizes Amazon Web Services (AWS) and Microsoft Azure which have both undergone third-party assessments to verify their security measures. ActiGraph ensures that it doesn't provide information to third parties beyond those acting under its instructions. ActiGraph specifies that it does not have the ability to identify clinical trial participants, as it operates under the instructions of the data controller (e.g., trial sponsor). This indicates a level of data separation where individual identities might not be directly linked to their data. <br />'Personal Data' as covered by the Privacy Shield Policy is data that can be linked to specific individuals and is protected, with rights for individuals to access, correct, amend, or delete their data. However, there's no explicit mention of differential privacy techniques or specific encryption methods for data in transit and at rest. It is clear that ActiGraph does not share information with non-agent third parties unless mandated by law or if it's necessary for protection purposes, keeping data privacy at the forefront of its services."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "ActiGraph mentions that they share data with 'those which are acting on our behalf with our instructions'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'those which are acting on our behalf with our instructions'. ActiGraph's data storage systems are provided by Amazon Web Services and Microsoft Azure. They do not provide specific names of other third-party entities. <br />No mentions of other specific companies, organizations, or individuals outside of Amazon Web Services and Microsoft Azure are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Actigraph_CentrePoint_Insight_GeneralPhysiology.txt",
+      "Actigraph_CentrePoint_Insight_Obstetrics.txt",
+      "Actigraph_CentrePoint_Insight_Oncology.txt",
+      "Actigraph_CentrePoint_Insight_Pulmonology.txt",
+      "Actigraph_CentrePoint_Insight_Somnology.txt"
+    ]
+  },
+  {
+    "name": "Apple Healthkit",
+    "id": "apple-healthkit",
+    "ordering_priority": 9999,
+    "picture": "/assets/apple-healthkit.png",
+    "description": "Apple HealthKit is a smartphone app designed to centralize and manage health data. It integrates data from various health and fitness apps, allowing users to track a wide range of health metrics such as physical activity, nutrition, sleep, and heart rate. HealthKit also supports data from external devices like blood pressure monitors and glucose meters, providing a comprehensive health overview. This app is particularly beneficial for individuals aiming to maintain or improve their health and wellness. It enables users to monitor their daily health behaviors and trends, facilitating informed lifestyle choices and health management. For healthcare providers, HealthKit offers a valuable tool to access patient health data, enhancing personalized care and treatment plans. HealthKit's role extends to research, where aggregated data can contribute to health studies and insights. Its ability to compile diverse health data in one platform makes it a key player in personal health management and the broader health technology landscape.",
+    "tags": [
+      "App"
+    ],
+    "notebooks": [],
+    "link": "https://developer.apple.com/health-fitness/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone App)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": "N/A"
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "N/A",
+          "long": "N/A"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from Apple HealthKit can include a wide array of health metrics, depending on the apps and devices a user connects. This includes 'physiological data' ('heart rate', 'blood pressure', 'body temperature'), 'activity data' ('steps taken', 'flights climbed', 'distance traveled'), 'nutrition data' ('calories consumed', 'water intake', 'caffeine intake'), 'sleep data', 'menstrual cycle tracking', 'audiogram data', 'respiratory data', and much more. The platform is designed to aggregate and provide insights on a broad spectrum of health and fitness data. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Workouts, steps, distance, active energy, and exercise types <br />- Sleep data: Sleep analysis and bedtime <br />- Physiological data: Metrics like heart rate, blood oxygen levels, blood pressure, and body temperature <br />- Health status data: Dietary energy, carbohydrates, protein, fat, sugar, vitamins, minerals, and water intake, menstrual cycle, sexual activity, and fertility predictions, noise exposure and audiograms, lab results, immunizations, allergies, medications, and various health records."
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Apple devices gather a wide range of data. This includes account and device information, contact and payment details, transaction and fraud prevention data, and usage activity. Geographical specifics, health and fitness data are also logged. Apple also collects financial data, such as income and assets, and information related to the use of Apple-branded financial services. In certain regions, government-issued identification may be necessary for specific tasks. Additionally, interactions and communications with Apple's customer support and social media channels are monitored and stored. <br />Health and fitness data, potentially comprising steps, mobility data, headphone audio levels, sleep history, and health records, could be considered protected health information under HIPAA due to their relevance to health status or the provision of healthcare. <br />Apple Healthkit is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Apple's privacy policy suggests that health data is encrypted both in transit and at rest when iCloud is used. The company has stated that it uses differential privacy, a technique that adds noise to data to protect individual user's identities when collecting other types of data, but it is not explicitly mentioned if this technique is applied to health data. <br />There is no explicit mention whether data is de-identified before sharing with third parties for research purposes. However, Apple states that it 'does not share any personal data with third parties' and personal data is defined as 'data that directly identifies you — such as your name' as well as 'data that does not directly identify you, but that can reasonably be used to identify you — such as the serial number of your device'. Aggregated data, on the other hand, is not considered personal data."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Apple mentions that they 'may share personal data with Apple-affiliated companies, service providers who act on our behalf, our partners, developers, and publishers, or others at your direction'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Apple_HealthKit_Cardiology.txt",
+      "Apple_HealthKit_Endocrinology.txt",
+      "Apple_HealthKit_GeneralPhysiology.txt",
+      "Apple_HealthKit_Obstetrics.txt"
+    ]
+  },
+  {
+    "name": "Apple iPhone",
+    "id": "apple-iphone",
+    "ordering_priority": 4,
+    "picture": "/assets/apple-iphone.png",
+    "description": "The Apple iPhone measures physical activity and health markers. Equipped with sensors like an accelerometer and gyroscope, it tracks steps, distance traveled, and overall physical activity. The iPhone's Health app consolidates this data, offering insights into daily fitness routines and health trends. This functionality is particularly useful for individuals focused on maintaining or improving their health and fitness. Users can monitor their daily activities, set fitness goals, and track their progress over time. The iPhone's capability to integrate with other health and fitness apps and devices, like heart rate monitors and sleep trackers, further enhances its utility in personal health management. In the realm of healthcare and research, the iPhone's data collection supports studies in areas like physical activity, epidemiology, and public health, making it a valuable asset in both personal wellness and wider health research initiatives.",
+    "tags": [
+      "App",
+      "Pedometer"
+    ],
+    "notebooks": [],
+    "link": "https://www.apple.com/iphone/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi or bluetooth"
+        },
+        "API Access Security": {
+          "short": "N/A",
+          "long": "No public API is available. Data may be accessible through the Apple HealthKit and third party apps."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Apple iPhone includes steps, flights of stairs, and other walking data, mobility data, headphone audio levels, sleep history, and health records from healthcare providers. Health/fitness apps and devices downloaded from the App Store as well as devices such as blood pressure monitors and weight scales contribute to an aggregated data pool [1].<br />These data constitute a health data risk in the following categories:<br />- Physical Activity: Steps, flight of stairs, other walking data, mobility data<br />- Health status data: Headphone audio levels [2]<br />- Sleep data: Sleep history<br />- Health risk assessment: Health records from healthcare providers [3]<br />- Predictive health insights: Data from other apps and devices [4]"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Apple iPhone collects account and device information, contact and payment details, transaction and fraud prevention data, and usage activity. Geographical specifics, health and fitness data are also logged. The Apple iPhone also collects financial data, such as income and assets, and information related to the use of Apple-branded financial services. In certain regions, government-issued identification may be necessary for specific tasks. Interactions and communications with Apple's customer support and social media channels are monitored and stored.<br />Steps, mobility, headphone audio levels, sleep, and health data could be considered protected health information under HIPAA.<br />Apple iPhone is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Apple's privacy policy states that health data is encrypted both in transit and at rest when iCloud is used. The company has stated that it uses differential privacy, a technique that adds noise to data to protect individual user's identities when collecting other types of data, but it is not explicitly mentioned if this technique is applied to health data. <br />There is no explicit mention whether data is de-identified before sharing with third parties for research purposes. However, Apple states that it 'does not share any personal data with third parties' and personal data is defined as 'data that directly identifies you — such as your name' as well as 'data that does not directly identify you, but that can reasonably be used to identify you — such as the serial number of your device'. Aggregated data, on the other hand, is not considered personal data. "
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Apple mentions that they 'may share personal data with Apple-affiliated companies, service providers who act on our behalf, our partners, developers, and publishers, or others at your direction'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        [
+          "Pedometer-walk",
+          "39",
+          "MAE"
+        ]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "IPhone_Bariatrics.txt",
+      "IPhone_Cardiology.txt",
+      "IPhone_ChronicPainOrDiseases.txt",
+      "IPhone_Endocrinology.txt",
+      "IPhone_Gastroenterology.txt",
+      "IPhone_GeneralPhysiology.txt",
+      "IPhone_Gynecology.txt",
+      "IPhone_Nephrology.txt",
+      "IPhone_Obstetrics.txt",
+      "IPhone_Oncology.txt",
+      "IPhone_Other.txt",
+      "IPhone_Psychiatry.txt",
+      "IPhone_Pulmonology.txt",
+      "IPhone_Somnology.txt"
+    ]
+  },
+  {
+    "name": "Apple Watch",
+    "id": "apple-watch",
+    "ordering_priority": 3,
+    "picture": "/assets/apple-watch.png",
+    "description": "Easy to access consumer wearable. Great for personal use if interested in general fitness/sleep tracking. Can also double as a research wearable if high granularity or unprocessed data is not needed. Most accurate pedometer, calorimetry, and SPO2. Keep in mind that Apple Watch samples HRV at random times so it is difficult to get quality HRV data readings from this device unless you have timed 'Breath' HRV.",
+    "tags": [
+      "SPO2",
+      "Continuous HRV",
+      "2-Stage",
+      "Calorimeter"
+    ],
+    "notebooks": [],
+    "link": "https://www.apple.com",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "$249.00 - $799.00[@apple2024watch]",
+        "Sensors": [
+          "PPG",
+          "Gyroscope",
+          "Barometer",
+          "Altimeter",
+          "Electrical EEG",
+          "Magnetic Compass",
+          "Light",
+          "Microphone"
+        ],
+        "Battery": "18 hours[@apple2024watchbattery]"
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Bluetooth[@apple2024connect]."
+        },
+        "API Access Security": {
+          "short": "N/A",
+          "long": "No public API is available. Data may be accessbile through the Apple HealthKit and third party apps[@esposito2022watchOS]."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "Yes",
+          "long": "Data from the Apple Watch includes location[@appleintro], ecg[@appleintro], heart rate[@appleintro], and heart health[@appleintro]. These data constitute a health data risk in the following categories: <br />- Physical Activity Data: Heart rate, ecg <br />- Health Status Data: Heart health <br />- Health Risk Assessment: Likelihood of heart related health issues"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Apple Watch collects account and device information, contact and payment details, transaction and fraud prevention data, and usage activity. Geographical specifics, health and fitness data are also logged. The Apple Watch also collects financial data, such as income and assets, and information related to the use of Apple-branded financial services. In certain regions, government-issued identification may be necessary for specific tasks. Additionally, interactions and communications with Apple's customer support and social media channels are monitored and stored. <br /> Steps, mobility, headphone audio levels, sleep, and health data could be considered protected health information under HIPAA. <br /> Apple Watch is not HIPAA compliant[@apple2022privacypolicy]."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Apple's privacy policy suggests that health data is encrypted both in transit and at rest when iCloud is used. The company has stated that it uses differential privacy, a technique that adds noise to data to protect individual user's identities when collecting other types of data, but it is not explicitly mentioned if this technique is applied to health data.[@apple2024differentialprivacy]<br /><br /> There is no explicit mention whether data is de-identified before sharing with third parties for research purposes. However, Apple states that it 'does not share any personal data with third parties' and personal data is defined as 'data that directly identifies you — such as your name' as well as 'data that does not directly identify you, but that can reasonably be used to identify you — such as the serial number of your device'[@apple2022privacypolicy]. Aggregated data, on the other hand, is not considered personal data.<br /><br />"
+        },
+        "Shares With Third Parties": {
+          "short": "Yes",
+          "long": "Apple mentions that they 'may share personal data with Apple-affiliated companies, service providers who act on our behalf, our partners, developers, and publishers, or others at your direction'[@apple2022privacypolicy]."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement[@apple2022privacypolicy].<br /><br /> No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        [
+          "SPO2",
+          "0.81[@schroder2023applewatch],[@windisch2023accuracy]",
+          "daily (per min)"
+        ],
+        [
+          "HRV",
+          "10.8[@hernando2018validation],[@velmovitsky2023heartrate]",
+          "MAE"
+        ],
+        [
+          "HR",
+          "7.8[@falter2019accuracy],[@nuss2018accuracy]",
+          "MAE"
+        ],
+        [
+          "Pedometer-walk",
+          "27.0[@veerabhadrappa2018tracking],[@germini2022accuracy]",
+          "daily"
+        ],
+        [
+          "Pedometer-run",
+          "59.0",
+          "daily"
+        ]
+      ],
+      "nighttime": [
+        [
+          "HR",
+          "6.2",
+          "MAE"
+        ],
+        [
+          "SOL",
+          "10.6[@miller2022validation],[@roomkham2019sleepmonitoring]",
+          "MAE"
+        ],
+        [
+          "TST",
+          "23.8",
+          "MAE"
+        ],
+        [
+          "Stages",
+          "W/R",
+          "-"
+        ],
+        [
+          "Apnea",
+          "N",
+          "-"
+        ],
+        [
+          "Snoring",
+          "N",
+          "-"
+        ]
+      ],
+      "sensor_performance": [
+        [
+          "Apple Watch 5",
+          "9.6 MAE",
+          "29 MAE"
+        ],
+        [
+          "Apple Watch 6",
+          "8.5 MAE",
+          "22 MAE"
+        ],
+        [
+          "Apple Watch 7",
+          "8.2 MAE",
+          "20 MAE"
+        ],
+        [
+          "Apple Watch 8",
+          "9.5 MAE",
+          "20 MAE"
+        ],
+        [
+          "Apple Watch Ultra",
+          "7.7 MAE",
+          "20 MAE"
+        ]
+      ]
+    },
+    "summaries": [
+      "Apple_Watch_5_Cardiology.txt",
+      "Apple_Watch_5_ChronicPainOrDiseases.txt",
+      "Apple_Watch_5_Gastroenterology.txt",
+      "Apple_Watch_5_GeneralPhysiology.txt",
+      "Apple_Watch_5_Other.txt",
+      "Apple_Watch_5_Psychiatry.txt",
+      "Apple_Watch_5_Pulmonology.txt",
+      "Apple_Watch_5_Somnology.txt"
+    ]
+  },
+  {
+    "name": "Biostrap",
+    "id": "biostrap",
+    "ordering_priority": 9999,
+    "picture": "/assets/biostrap.png",
+    "description": "The Biostrap is a wearable designed for health and fitness tracking, focusing on metrics like heart rate variability (HRV), respiratory rate, and SpO2. It also provides detailed sleep analysis, including sleep stages and movement tracking. The device is capable of capturing high-resolution biometric data, which can be useful for monitoring health and detecting early signs of illness, including respiratory and cardiovascular issues. Biostrap integrates with third-party apps and supports remote monitoring for health professionals, making it suitable for both individual users and clinical applications. It uses a wristband and chest strap for data collection, depending on the specific activity or health metric being tracked.",
+    "tags": [
+      "HR",
+      "HRV"
+    ],
+    "notebooks": [],
+    "link": "https://biostrap.com/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "",
+          "long": ""
+        },
+        "API Access Security": {
+          "short": "",
+          "long": ""
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "",
+          "long": ""
+        },
+        "HIPAA Compliance": {
+          "short": "",
+          "long": ""
+        },
+        "De-identification (When Sharing)": {
+          "short": "",
+          "long": ""
+        },
+        "Shares With Third Parties": {
+          "short": "",
+          "long": ""
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "",
+          "long": ""
+        }
+      }
+    },
+    "api": {},
+    "summaries": []
+  },
+  {
+    "name": "Coros Pace",
+    "id": "coros-pace",
+    "ordering_priority": 21,
+    "picture": "/assets/coros-pace.png",
+    "description": "The Coros Pace is a lightweight, high-performance sports watch designed for athletes and fitness enthusiasts. It offers advanced tracking capabilities for various activities, including running, swimming, and cycling. The watch is equipped with GPS, a heart rate monitor, and a barometric altimeter, providing accurate data on pace, distance, heart rate, and elevation. Its battery life is notably long-lasting, making it suitable for extended training sessions and endurance events. The Coros Pace also supports customizable workout plans and provides detailed analysis of training metrics, aiding athletes in optimizing their performance. Additionally, the watch syncs with smartphones for notifications and data sharing, allowing users to keep track of their progress and share it with coaches or fitness communities. The Coros Pace stands out for its precision, durability, and utility in sports and fitness training.",
+    "tags": [
+      "SPO2",
+      "Pedometer",
+      "Calorimeter"
+    ],
+    "notebooks": [],
+    "link": "https://coros.com/pace3",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "$229.00",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "N/A",
+          "long": "No public API is available."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Coros Pace includes steps tracking, distance covered, heart rate monitoring, sleep tracking, elevation gained, cadence, stride length, calories burned, VO2 max estimation, and training load tracking. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Steps tracking, distance covered, elevation gained, cadence, stride length, calories burned <br />- Sleep data: Sleep tracking <br />- Physiological data: Heart rate monitoring <br />- Physical fitness level: VO2 max estimation, training load tracking"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Coros Pace collects activity data based on the user's physical activities, including steps, distance traveled, swimming metrics, calories burned, running dynamics, cadence, stride length, elevation gain, and training load. The device also monitors heart rate, sleep cycles, and VO2 max estimation. Technical data for product and service use, such as GPS location, technical logs, battery measurement, and device configuration, are processed. <br />Heart rate, sleep, and physiological measurement data could be considered protected health information under HIPAA. <br />Coros Pace is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Coros Pace may share information about users in various circumstances, including with service providers working on their behalf, third-party services like Strava and TrainingPeaks if connected to the COROS account, or publicly if users participate in interactive areas of their Services. Data may also be disclosed in legal contexts, during business negotiations, or among COROS's corporate affiliates. Additionally, with user consent or at the user's direction, COROS may share aggregated or de-identified information, which cannot reasonably be used to identify an individual. Users can disable auto-sync settings to stop automatic data sharing with third-party platforms, though existing data on those platforms will remain unless deleted from their servers."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Coros Pace may engage third-party entities to provide analytics and advertising services for their websites and online platforms. These third parties may utilize various technologies to collect information such as IP address, web browser, mobile network information, and user behavior. COROS and other involved parties may use this information to analyze user activity, gauge feature popularity, and deliver tailored ads and content. Users who wish to opt out of interest-based ads may do so at aboutads.info/choices, and some mobile devices may offer features to restrict information collection for interest-based advertising purposes."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'advertising partners', 'professional advisors' and 'authorities and others', and 'business transferees'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        [
+          "SPO2",
+          "0.73",
+          "MAE"
+        ],
+        [
+          "HR",
+          "13.2",
+          "MAE"
+        ],
+        [
+          "Pedometer-walk",
+          "45",
+          "MAE"
+        ],
+        [
+          "Pedometer-run",
+          "87",
+          "MAE"
+        ]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": []
+  },
+  {
+    "name": "Cronometer",
+    "id": "cronometer",
+    "ordering_priority": 7,
+    "picture": "/assets/cronometer.png",
+    "description": "Cronometer is a nutrition tracking app that provides detailed analysis of dietary intake. It allows users to log their food consumption and monitor nutrients, including calories, macronutrients (carbs, fats, proteins), and micronutrients (vitamins and minerals). The app's extensive food database ensures accurate tracking of various food items and recipes. A key feature of Cronometer is its ability to customize nutrition goals based on individual needs, making it suitable for various dietary plans, including weight loss, muscle gain, or maintenance. It also supports integration with fitness devices to track physical activity and caloric expenditure. Cronometer offers detailed reports and charts, giving users insights into their nutritional habits and helping them make informed dietary choices. Its focus on comprehensive nutrient tracking sets it apart from other food diary apps, making it a valuable tool for anyone serious about their nutrition and overall health.",
+    "tags": [
+      "App"
+    ],
+    "notebooks": [
+      {
+        "name": "cronometer.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/cronometer.ipynb"
+      }
+    ],
+    "link": "https://cronometer.com/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone App)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": "N/A"
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "N/A",
+          "long": "N/A"
+        },
+        "API Access Security": {
+          "short": "N/A",
+          "long": "No public API is available."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from Cronometer includes detailed 'food consumption' data, which breaks down the nutrient profile of foods consumed, such as 'macronutrients' ('carbohydrates', 'proteins', 'fats'), 'micronutrients' (vitamins, minerals, etc.), 'caloric intake', and more. The platform also captures 'physical activity' data, either entered manually or imported from connected fitness tracking devices. Users can also log 'biometric data' such as 'weight', 'blood pressure', and 'sleep hours', and set personal health and wellness goals. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Activity type, duration, intensity, and estimated caloric burn.<br />- Health status data: Detailed breakdown of daily food consumption and nutrient intake, including both macronutrients and micronutrients, weight trends, body measurements, blood pressure, cholesterol levels, captures patterns of consumption, such as frequency of specific foods or meals, highlighting potential dietary imbalances or deficiencies."
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Cronometer collects dietary intake, exercise routines, and biometric data. It offers analysis of macro and micronutrient intake based on user entries. <br />Data related to dietary intake, exercise, and biometrics could be considered protected health information under HIPAA. <br />Cronometer is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "No",
+          "long": "Non Personal Information. As used in this Privacy Notice, 'Non-Personal Information' means information that does not identify you and cannot be used to contact you personally and may include: (a) certain [A1]publicly available information; (b) aggregate information, meaning data about a group or category of services or users from which individual identities and other Personal Information has been removed; (c) deidentified information that cannot be easily linked back to the individual; or (d) [A2]and in full compliance with HIPAA and Privacy laws, and on an aggregated and anonymous basis, your diary entries, health data[A3], recipes, targets and profile."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Cronometer mentions that they 'may share data with third parties for the purposes of operating our services, maintaining the safety and security of our services, and for marketing purposes.'"
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are not specifically outlined in the privacy policy. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Cronometer_ChronicPainOrDiseases.txt",
+      "Cronometer_Endocrinology.txt",
+      "Cronometer_Gastroenterology.txt"
+    ]
+  },
+  {
+    "name": "Dexcom G Pro",
+    "id": "dexcom-g-pro",
+    "ordering_priority": 5,
+    "picture": "/assets/dexcom-g-pro.png",
+    "description": "The Dexcom G Pro is a continuous glucose monitoring (CGM) system designed for diabetes management in both clinical and personal settings. It features a small, wearable sensor that continuously measures glucose levels in interstitial fluid and a transmitter that sends data to a display device. The G Pro allows for unblinded or blinded monitoring, giving healthcare providers flexibility in how they use the device for patient care. This CGM system is particularly useful for gaining insights into a patient's glucose patterns and variability, which can inform treatment decisions. It does not require fingerstick calibrations, offering convenience and ease of use. The real-time glucose data and trend analysis provided by the Dexcom G Pro are valuable for managing both type 1 and type 2 diabetes, helping to reduce the risk of hypoglycemia and improve glycemic control. Its accuracy and reliability make it a trusted tool in diabetes care.",
+    "tags": [
+      "CGM"
+    ],
+    "notebooks": [
+      {
+        "name": "dexcom_g6_pro.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/dexcom_g6_pro.ipynb"
+      }
+    ],
+    "link": "https://provider.dexcom.com/products/dexcom-g6-pro",
+    "specs": {
+      "product_details": {
+        "Location": "Back of upper arm, abdomen, upper buttocks",
+        "Price": "$59.00",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Dexcom Pro CGM includes real-time glucose readings taken at regular intervals. The device can alert the user to high and low glucose levels, allowing for timely interventions. Through trends and historical data, the CGM offers insights into glucose variations due to factors like meals, insulin dosages, and physical activity. Additionally, it may include data points such as the time and date of readings, any calibrations done, and potentially user-inputted events like meals or exercise. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Physical activity can influence glucose dynamics, and annotations or trends could be linked to exercise routines. <br />- Physiological data: Rapid changes in glucose levels can provide insights into certain physiological responses like stress, illness, or reactions to medications. <br />- Health status data: Continuous glucose levels, which directly reflect the user's metabolic state and responses to insulin, food intake, or other factors. <br />- Predictive health insights: Analysis of glucose trends can be used to predict potential future hypoglycemic or hyperglycemic events, allowing for preventive measures."
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Dexcom Pro CGM collects real-time glucose readings, trends, and provides alerts for high or low glucose levels. This information is relayed to the user's smartphone or receiver device, aiding in diabetes management. <br />Glucose readings and associated trends can be seen as protected health information under HIPAA since they directly relate to a person's health condition and treatment. <br />Dexcom Pro CGM is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Dexcom Pro CGM interfaces with Dexcom CLARITY, a management tool that processes data from the CGM. The Dexcom Receiver used by CLARITY anonymizes this data. The Dexcom G6, a CGM system by Dexcom, features a 'Share' function. This allows users to transmit their glucose data to chosen recipients, like family members or healthcare professionals. Data shared via this function is encrypted, ensuring that only authorized individuals can access it. <br />Dexcom's policy on data handling states that Personal Information is shared with Service Providers. This includes reasons like managing their business, maintaining their products, delivering services, or upholding contracts. They also share data for purposes where the user has given consent, for sending surveys when legally permissible, to meet legal obligations, and to assert or protect legal rights."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Dexcom Pro CGM mentions that they 'share Personal Information with our Service Providers for specified purposes such as operating and managing our business, product support, and establishing legal claims.' It also mentions sharing data for the delivery of their Products and Services, where consent has been given, and for compliance with applicable law. The data is shared in compliance with applicable data protection law and under the constraints of specified contracts that maintain confidentiality and prescribed use."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'Service Providers'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Dexcom_G6_Pro_Cardiology.txt",
+      "Dexcom_G6_Pro_Endocrinology.txt",
+      "Dexcom_G6_Pro_GeneralPhysiology.txt",
+      "Dexcom_G6_Pro_Obstetrics.txt",
+      "Dexcom_G6_Pro_Pulmonology.txt",
+      "Dexcom_G6_Pro_Somnology.txt"
+    ]
+  },
+  {
+    "name": "Dreem Headband",
+    "id": "dreem-headband",
+    "ordering_priority": 20,
+    "picture": "/assets/dreem-headband.png",
+    "description": "The Dreem Headband is a wearable sleep technology device designed to monitor, analyze, and improve sleep quality. It uses sensors to track brain activity, heart rate, and movement throughout the night, providing detailed insights into sleep patterns. The headband pairs with a smartphone app, offering users a comprehensive analysis of their sleep stages, including deep, light, and REM sleep. One of the key features of the Dreem Headband is its ability to provide real-time audio feedback through bone conduction, designed to enhance the quality of deep sleep. It also offers personalized sleep coaching programs based on the user's sleep data, aiming to improve sleep habits and overall sleep quality. This device is particularly useful for individuals experiencing sleep issues or those looking to optimize their sleep for better health and well-being. Its data-driven approach and non-invasive nature make it a valuable tool for personal sleep management.",
+    "tags": [
+      "EEG"
+    ],
+    "notebooks": [
+      {
+        "name": "dreem_headband_3.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/dreem_headband_3.ipynb"
+      }
+    ],
+    "link": "https://dreem.com/clinicaltrials",
+    "specs": {
+      "product_details": {
+        "Location": "Forehead",
+        "Price": "$129.95",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi"
+        },
+        "API Access Security": {
+          "short": "N/A",
+          "long": "No public API is available."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Dreem 3 includes EEG (electroencephalogram) data, which allows for the monitoring of brain waves, heart rate, respiratory rate, and movement during sleep. The device analyzes deep, light, and REM sleep stages, as well as wake periods. In addition to providing insights into overall sleep architecture, the Dreem 3 offers tools and techniques to help improve sleep, such as auditory stimulation to enhance deep sleep and smart alarms to wake users during the optimal sleep stage. <br />These data constitute a health data risk in the following categories: <br /> <br />- Physical activity data: Movements during sleep which might indicate disruptions, restless sleep, or potential sleep disorders <br />- Sleep data: Sleep stages (deep, light, REM), wake periods, and overall sleep architecture derived from EEG readings <br />- Physiological data: Heart rate, respiratory rate during sleep <br />- Predictive health insights: Recommendations for sleep improvement based on analyzed metrics, which may hint at sleep irregularities or potential sleep conditions"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Dreem 3 collects sleep stages, heart rate, breathing patterns, and brain activity. Users receive this data via the Dreem app, which offers insights into their sleep patterns and quality. Interactions with the Dreem platform and any communications with their support might be stored. <br />Data points like sleep stages, heart rate, and brain activity could be considered protected health information under HIPAA. <br />Dreem 3 is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Dreem 3 is a headband designed to monitor and improve sleep quality. It measures parameters such as brain activity, heart rate, and movement to provide detailed sleep insights.  Dreem's privacy policy states that data is encrypted both during transmission and while stored. The policy does not provide specific details regarding the use of differential privacy or other unique de-identification techniques applied to health data. In terms of sharing, Dreem's policy indicates that data may be shared with third parties in an anonymized form. However, the exact methods of de-identification or the specifics of what constitutes 'anonymized' are not clearly laid out. <br />For an up-to-date and detailed understanding of Dreem's data handling and privacy policies, it's recommended to refer directly to the company's official documentation."
+        },
+        "Shares With Third Parties": {
+          "short": "Yes",
+          "long": "Dreem 3 mentions that they 'may share personal data with third-party collaborators or service providers to enhance user experience, provide product support, and for research purposes.'"
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "Yes",
+          "long": "Categories of third parties are disclosed as 'partners', 'affiliates', and 'service providers'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Dreem_Headband_3_Bariatrics.txt",
+      "Dreem_Headband_3_ChronicPainOrDiseases.txt",
+      "Dreem_Headband_3_Gastroenterology.txt",
+      "Dreem_Headband_3_Psychiatry.txt",
+      "Dreem_Headband_3_Somnology.txt"
+    ]
+  },
+  {
+    "name": "Elite HRV",
+    "id": "elite-hrv",
+    "ordering_priority": 22,
+    "picture": "/assets/elite-hrv.png",
+    "description": "The Elite HRV app is designed to track heart rate variability (HRV), heart rate, and respiratory rate to provide insights into autonomic nervous system function, stress, and recovery. It supports integration with compatible wearables, such as chest straps, to deliver accurate HRV measurements. The app provides personalized recommendations based on HRV trends, helping users monitor stress, optimize recovery, and improve performance. It includes guided breathing exercises aimed at enhancing HRV and managing stress. The Elite HRV platform also allows for team and group data tracking, which is useful for coaches, trainers, and researchers who need to monitor multiple individuals.",
+    "tags": [
+      "HRV"
+    ],
+    "notebooks": [
+      {
+        "name": "polar-h10.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/polar_h10.ipynb"
+      }
+    ],
+    "link": "https://elitehrv.com/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone App)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": "N/A"
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "",
+          "long": ""
+        },
+        "API Access Security": {
+          "short": "",
+          "long": ""
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "",
+          "long": ""
+        },
+        "HIPAA Compliance": {
+          "short": "",
+          "long": ""
+        },
+        "De-identification (When Sharing)": {
+          "short": "",
+          "long": ""
+        },
+        "Shares With Third Parties": {
+          "short": "",
+          "long": ""
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "",
+          "long": ""
+        }
+      }
+    },
+    "api": {},
+    "summaries": []
+  },
+  {
+    "name": "Fitbit Charge",
+    "id": "fitbit-charge",
+    "ordering_priority": 0,
+    "picture": "/assets/fitbit-charge.png",
+    "description": "One of the only wrist worn wearable devices that is still validated for calorimetric use. The algorithm accuracy provides great insight into activity calories burned. This device also has accurate SPO2 and pedometer tracking for walking.",
+    "tags": [
+      "SPO2",
+      "HR",
+      "2-Stage",
+      "Pedometer",
+      "Calorimeter"
+    ],
+    "notebooks": [
+      {
+        "name": "fitbit_charge_4.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/fitbit_charge_4.ipynb"
+      }
+    ],
+    "link": "https://www.fitbit.com/global/us/products/trackers/charge4",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "$110.00[]",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi or bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Fitbit Charge includes steps tracking, distance covered, heart rate monitoring, sleep tracking, calories burned, floors climbed, and active zone minutes. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Steps tracking, distance covered, calories burned, floors climbed, active zone minute <br />- Sleep data: Sleep trackin <br />- Physiological data: Heart rate monitoring"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Google Fitbit Charge collects identity data such as email address, birth date, usernames, and user preferences. The device amasses activity data based on the user's physical activities, including steps, distance traveled, floors climbed, heart rate, blood oxygen levels (SpO2), sleep stages, skin temperature, stress management, and menstrual tracking. Technical data for product and service use, including GPS location, technical logs, device configuration, and app usage, are processed. <br />Heart rate, blood oxygen levels, skin temperature, sleep, and physiological measurement data could be considered protected health information under HIPAA. <br />Google Fitbit Sense is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Fitbit Charge may share non-personal information that has been aggregated or de-identified, ensuring that it cannot reasonably be used to identify an individual. Such information might be disclosed publicly and to third parties, such as in public reports about exercise and activity. It could also be shared with partners under agreement with Fitbit, or as part of the community benchmarking information provided to users of Fitbit's subscription services."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Fitbit Charge incorporates payment features in some of its devices, requiring users to provide identification and verification details such as name, card number, expiration date, and CVV code. This information is encrypted and sent to the card network, which returns a token to the device, allowing transactions without exposing the card number. Fitbit stores only the last four digits of the card number and the card issuer's information but does not store the full transaction history. If purchasing Fitbit merchandise on their website, payment details are provided but not stored by Fitbit. Shipping addresses are stored for order fulfillment, while third-party payment processors may retain payment information in line with their own policies and terms. Fitbit's handling of payment information emphasizes security and privacy, limiting retention of sensitive financial details."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "sensor_performance": [
+        [
+          "Fitbit Charge",
+          "13.3 MAE",
+          "54 MAE"
+        ],
+        [
+          "Fitbit Charge 5",
+          "8.4 MAE",
+          "47 MAE"
+        ],
+        [
+          "Fitbit Charge 6",
+          "7.2 MAE",
+          "33 MAE"
+        ]
+      ],
+      "daytime": [
+        [
+          "SPO2",
+          "0.64",
+          "daily (per min)"
+        ],
+        [
+          "HRV",
+          "9.2",
+          "MAE"
+        ],
+        [
+          "HR",
+          "7.2",
+          "MAE"
+        ],
+        [
+          "Pedometer-walk",
+          "39",
+          "daily (per min)"
+        ],
+        [
+          "Pedometer-run",
+          "48",
+          "daily (per min)"
+        ]
+      ],
+      "nighttime": [
+        [
+          "HR",
+          "6.8",
+          "MAE"
+        ]
+      ]
+    },
+    "summaries": [
+      "Fitbit_Charge_4_ChronicPainOrDiseases.txt",
+      "Fitbit_Charge_4_Endocrinology.txt",
+      "Fitbit_Charge_4_GeneralPhysiology.txt",
+      "Fitbit_Charge_4_Psychiatry.txt",
+      "Fitbit_Charge_4_Somnology.txt"
+    ]
+  },
+  {
+    "name": "Fitbit Sense",
+    "id": "fitbit-sense",
+    "ordering_priority": 1,
+    "picture": "/assets/fitbit-sense.png",
+    "description": "The Fitbit Sense is a smartwatch that focuses on health and wellness tracking. It offers comprehensive monitoring of heart rate, activity levels, sleep patterns, and stress management. The device includes an EDA (electrodermal activity) sensor for stress tracking, a skin temperature sensor, and an ECG (electrocardiogram) app for heart health. In addition to fitness tracking features like step count, calories burned, and workout intensity, the Sense provides detailed sleep analysis, including sleep stages and sleep score. Its built-in GPS tracks outdoor activities accurately, and the watch supports various workout modes. The Fitbit Sense also offers smart features like notifications, voice assistants, and music control. It syncs with the Fitbit app, where users can view their health and fitness data, set goals, and track progress. This smartwatch is designed for individuals looking to closely monitor and manage their overall health and wellness.",
+    "tags": [
+      "SPO2",
+      "HR",
+      "2-Stage",
+      "Pedometer",
+      "Calorimeter"
+    ],
+    "notebooks": [
+      {
+        "name": "fitbit-sense.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/fitbit_sense.ipynb"
+      }
+    ],
+    "link": "https://www.fitbit.com/global/us/products/smartwatches/sense",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "$249.00",
+        "Sensors": [
+          "PPG"
+        ],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi or bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Fitbit Sense includes steps tracking, distance covered, heart rate monitoring, sleep tracking, blood oxygen levels (SpO2) monitoring, stress tracking, skin temperature variation, and electrodermal activity (EDA) scanning. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Steps tracking, distance covered <br />- Sleep data: Sleep tracking <br />- Physiological data: Heart rate monitoring, blood oxygen levels (SpO2) monitoring, skin temperature variation <br />- Health status data: Stress tracking, electrodermal activity (EDA) scanning"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Google Fitbit Sense collects identity data such as email address, birth date, usernames, and user preferences. The device amasses activity data based on the user's physical activities, including steps, distance traveled, floors climbed, heart rate, blood oxygen levels (SpO2), sleep stages, skin temperature, stress management, and menstrual tracking. Technical data for product and service use, including GPS location, technical logs, device configuration, and app usage, are processed. <br />Heart rate, blood oxygen levels, skin temperature, sleep, and physiological measurement data could be considered protected health information under HIPAA.<br /> Google Fitbit Sense is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Fitbit Sense may share non-personal information that has been aggregated or de-identified, ensuring that it cannot reasonably be used to identify an individual. Such information might be disclosed publicly and to third parties, such as in public reports about exercise and activity. It could also be shared with partners under agreement with Fitbit, or as part of the community benchmarking information provided to users of Fitbit's subscription services."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Fitbit Sense incorporates payment features in some of its devices, requiring users to provide identification and verification details such as name, card number, expiration date, and CVV code. This information is encrypted and sent to the card network, which returns a token to the device, allowing transactions without exposing the card number. Fitbit stores only the last four digits of the card number and the card issuer's information but does not store the full transaction history. If purchasing Fitbit merchandise on their website, payment details are provided but not stored by Fitbit. Shipping addresses are stored for order fulfillment, while third-party payment processors may retain payment information in line with their own policies and terms. Fitbit's handling of payment information emphasizes security and privacy, limiting retention of sensitive financial details."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Fitbit_Sense_Bariatrics.txt",
+      "Fitbit_Sense_Cardiology.txt",
+      "Fitbit_Sense_ChronicPainOrDiseases.txt",
+      "Fitbit_Sense_Endocrinology.txt",
+      "Fitbit_Sense_GeneralPhysiology.txt",
+      "Fitbit_Sense_Oncology.txt",
+      "Fitbit_Sense_Psychiatry.txt"
+    ]
+  },
+  {
+    "name": "Garmin Fēnix",
+    "id": "garmin-fenix",
+    "ordering_priority": 12,
+    "picture": "/assets/garmin-fenix.png",
+    "description": "Garmin Fenix line is one of the best watches for running/cycling tracking and has the best GPS system of any of the devices we have covered. The HR sensor on this device is on the upper end of accuracy, even for higher heart rates and outdoor motion.",
+    "tags": [
+      "SPO2",
+      "Continuous HRV",
+      "2-Stage",
+      "Pedometer",
+      "Calorimeter"
+    ],
+    "notebooks": [
+      {
+        "name": "garmin_fēnix_7s.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/garmin_fēnix_7s.ipynb"
+      }
+    ],
+    "link": "https://www.garmin.com/en-US/p/735542",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "$699.99",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi or bluetooth"
+        },
+        "API Access Security": {
+          "short": "No",
+          "long": "API is available through OAuth 1.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Garmin fēnix includes name, mailing address, phone number, email address, contact preferences, device's serial numbers, purchase dates, and purchased subscriptions. Activity data like steps, distance, pace, activity time, calories burned, heart rate, sleep, location, golf stats, menstrual cycle information, hydration, and music played are also tracked. Additional voluntary data may include location, activity types (such as running, hiking, cycling, golf), gender, birthdate, height, and weight. Users can manually add activities to their account. Users may be prompted for gender, height, weight, birthdate, activity level, and normal bed and wake times [1]. <br />These data constitute a health data risk in the following categories: <br />- Physical activity: Steps, distance, pace, activity time, calories burned, activity types [2] <br />- Health status data: Heart rate, sleep, hydration, menstrual cycle information [3] <br />- Sleep data: Sleep, normal bed and wake time [4] <br />- Health risk assessment: Heart rate, sleep, hydration, activity data <br />- Predictive health insights: Heart rate, sleep data, hydration, physical activity data"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Garmin fēnix collects identity and contact data such as email address, password, and mobile phone number. This data is used for account security, providing user information about Garmin's products, services, apps, or account, marketing communications (if consent is given), customer support interaction, and violation notifications. Activity data like location on your activity course, heart rate related metrics, stress score, Body Battery, pulse oximetry, and fitness goals are processed for analysis and sharing (with user consent). This data can also be used to provide personalized Insights and recommendations (if user opts into the Insights feature), for aggregated trend analysis and feature development, and for internal research and development (if the user is opted in to product improvement). Location data is processed for providing location-based services. The processing of these data are backed by varying legal grounds, including user consent, performance of a contract, and legitimate interest. <br />Heart rate, pulse oximetry, and fitness goal data could be considered protected health information under HIPAA. <br />Garmin fēnix is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Garmin fēnix's privacy policy does not explicitly state that personal data is encrypted in transit or at rest. The policy details how personal data is used and shared with third-party service providers for various purposes like payment processing, shipping, fraud detection, and customer support, but does not mention any specific de-identification technique [1]. <br />Personal data might be transferred to affiliates or third parties in specific situations, but these entities are not permitted to process your personal data other than as described in the privacy policy without providing notice and obtaining consent, if required by applicable laws. There is no explicit mention whether data is de-identified before sharing with third parties. Garmin states that it 'does not sell, and have not sold, your personal information' and that sensitive personal information is only used or disclosed for certain purposes [2]. However, this is only stated in the California-specific privacy policy under CCPA and not in the general privacy policy page. <br />Previously, a ransomware attack was perpetuated on Garmin, affecting numerous services across the company, including Garmin Connect and portions of Garmin.com. The attack took down the flyGarmin and Garmin Pilot apps, causing days-long outages that hindered some Garmin hardware used in planes and boats. Although some pilots and athletes were temporarily affected, Garmin stating that there was 'no indication that any customer data, including payment information from Garmin Pay, was accessed, lost or stolen' during the attack [3]. This incident underscores some previous vulnerability in Garmin's security infrastructure."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Garmin fēnix states that they 'share personal data with service providers, advertising partners, professional advisors, authorities and others, and business transferees'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "Yes",
+          "long": "Garmin uses third-party services for various functions. Adobe and SendGrid assist with sending and tracking emails. SMS messages are dispatched via Vonage and Twilio, with other regional services including Alibaba Cloud (China), every8d (Taiwan), aligo sms (South Korea), fpt / chunghwa (Vietnam), and true corp (Thailand). Third-party providers are used to analyze the performance of Garmin's products, services, websites, and apps. Payment processing varies by region and includes Adyen, PayPal, Alipay (China), WeChat Pay powered by tenpay (China), UnionPay (China), NewebPay, Klarna, and Veritrans. Fraud detection utilizes Cybersource, and address verification services are provided by third parties like Google and CDYNE. <br />Garmin partners with third-party services for shipping products and customer service. Point-of-sale services for in-store purchases are facilitated by Erply. Shipment information tracking is offered through Narvar. Global Blue provides tax rebate paperwork, while VHT provides callback request functionality for customer support. Garmin also collaborates with third-party providers for generating tax regulatory reports in some countries."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        [
+          "SPO2",
+          "0.78",
+          "daily (per min)"
+        ],
+        [
+          "HRV",
+          "11.7",
+          "MAE"
+        ],
+        [
+          "HR",
+          "7.8",
+          "MAE"
+        ],
+        [
+          "Pedometer-walk",
+          "40",
+          "daily (per min)"
+        ],
+        [
+          "Pedometer-run",
+          "76",
+          "daily (per min)"
+        ]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "Garmin_Fenix_7S_Cardiology.txt",
+      "Garmin_Fenix_7S_ChronicPainOrDiseases.txt",
+      "Garmin_Fenix_7S_Endocrinology.txt",
+      "Garmin_Fenix_7S_GeneralPhysiology.txt",
+      "Garmin_Fenix_7S_Gynecology.txt",
+      "Garmin_Fenix_7S_Oncology.txt",
+      "Garmin_Fenix_7S_Psychiatry.txt",
+      "Garmin_Fenix_7S_Pulmonology.txt",
+      "Garmin_Fenix_7S_Somnology.txt"
+    ]
+  },
+  {
+    "name": "Google Fit",
+    "id": "google-fit",
+    "ordering_priority": 15,
+    "picture": "/assets/google-fit.png",
+    "description": "Google Fit is a health-tracking smartphone app that consolidates data from various activities to help users monitor their fitness and wellness. It tracks steps, distance, calories burned, and heart rate, using sensors in the user's smartphone or connected wearable devices. The app also records workout sessions and supports different types of physical activities, from walking to cycling. A key feature of Google Fit is its focus on two metrics: Move Minutes and Heart Points. Move Minutes encourage users to increase daily activity, while Heart Points are earned for more intense activities, promoting cardiovascular health.  Google Fit integrates with other health apps and devices, providing a centralized platform for users to view their health data. This makes it a useful tool for those looking to maintain or improve their fitness levels, offering a simple and accessible way to track and understand their physical activity and health trends.",
+    "tags": [
+      "App"
+    ],
+    "notebooks": [
+      {
+        "name": "google-fit.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/google_fit.ipynb"
+      }
+    ],
+    "link": "https://www.google.com/fit/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone App)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": "N/A"
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "N/A",
+          "long": "N/A"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from Google Fit includes 'physical activity data' (steps taken, 'distance traveled', 'calories burned', and 'activity type'), 'heart rate data', 'weight', 'sleep patterns', and other health metrics that might be provided by integrated third-party devices or apps. The platform provides an overview of 'Daily Activity', 'Heart Points' to measure more intense activity levels, and can even capture and log manual fitness sessions. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Tracking of steps, walking, running, cycling, and other manually inputted workouts <br />- Sleep data: Sleep duration and patterns if synced with compatible sleep trackers or apps <br />- Physiological data: Heart rate, and any additional metrics inputted by the user or synced from other devices <br />- Health status data: Weight trends, and any other body measurements provided by the user or linked devices/apps"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Google Fit collect data from various sources, including smartphones and wearables, to track physical activities, heart rate, sleep patterns, and other wellness metrics. <br />Data such as physical activity, heart rate, and sleep could be considered protected health information under HIPAA. <br />Google Fit is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "No",
+          "long": "Google Fit does not guarantee data de-identification to meet HIPAA standards. Sensitive data should not be used through Google Fit. Google fit specifies that the responsibility for data de-identification lies with the user and is not accountable for any breaches."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Google Fit mention that they may share information with third parties. Google's general privacy policy, which encompasses a broad range of their products including Google Fit, mentions sharing data with third-party partners, vendors, researchers, and other entities for purposes ranging from product improvements to personalized advertising. Broad and encompassing language within its policies might mean that users' health and activity data, even if anonymized or aggregated, could be accessible to various third-party entities."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'affiliates', 'external processing' entities, and 'legal reasons'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Google_Fit_Bariatrics.txt",
+      "Google_Fit_Cardiology.txt",
+      "Google_Fit_ChronicPainOrDiseases.txt",
+      "Google_Fit_GeneralPhysiology.txt",
+      "Google_Fit_Obstetrics.txt",
+      "Google_Fit_Oncology.txt",
+      "Google_Fit_Other.txt"
+    ]
+  },
+  {
+    "name": "Hypnodyne ZMax",
+    "id": "hypnodyne-zmax",
+    "ordering_priority": 16,
+    "picture": "/assets/hypnodyne-zmax.png",
+    "description": "The Hypnodyne ZMax is a sleep-monitoring device capable of two-stage sleep classification and five-stage sleep detection, though it is not cleared for clinical diagnosis. It uses advanced EEG technology alongside metrics such as SpO2, heart rate, and heart rate variability (HRV) to monitor sleep patterns and detect potential sleep disorders, including sleep apnea. The device offers customization through its app, allowing adjustments based on real-time vital signs. It is primarily designed for research and detailed sleep analysis rather than for use during physical activities or exercise.",
+    "tags": [
+      "EEG"
+    ],
+    "notebooks": [],
+    "link": "https://hypnodynecorp.com/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "",
+          "long": ""
+        },
+        "API Access Security": {
+          "short": "",
+          "long": ""
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "",
+          "long": ""
+        },
+        "HIPAA Compliance": {
+          "short": "",
+          "long": ""
+        },
+        "De-identification (When Sharing)": {
+          "short": "",
+          "long": ""
+        },
+        "Shares With Third Parties": {
+          "short": "",
+          "long": ""
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "",
+          "long": ""
+        }
+      }
+    },
+    "api": {},
+    "summaries": []
+  },
+  {
+    "name": "MyFitnessPal",
+    "id": "myfitnesspal",
+    "ordering_priority": 8,
+    "picture": "/assets/myfitnesspal.png",
+    "description": "MyFitnessPal is a widely-used nutrition and fitness tracking app that helps users monitor their diet and exercise routines. It features a large food database, making it easy to log meals and track calorie intake. Users can also record their physical activities and workouts, allowing for a comprehensive view of their fitness journey. The app calculates daily calorie needs based on individual goals, whether it's weight loss, gain, or maintenance, and tracks progress over time. MyFitnessPal also provides a breakdown of macronutrients (carbs, fats, proteins) and other nutritional information to help users make healthier food choices. One of the strengths of MyFitnessPal is its community aspect, offering motivation and support through forums and challenges. The app's user-friendly interface and integration with various fitness devices make it a popular choice for those looking to improve their dietary habits and overall health.",
+    "tags": [
+      "App"
+    ],
+    "notebooks": [
+      {
+        "name": "my-fitness-pal.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/my_fitness_pal.ipynb"
+      }
+    ],
+    "link": "https://www.myfitnesspal.com/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone App)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": "N/A"
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "N/A",
+          "long": "N/A"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from MyFitnessPal encompasses detailed 'food consumption' data, offering an extensive breakdown of nutrient profiles for foods consumed, including 'macronutrients' ('carbohydrates', 'proteins', 'fats'), and 'micronutrients' (vitamins, minerals, etc.). Additionally, the platform records 'caloric intake' and 'caloric burn' from physical activities, which can be manually entered or integrated from various fitness tracking devices. Users can also register 'weight' and other body measurements and set personalized health objectives. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Information on exercise type, duration, intensity, and estimated calorie expenditure.<br />- Health status data: Comprehensive logs of daily food consumption detailing both macronutrients and micronutrients, trends in weight, body measurements, and sometimes more detailed metrics if synchronized with other devices, dietary patterns & habits: Illuminates consistent eating patterns, potential dietary imbalances, or nutrient deficiencies."
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "MyFitnessPal collects daily food consumption, exercise activities, and sometimes weight or other health metrics. The application provides insights based on these inputs to assist users in meeting their health goals. <br />The recorded dietary, exercise, and health metrics could be considered protected health information under HIPAA. <br />MyFitnessPal is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "No",
+          "long": "MyFitnessPal collects, uses, discloses and processes Personal Data as outlined in this Privacy Policy, including to operate and improve the Services and our business; for advertising and marketing; and to provide you with innovative fitness and wellness services, as further described in this Privacy Policy. <br />We may create de-identified or anonymous data from Personal Data by excluding data components (such as your name, email address, or linkable tracking ID) that makes the data personally identifiable to you, through obfuscation, or through other means. Our use of anonymized and de-identified data is not subject to this Privacy Policy."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "MyFitnessPal, owned by Under Armour, mentions that they may share user data with third parties for several reasons, including for advertising and promotional purposes. The company specifies that they may share 'de-identified or aggregated data with others for their own uses'. Furthermore, third-party service providers may be given access to personal data as necessary to perform their functions."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are not specifically outlined in the privacy policy. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "MyFitnessPal_Bariatrics.txt",
+      "MyFitnessPal_Cardiology.txt",
+      "MyFitnessPal_Endocrinology.txt",
+      "MyFitnessPal_Gastroenterology.txt",
+      "MyFitnessPal_GeneralPhysiology.txt",
+      "MyFitnessPal_Obstetrics.txt",
+      "MyFitnessPal_Oncology.txt",
+      "MyFitnessPal_Other.txt",
+      "MyFitnessPal_Psychiatry.txt"
+    ]
+  },
+  {
+    "name": "Oura Ring",
+    "id": "oura-ring",
+    "ordering_priority": 2,
+    "picture": "/assets/oura-ring.png",
+    "description": "Excellent device that is validated for 2 stage sleep classification and can perform 5 stage sleep detection (though not validated for clinical use). The readiness scores, activity goals are well tailored and the app even has a setting to turn off activity goals if the ring detects that you have elevated body temperature, lower trending HRV, and elevated HR. The device has recently had updates to SPO2 which have made battery life somewhat unreliable. Take a look at the 1 star reviews. Physical activity and lifting are slightly impacted as the ring is difficult to use during heavy lifts and calisthenics training.",
+    "tags": [
+      "SPO2",
+      "HR",
+      "2-Stage",
+      "Pedometer",
+      "Calorimeter"
+    ],
+    "notebooks": [
+      {
+        "name": "oura-ring-3.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/oura_ring_gen_3.ipynb"
+      }
+    ],
+    "link": "https://ouraring.com/product/heritage-silver",
+    "specs": {
+      "product_details": {
+        "Location": "Index finger",
+        "Price": "$299.00",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi or bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Oura Ring includes sleep duration and quality, heart rate variability (HRV), resting heart rate, temperature deviation, respiratory rate, body movement, and activity levels. When paired with the Oura app, users can receive insights into their sleep patterns, overall readiness for the day based on physiological signals, and activity feedback. The ring also monitors nighttime body temperature trends, which can be valuable for various health insights, including menstrual cycle tracking. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Activity type, duration, and intensity <br />- Sleep data: Sleep duration, disturbances, efficiency, and stages <br />- Physiological data: Heart rate variability, resting heart rate, temperature deviation, and respiratory rate <br />- Health status data: Body temperature trends <br />- Predictive health insights: Sleep quality predictions, readiness score for the day based on various metrics, and activity recommendations"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Oura Ring monitors sleep, heart rate, and activity. It collects data on body temperature, heart rate variability, and respiratory rate. This data is transferred to the Oura app for user analysis. Interactions with Oura's customer service or platforms might be stored. <br />Sleep metrics, heart rate, body temperature, and other biometric data could be considered protected health information under HIPAA. <br />Oura Ring is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Oura Ring is a wearable device designed to monitor sleep patterns, body temperature, heart rate variability, and other physiological metrics. Data gathered by the device is processed and stored using the Oura Cloud. Oura's privacy policy outlines that they employ strong encryption for data both in transit and at rest. The specific methodology for de-identification of the collected data, if applied upon collection, is not explicitly mentioned in the policy. <br />Regarding sharing with third parties, Oura does state that they may share anonymized or aggregated data but does not provide detailed specifics on the de-identification processes used."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Oura mentions that they 'may share personal data with third-party service providers for purposes such as data analysis and processing, as well as with partners for research and collaboration purposes, always ensuring the data is anonymized or aggregated to protect user privacy.'"
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'business partners', and 'third parties in connection with a merger or acquisition'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        [
+          "HR",
+          "12.9",
+          "MAE"
+        ],
+        [
+          "Pedometer-walk",
+          "52",
+          "daily (per min)"
+        ],
+        [
+          "Pedometer-run",
+          "89",
+          "daily (per min)"
+        ]
+      ],
+      "nighttime": [
+        [
+          "SPO2",
+          "3.2",
+          "MAE"
+        ],
+        [
+          "HR",
+          "3.6",
+          "MAE"
+        ],
+        [
+          "SOL",
+          "9.1",
+          "MAE"
+        ],
+        [
+          "TST",
+          "19.97",
+          "MAE"
+        ],
+        [
+          "WASO",
+          "-3.4",
+          "MAE"
+        ],
+        [
+          "SE",
+          "0.3",
+          "MAE"
+        ],
+        [
+          "Stages",
+          "W/R",
+          "MAE"
+        ],
+        [
+          "Apnea",
+          "N",
+          "MAE"
+        ],
+        [
+          "Snoring",
+          "N",
+          "MAE"
+        ]
+      ],
+      "sensor_performance": [
+        [
+          "Oura Ring 3",
+          "28.2 MAE",
+          "63 MAE"
+        ]
+      ]
+    },
+    "summaries": [
+      "Oura_Ring_Gen_3_Bariatrics.txt",
+      "Oura_Ring_Gen_3_Cardiology.txt",
+      "Oura_Ring_Gen_3_ChronicPainOrDiseases.txt",
+      "Oura_Ring_Gen_3_Endocrinology.txt",
+      "Oura_Ring_Gen_3_Gastroenterology.txt",
+      "Oura_Ring_Gen_3_GeneralPhysiology.txt",
+      "Oura_Ring_Gen_3_Gynecology.txt",
+      "Oura_Ring_Gen_3_Obstetrics.txt",
+      "Oura_Ring_Gen_3_Oncology.txt",
+      "Oura_Ring_Gen_3_Psychiatry.txt",
+      "Oura_Ring_Gen_3_Pulmonology.txt",
+      "Oura_Ring_Gen_3_Somnology.txt"
+    ]
+  },
+  {
+    "name": "Polar H",
+    "id": "polar-h",
+    "ordering_priority": 9,
+    "picture": "/assets/polar-h.png",
+    "description": "This device was excellent for tracking heart rate while running, is accurate even in longer distance, warmer conditions. One of the only devices reviewed which has been clinically validated for calorimetric data tracking usage. Note that Polar H10 requires integration with a Polar Watch in order to extract HRV data directly online. Otherwise, you may have to build your own app using Polar SDK or use EliteHRV (for hourlong sessions) or use Kubios.",
+    "tags": [
+      "HR",
+      "HRV"
+    ],
+    "notebooks": [
+      {
+        "name": "polar-h10.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/polar_h10.ipynb"
+      }
+    ],
+    "link": "https://www.polar.com/us-en/sensors/h10-heart-rate-sensor/",
+    "specs": {
+      "product_details": {
+        "Location": "Chest",
+        "Price": "$59.00",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Bluetooth or ANT+"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Polar H includes heart rate measurements taken during workouts and other physical activities. It provides real-time heart rate data and captures heart rate variability. When synchronized with the Polar Flow service or other compatible applications, this device helps users gain insights into their cardiovascular performance, training intensity, and recovery. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Heart rate data associated with specific exercises (duration, estimated calories, type of exercise) <br />- Physiological data: Heart rate, heart rate variability <br />- Health risk assessment: Insights related to cardiovascular health, potential arrhythmias or irregularities detected from continuous heart rate monitoring <br />- Predictive health insights: Training intensity, potential overtraining risks, and recovery status inferred from heart rate data"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Polar H collects heart rate and heart rate variability data for various fitness activities and health assessments. Data is typically synced with the Polar Flow app or other compatible fitness platforms, which further analyze and store this information. Interactions with Polar's customer support and any feedback regarding the device's usage could also be recorded. <br />Heart rate and heart rate variability could be considered protected health information under HIPAA. <br />Polar H is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Polar H is designed primarily for heart rate monitoring, and it collects data related to this function. This data is processed and can be accessed through Polar's dedicated apps and online services. Polar's documentation does not specify if the health data recorded by the Polar H undergoes de-identification at the time of collection. This leaves an uncertainty regarding their data handling practices in this regard. <br />Polar privacy policy mentions the possibility of sharing aggregated or anonymized data with third parties. However, the specific methods Polar uses for de-identification of data collected by the H are not explicitly mentioned."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Polar H's policy indicates that they 'may disclose your personal data to selected third parties, including business partners, suppliers, and sub-contractors for the performance of any contract we enter into with them or you'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'third party service providers', 'partners', 'affiliates', and 'other third parties'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        [
+          "HR",
+          "2.3",
+          "MAE"
+        ]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "Polar_H10_Bariatrics.txt",
+      "Polar_H10_Cardiology.txt",
+      "Polar_H10_ChronicPainOrDiseases.txt",
+      "Polar_H10_Endocrinology.txt",
+      "Polar_H10_Gastroenterology.txt",
+      "Polar_H10_GeneralPhysiology.txt",
+      "Polar_H10_Other.txt",
+      "Polar_H10_Psychiatry.txt",
+      "Polar_H10_Pulmonology.txt",
+      "Polar_H10_Somnology.txt"
+    ]
+  },
+  {
+    "name": "Polar Vantage",
+    "id": "polar-vantage",
+    "ordering_priority": 11,
+    "picture": "/assets/polar-vantage.png",
+    "description": "The Polar Vantage is a multisport GPS watch designed for athletes seeking detailed data to optimize their training. It tracks a wide range of metrics including heart rate, speed, distance, and altitude. The watch features advanced training tools like Training Load Pro and Recovery Pro, which help users balance training intensity and recovery to prevent overtraining. Equipped with a built-in GPS and barometer, the Vantage V2 is effective for outdoor activities like running, cycling, and hiking. It also supports over 130 sports profiles, making it versatile for various training needs. The watch offers detailed insights into performance metrics, including running power from the wrist, making it valuable for runners looking to improve efficiency. The Polar Vantage syncs with the Polar Flow app, where users can analyze their data, set goals, and track progress. Its lightweight design and long battery life make it suitable for daily wear and extended training sessions.",
+    "tags": [
+      "HR",
+      "SPO2",
+      "Pedometer",
+      "Calorimeter"
+    ],
+    "notebooks": [
+      {
+        "name": "polar-vantage.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/polar_vantage.ipynb"
+      }
+    ],
+    "link": "https://www.polar.com/en/vantage/v2",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Polar Vantage includes heart rate tracking, sleep tracking, GPS location tracking, steps count, distance covered, swimming metrics, cycling dynamics, running power, VO2 max estimation, recovery status, stress and relaxation levels, daily activity, calories burned, and training load. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Steps count, distance covered, swimming metrics, cycling dynamics, running power, daily activity, calories burned <br />- Sleep data: Sleep tracking <br />- Physiological data: Heart rate tracking <br />- Environmental exposure: GPS location tracking <br />- Physical fitness level: VO2 max estimation, recovery status, training load <br />- Lifestyle habits: Stress and relaxation levels"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Polar Vantage collects identity data such as email address, birth date, usernames, and user preferences. The device amasses activity data based on the user's physical activities, including steps, distance traveled, heart rate, sleep tracking, swimming metrics, running metrics, cycling performance, and recovery status. Technical data for product and service use, including GPS location, technical logs, device configuration, and app usage, are processed. <br />Heart rate, sleep stages, and physiological measurement data could be considered protected health information under HIPAA. <br />Polar Vantage is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Polar Vantage collects and processes sensitive personal information based on the service and device being used. The actual service data is stored within the EU/EEA area, with some monitoring and ancillary activities potentially involving a transfer outside the EU. Polar ensures compliance with applicable laws for sufficient privacy protection and adheres to European Commission’s standard contractual clauses. Information may be transferred to Polar’s subcontractors for specific tasks related to Polar’s products and services but remains under Polar’s control. Polar does not disclose personal information without specific permission and ensures that any disclosure complies with legal requirements. For statistical purposes, Polar may deliver collected anonymized statistical data to reputable third parties, ensuring that these statistics do not contain identifiable personal information."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Polar Vantage employs web and mobile tracking techniques, including the use of cookies, to collect device information and track user behavior for improving services and providing targeted advertising. Tools from Google, Facebook, LinkedIn, and Criteo are used, but personal data is not shared without user permission. In-house research and collaboration with third-party partners are key to the development of Polar's products and services, utilizing anonymized customer data when possible. Marketing messages and targeted content are sent to those who provide consent, with the assurance that customer data is not sold or given to any third parties for marketing purposes. Polar's approach aims to blend innovation and personalized content with a strong commitment to ethical data handling."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'advertising partners', 'professional advisors' and 'authorities and others', and 'business transferees'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        [
+          "SPO2",
+          "0.91",
+          "MAE"
+        ],
+        [
+          "HRV",
+          "19.6",
+          "MAE"
+        ],
+        [
+          "HR",
+          "6.83",
+          "MAE"
+        ]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "Polar_Vantage_V2_Psychiatry.txt"
+    ]
+  },
+  {
+    "name": "Polar Verity Sense",
+    "id": "polar-verity-sense",
+    "ordering_priority": 10,
+    "picture": "/assets/polar-verity-sense.png",
+    "description": "The Polar Verity Sense is an optical heart rate monitor designed for versatility and ease of use. It can be worn on the arm or temple, making it suitable for a wide range of sports and activities. The device tracks heart rate accurately and provides real-time data to connected devices via Bluetooth and ANT+. Its compact and comfortable design ensures it stays secure during activities, and it's water-resistant, ideal for swimming and other water sports. The Verity Sense supports up to 20 hours of training on a single charge, catering to long-duration workouts and events. This heart rate monitor is compatible with various fitness apps, sports watches, and gym equipment, offering flexibility in how users track and analyze their performance. The Polar Verity Sense is a practical choice for athletes and fitness enthusiasts who require reliable heart rate data across different training environments.",
+    "tags": [
+      "Pedometer"
+    ],
+    "notebooks": [
+      {
+        "name": "polar-verity-sense.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/polar_verity_sense.ipynb"
+      }
+    ],
+    "link": "https://www.polar.com/en/products/accessories/polar-verity-sense",
+    "specs": {
+      "product_details": {
+        "Location": "forearm, upper arm",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Bluetooth or ANT+"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Polar Verity Sense includes 'account information' ('name', 'physical information', 'overall health', 'location'), 'purchase history', 'data from Polar devices', and 'training data'. This may include 'heart rate' data, heart rate variability, and sleep data. Polar Flow, the companion app, is designed to capture and analyze this data, providing insights into training sessions, activity levels, and recovery. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Training data (duration, estimated calories, type of exercise) <br />- Sleep data: Sleep tracking (if worn during sleep) <br />- Physiological data: Heart rate, heart rate variability <br />- Health risk assessment: Cardiovascular health insights from heart rate and activity data analysis <br />- Predictive health insights: Recovery times, training recommendations"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Polar Verity Sense collects account information, data from Polar devices, and training data. The Verity Sense captures specific health metrics like heart rate, heart rate variability, and, if worn during sleep, sleep data. These metrics are collected, analyzed, and stored in the Polar Flow service, which is a companion platform. Interactions with Polar's customer support may also be logged and stored. <br />Heart rate, heart rate variability, and sleep data, among other training-related metrics, could be considered protected health information under HIPAA. <br />Polar Verity Sense is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Polar Verity Sense collects health and fitness metrics, which are processed and stored in conjunction with the Polar Flow app. The documentation does not provide explicit details on whether the health-related data collected by the Verity Sense is subjected to de-identification techniques at the time of collection. This leaves a certain ambiguity regarding the exact methodologies employed to ensure user privacy. <br />While the Polar privacy policy notes the potential for sharing anonymized or aggregated data with third parties for various purposes, it does not explicitly clarify the processes or methods they employ for data de-identification."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Polar Verity Sense's policy states that they 'may disclose your personal data to selected third parties, including business partners, suppliers, and sub-contractors for the performance of any contract we enter into with them or you'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'third party service providers', 'partners', 'affiliates', and 'other third parties'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Polar_Verity_Sense_Cardiology.txt",
+      "Polar_Verity_Sense_GeneralPhysiology.txt",
+      "Polar_Verity_Sense_Other.txt",
+      "Polar_Verity_Sense_Psychiatry.txt"
+    ]
+  },
+  {
+    "name": "SleepOn go2sleep",
+    "id": "sleepon-go2sleep",
+    "ordering_priority": 9999,
+    "picture": "/assets/sleepon-go2sleep.png",
+    "description": "The Sleepon Go2Sleep is a wearable sleep tracker designed to monitor sleep quality and detect sleep-related health issues. It is worn on the finger, using sensors to measure heart rate, blood oxygen levels, and sleep patterns. The device tracks various sleep stages, including deep, light, and REM sleep, and provides analysis of sleep quality. One of the key features of Go2Sleep is its ability to detect signs of sleep apnea, a common sleep disorder. It alerts users to potential issues through its smartphone app, where detailed sleep reports and recommendations are provided. The Go2Sleep tracker is small and lightweight, making it comfortable to wear overnight. It's suitable for individuals looking to gain insights into their sleep habits or those concerned about sleep-related health conditions. By offering detailed sleep analysis and health monitoring, Go2Sleep aids in improving overall sleep quality and well-being.",
+    "tags": [
+      "HR",
+      "HRV"
+    ],
+    "notebooks": [],
+    "link": "https://www.sleepon.us/go2sleep/",
+    "specs": {
+      "product_details": {
+        "Location": "Middle or ring finger",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "N/A",
+          "long": "No public API is available."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the SleepOn Go2Sleep includes sleep stages, heart rate variability (HRV), oxygen saturation (SpO2) levels, total sleep duration, sleep efficiency, toss and turn count, and apnea detection. When paired with its companion app, users can receive comprehensive insights into their sleep health, highlighting potential issues like sleep apnea, low oxygen events, and heart health problems. <br />These data constitute a health data risk in the following categories: <br />- Sleep data: Sleep stages, disturbances, total sleep duration, and efficiency <br />- Physiological data: Heart rate variability, oxygen saturation levels <br />- Health status data: Detection of sleep disorders such as sleep apnea <br />- Predictive health insights: Risk assessment of sleep disorders and associated health conditions based on monitored metrics"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "SleepOn go2sleep collects heart rate, blood oxygen saturation, and sleep stages data. This information is processed and made available to users via its accompanying application. Interaction data with SleepOn's platforms or customer service may also be collected. <br />Metrics like sleep stages, heart rate, and blood oxygen levels could be considered protected health information under HIPAA. <br />SleepOn go2sleep is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "No",
+          "long": "SleepOn go2sleep processes and stores data on the SleepOn cloud platform. SleepOn's privacy policy indicates that data is encrypted during transmission. However, the policy does not specify whether the health data undergoes differential privacy or other de-identification methods when stored or collected. <br />When it comes to third-party sharing, the privacy policy doesn't explicitly mention the protocols for de-identifying data before sharing. They note that personal information may be shared under certain conditions but don't detail the specifics of data aggregation or anonymization."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "SleepOn mentions that they 'may share personal data with third-party service providers for the purpose of measuring and analyzing usage and activity using tools like web beacons and pixel tags. These third-party service providers may help SLEEPON in improving their functionality by analyzing the data collected.'"
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'third party service providers'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [],
+      "nighttime": [
+        [
+          "SPO2",
+          "5.4",
+          "MAE"
+        ],
+        [
+          "HR",
+          "8.4",
+          "MAE"
+        ]
+      ],
+      "sensor_performance": []
+    },
+    "summaries": []
+  },
+  {
+    "name": "Strava",
+    "id": "strava",
+    "ordering_priority": 9999,
+    "picture": "/assets/strava.png",
+    "description": "Strava is a fitness tracking app primarily focused on cycling and running. It allows users to record and analyze their workouts using GPS data. The app tracks metrics such as distance, pace, speed, elevation gained, and calories burned, providing athletes with detailed insights into their performance. A key feature of Strava is its social networking aspect, where users can share their activities, compete with others, and join challenges. The app's segment feature lets users compare their times on specific routes with other community members, fostering a competitive and motivational environment. Strava also offers route planning tools, making it useful for discovering new trails and paths. The app integrates with various GPS watches and cycling computers, enhancing its tracking capabilities.",
+    "tags": [
+      "App"
+    ],
+    "notebooks": [
+      {
+        "name": "strava.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/strava.ipynb"
+      }
+    ],
+    "link": "https://www.strava.com/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone App)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "N/A",
+          "long": "N/A"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from Strava includes 'physical activity data' ('route', 'distance traveled', 'pace', 'elevation', 'calories burned', and 'activity type'), 'location data' (GPS traces of runs, rides, etc.), 'heart rate data', 'power data', and other performance metrics that might be provided by integrated third-party devices or apps. Strava provides detailed analytics on activities and tracks metrics over time, allowing users to see trends, improvements, and compare with others. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Tracking of activities including runs, rides, swims, and hikes, GPS routes and heat maps of user's activities <br />- Physiological data: Heart rate, power data, and any additional metrics inputted by the user or synced from other devices <br />- Health status data: Analyzing improvements or declines in performance, setting personal records, and comparing performances to past activities or other users"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Strava collects and analyzes exercise activities, such as running, cycling, and swimming, using GPS data. Users can share their activities, routes, photos, and interact with other athletes. <br />Exercise activities, routes, and related metrics could be considered protected health information under HIPAA. <br />Strava is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "No",
+          "long": "Strava does not guarantee data de-identification to meet HIPAA standards. Data may not be de-identified when stored or shared with third parties. Using Strava could expose personal information. Strava specifies that the responsibility for data de-identification lies with the user and is not accountable for any breaches."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Strava mentions that they share certain user data with third-party partners for advertising, analytics, and other business purposes."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'third party services', 'third party applications', and 'business transfers'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Strava_Bariatrics.txt",
+      "Strava_Cardiology.txt",
+      "Strava_ChronicPainOrDiseases.txt",
+      "Strava_GeneralPhysiology.txt",
+      "Strava_Oncology.txt",
+      "Strava_Psychiatry.txt"
+    ]
+  },
+  {
+    "name": "Suunto HR Monitor",
+    "id": "suunto-hr-monitor",
+    "ordering_priority": 9999,
+    "picture": "/assets/suunto-hr-monitor.png",
+    "description": "The Suunto Heart Rate Monitor is a chest strap device designed to accurately track heart rate during various physical activities. It pairs with Suunto watches and compatible fitness apps, providing real-time heart rate data to help users optimize their training intensity. The monitor uses a comfortable and adjustable strap, ensuring a secure fit during intense workouts or sports activities. This heart rate monitor is known for its precision and reliability, making it a favored choice for athletes and fitness enthusiasts who require accurate heart rate measurements for performance analysis and training adjustments. It's also water-resistant, suitable for swimming and other water-based activities. The Suunto Heart Rate Monitor's compatibility with a wide range of devices and apps offers flexibility in how users track and analyze their workout data.",
+    "tags": [
+      "HR",
+      "HRV"
+    ],
+    "notebooks": [],
+    "link": "https://www.suunto.com/Products/Heart-Rate-Belts/SuuntoSmartSensor/",
+    "specs": {
+      "product_details": {
+        "Location": "Chest",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Suunto HR Monitor includes real-time heart rate measurements and heart rate variability obtained during workouts, physical activities, and possibly resting periods. When synchronized with the Suunto app or other compatible platforms, users can gain insights into their cardiovascular performance, intensity of workouts, and potential recovery periods. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Heart rate data related to specific workouts (duration, intensity, type of exercise) <br />- Physiological data: Heart rate, heart rate variability <br />- Health risk assessment: Cardiovascular health insights derived from continuous heart rate tracking, potential arrhythmias or irregularities detected  <br />- Predictive health insights: Indicators of training intensity, risks of overtraining, and inferred recovery status from heart rate trends"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Suunto HR Monitor primarily collects real-time heart rate data. This data, alongside related metrics such as exercise duration and intensity, is used to inform users about their physical performance and recovery needs. Data from the monitor can be synchronized with Suunto's companion app or other fitness platforms for further analysis and storage. Additionally, interactions with Suunto's customer service and any device-related feedback might be recorded. <br />Heart rate data could be considered protected health information under HIPAA. <br />Suunto HR Monitor is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "No",
+          "long": "Suunto HR Monitor is a device focused on tracking heart rate data. This data is processed through Suunto's associated apps and services for a comprehensive understanding of one's fitness and health metrics. Sunnto's documentation does not explicitly state if the health data from the HR Monitor undergoes de-identification immediately upon collection. This omission leaves questions about their exact data de-identification practices. <br />Suunto's general privacy policy mentions that they might share aggregated or de-identified data with third parties for research and analytics. However, the precise methods and conditions under which Suunto de-identifies data acquired by the HR Monitor are not detailed."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Suunto's policy states that they 'may share your personal data with Suunto's affiliates and trusted partners, depending on the service you are using and the purpose of the use.'"
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'business partners', and 'third parties in the event of a merger, acquisition, or sale'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        [
+          "HR",
+          "0.85",
+          "MAE"
+        ]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": []
+  },
+  {
+    "name": "Whoop Strap",
+    "id": "whoop-strap",
+    "ordering_priority": 13,
+    "picture": "/assets/whoop-strap.png",
+    "description": "One of the best recovery trackers on the market- this device has good performance on SPO2, HR, HRV, and 2-stage sleep classification. It is able to automatically detect walking motions or running but is not able to detect activities such as strength training.",
+    "tags": [
+      "SPO2",
+      "HR",
+      "HRV",
+      "2-Stage",
+      "Calorimeter"
+    ],
+    "notebooks": [
+      {
+        "name": "whoop-strap.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/whoop_strap.ipynb"
+      }
+    ],
+    "link": "https://shop.whoop.com/en-us/collections/whoop-4-0-bands/?order_by=featured",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the WHOOP Strap includes resting heart rate, heart rate variability, skin temperature, blood oxygen saturation level, and acceleration data. It further captures workout and sleep metadata as well as details on the type and duration of physical activity engaged in. Data reflecting strain and recovery are recorded. Other data from the user's physiological profile, such as birthday, gender identity, weight, height, and fitness/athlete level, are also captured. Voluntarily submitted data about diet, medications, and female health tracking are included as part of the data pool [1]. <br />These data constitute a health data risk in the following categories: <br />- Physical activity: Workout metadata, details on the type and duration of physical activity, data reflecting strain and recovery [2] <br />- Health status data: Resting heart rate, heart rate variability, skin temperature, blood oxygen saturation level [3] <br />- Sleep data: Sleep metadata [4] <br />- Health risk assessment: Data reflecting strain and recovery <br />- Predictive health insights: Resting heart rate, heart rate variability, sleep data, strain and recovery data "
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "WHOOP Strap collects contact and profile information such as usernames, passwords, and any data users add to a WHOOP profile. Communication through various platforms is also monitored. In terms of wellness, it collects heart rate, body temperature, metadata about workouts and sleep, details about physical activities, strain, recovery, and physiological profile. This profile may include diet, medication, and female health tracking. For transactions, payment and order history are collected. Marketing data reflecting user preferences and communication engagement is recorded. Device data includes system specifications, language settings, identifiers, network information, and general location. With consent, geolocation data like GPS and movement during specific exercises are documented. It tracks online activity by monitoring pages viewed, time spent on a page, website navigation paths, and access duration. <br />Heart rate, body temperature, and physiological profile data could be considered protected health information under HIPAA. <br />WHOOP Strap is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "WHOOP's privacy policy for the use of personal data in the WHOOP Strap outlines specific definitions and practices related to Aggregated Data, De-identified Data, or other anonymous data from Personal Data for research and development purposes. Aggregated Data is data that has been gathered and summarized for statistical analysis, and when aggregated across individuals, it becomes anonymized and is no longer considered Personal Data. De-Identified Data is described as data where all personally identifiable information has been removed, rendering it anonymous. <br />The policy indicates that WHOOP may create and use both Aggregated Data and De-identified Data for research and development purposes, including to analyze the effectiveness of the Services and the general behavior of users. Additionally, WHOOP states that it does not share Wellness Data with advertising partners and typically shares only Aggregated Data with organizations connected to employer or organizational corporate wellness programs. These processes suggest a deliberate process of de-identification or aggregation to protect individual privacy. "
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "WHOOP states that they 'may share personal data with service providers, advertising partners, professional advisors, authorities and others, and business transferees'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'advertising partners', 'professional advisors' and 'authorities and others', and 'business transferees'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        [
+          "HRV",
+          "14.2",
+          "MAE"
+        ],
+        [
+          "HR",
+          "9.1",
+          "MAE"
+        ]
+      ],
+      "nighttime": [
+        [
+          "TST",
+          "8.2",
+          "MAE"
+        ],
+        [
+          "WASO",
+          "7.1",
+          "MAE"
+        ],
+        [
+          "Stages",
+          "W/R",
+          "MAE"
+        ],
+        [
+          "Apnea",
+          "N",
+          "-"
+        ],
+        [
+          "Snoring",
+          "N",
+          "-"
+        ]
+      ],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "Whoop_Strap_4.0_Cardiology.txt",
+      "Whoop_Strap_4.0_GeneralPhysiology.txt",
+      "Whoop_Strap_4.0_Oncology.txt",
+      "Whoop_Strap_4.0_Other.txt",
+      "Whoop_Strap_4.0_Psychiatry.txt",
+      "Whoop_Strap_4.0_Somnology.txt"
+    ]
+  },
+  {
+    "name": "Withings Body+",
+    "id": "withings-body+",
+    "ordering_priority": 17,
+    "picture": "/assets/withings-body+.png",
+    "description": "The Withings Body+ is a smart scale that offers comprehensive body composition analysis. It measures weight, body fat, water percentage, muscle and bone mass, and provides a daily weather report. The scale uses bioelectrical impedance analysis to deliver accurate and detailed body composition data. One of the notable features of the Body+ is its ability to automatically recognize up to eight different users, making it suitable for family use. Each user's data is synced to their individual profile in the Withings Health Mate app, where they can track trends and progress over time. The scale also offers nutrition tracking, allowing users to set a weight goal and manage their daily calorie budget. Its sleek design and compatibility with various health and fitness apps make the Withings Body+ a valuable tool for individuals and families looking to monitor and improve their health and fitness levels.",
+    "tags": [
+      "Calorimeter"
+    ],
+    "notebooks": [
+      {
+        "name": "withings-body-plus.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/withings_body_plus.ipynb"
+      }
+    ],
+    "link": "https://www.withings.com/mx/en/body-plus",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Scale)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi (mainly)"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Withings Body+ includes weight, body fat and water percentage, muscle and bone mass, and standing heart rate. When paired with the Health Mate app, users can track their progress over time, set goals, and obtain insights into their overall health and fitness. The scale also provides data on the day's weather, which can be an incentive to plan activities. It can recognize up to eight users, keeping individual data private. <br />These data constitute a health data risk in the following categories: <br />- Physiological data: Standing heart rate <br />- Health status data: Weight, body fat and water percentage, muscle and bone mass <br />- Health risk assessment: Potential inferences on cardiovascular health, hydration levels, and overall fitness from combined data metrics <br />- Predictive health insights: Weight trends, estimations of muscle gain/loss, and body composition changes over time"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Withings Body+ is collects weight, body fat, water percentage, muscle and bone mass data. This device syncs data to the Withings Health Mate app to track their progress over time and gain insights into their health. It can recognize different users based on the weight measurements and can store data for multiple profiles. Interactions with Withings' customer service and any feedback related to the device might be recorded. <br />Body weight, body fat percentage, and other derived measurements could be considered protected health information under HIPAA. <br />Withings Body+ is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Withings Body+ is a smart scale that measures weight, body fat, water percentage, and other related metrics. Data from the scale is processed and stored through Withings' Health Mate app and platform. The privacy policy indicates that data storage and transmission is encrypted. However, the policy doesn't specify if data from the Body+ is de-identified upon collection. <br />The policy does state that Withings may share anonymized or aggregated data with third parties, but it doesn't go into specifics regarding the methods of de-identification or the conditions under which the data is shared."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Withings mentions that they 'may share your personal data with third-party service providers, affiliates, and partners, for purposes including but not limited to data analysis and providing users with services and improvements related to Withings products.'"
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'third parties for advertising and analytics', and 'affiliates'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        [
+          "SPO2",
+          "0.92",
+          "MAE"
+        ],
+        [
+          "HRV",
+          "11.9",
+          "MAE"
+        ],
+        [
+          "HR",
+          "10.8",
+          "MAE"
+        ],
+        [
+          "Pedometer-walk",
+          "40",
+          "MAE"
+        ],
+        [
+          "Pedometer-run",
+          "58",
+          "MAE"
+        ]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "Withings_Body+_GeneralPhysiology.txt",
+      "Withings_Body+_Oncology.txt"
+    ]
+  },
+  {
+    "name": "Withings ScanWatch",
+    "id": "withings-scanwatch",
+    "ordering_priority": 18,
+    "picture": "/assets/withings-scanwatch.png",
+    "description": "Excellent device that can double as both a personal and research wearable. Study participants noted ease of use and aesthetics of the watch which were preferred over the more standard looking smart watches.",
+    "tags": [
+      "SPO2",
+      "HR",
+      "Pedometer"
+    ],
+    "notebooks": [
+      {
+        "name": "withings-scanwatch.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/withings_scanwatch.ipynb"
+      }
+    ],
+    "link": "https://www.withings.com/us/en/scanwatch",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Withings ScanWatch includes activity detection, elevation tracking, step goal tracking, swimming sessions tracking, sleep data retrieval, respiratory scan, heart rate tracking, electrocardiogram (ECG) recording, heart arrhythmia tracking, SpO2 (oxygen saturation) tracking, and Fitness Level (VO2 max) estimation [1, 2]. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Activity detection, elevation tracking, step goal tracking, swimming sessions tracking <br />- Sleep data: Sleep data retrieval, respiratory scan <br />- Physiological data: Heart rate tracking, electrocardiogram (ECG) recording, SpO2 (oxygen saturation) tracking <br />- Health risk assessment: Heart arrhythmia tracking, signs of Atrial Fibrillation (AFib), breathing disturbances <br />- Physical fitness level: Fitness Level (VO2 max) estimation"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Withings ScanWatch collects identity data such as email address, birth date, usernames, names, phone numbers, and delivery address. The device also amasses activity data based on user's physical activities, including steps, distance travelled, swimming strokes, calories burned, type of activity, activity level, sport session time, and body data such as weight, muscle mass, fat, water percentage, heart rate, blood pressure, electrocardiogram, heart sound, temperature, sleep cycles, and snoring episodes. Technical data for product and service use, including Wi-Fi network, technical logs, date of product activation, battery measurement, manufacturing ID, debug technical information, and website cookies are processed. Bank details are used for auditing purposes during website product purchases. <br />Heart rate, blood pressure, electrocardiogram, body temperature, weight, muscle mass, fat percentage, and water percentage could be considered protected health information under HIPAA. <br />Withings ScanWatch is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Withings' privacy policy states that they may communicate your data to Withings' affiliates and authorized third parties complying with GDPR and their Privacy Policy. These third parties include service providers that help securely and confidentially fulfill tasks such as parcel delivery or secure data hosting, and they must work in compliance with the GDPR. <br />The only third parties with whom Withings shares your personal data are service providers chosen for their competencies and compliance with regulations. There is no mention of whether data is encrypted in transit or at rest, or if differential privacy or other techniques are used to protect individual user identities. There is also no explicit mention of whether data is de-identified before sharing or what constitutes aggregated data in Withings' context."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Withings states that they 'may communicate your data to Withings' affiliates, as well as authorised third parties complying with GDPR and this Privacy Policy, such as for the delivery of your purchases, the customer support, the verification of banking data'. They share 'personal data with services providers'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties with whom data is shared are disclosed as 'Withings' affiliates', and authorised third parties complying with GDPR and this Privacy Policy, such as those involved in the delivery of purchases, customer support, and verification of banking data. <br />The only specified third parties are the service providers, chosen for their competencies and compliance with GDPR. No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Withings_ScanWatch_Cardiology.txt",
+      "Withings_ScanWatch_ChronicPainOrDiseases.txt",
+      "Withings_ScanWatch_GeneralPhysiology.txt",
+      "Withings_ScanWatch_Oncology.txt",
+      "Withings_ScanWatch_Somnology.txt"
+    ]
+  },
+  {
+    "name": "Withings Sleep",
+    "id": "withings-sleep",
+    "ordering_priority": 19,
+    "picture": "/assets/withings-sleep.png",
+    "description": "The Withings Sleep is a sleep tracking mat that provides detailed insights into sleep patterns and quality. Placed under the mattress, it monitors sleep cycles, heart rate, and snoring, offering a comprehensive analysis of sleep health. The device uses advanced algorithms to track different sleep stages, including light, deep, and REM sleep, and provides a sleep score to help users understand their sleep quality. A notable feature of Withings Sleep is its ability to detect signs of sleep apnea, a condition characterized by breathing interruptions during sleep. This feature aids in identifying potential health issues that can be further evaluated by medical professionals. The data collected by the mat syncs with the Withings Health Mate app, allowing users to view their sleep trends and receive personalized advice for improving sleep quality. The Withings Sleep is a valuable tool for anyone looking to gain deeper insights into their sleep health and make informed changes for better rest.",
+    "tags": [
+      "HR"
+    ],
+    "notebooks": [
+      {
+        "name": "withings-sleep.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/withings_sleep.ipynb"
+      }
+    ],
+    "link": "https://www.withings.com/us/en/sleep",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Mat)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi (mainly)"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Withings Sleep includes sleep cycles (deep, light, and REM), heart rate, snoring detection, sleep duration, sleep interruptions, sleep score, and sleep regularity. When connected with its companion app, the device provides insights into overall sleep health and offers sleep environment analysis such as room temperature and noise levels, helping users optimize their sleep environment and schedule. <br />These data constitute a health data risk in the following categories: <br />- Sleep data: Sleep cycles (deep, light, REM), duration, interruptions, regularity, and snoring events <br />- Physiological data: Heart rate during sleep <br />- Predictive health insights: Sleep score, which assesses the overall quality of sleep based on the collected metrics"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Withings Sleep collects data on sleep cycles, heart rate, snoring events, and breathing disturbances. This information is processed and presented to users via the Health Mate app. Data interactions with Withings platforms and any communication with their customer service might also be collected. <br />Metrics such as sleep cycles, heart rate, and breathing disturbances could be considered protected health information under HIPAA. <br />Withings Sleep is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Withings Sleep is a sleep tracking pad that monitors various parameters such as sleep duration, disturbances, and sleep stages. Data collected is used in conjunction with the Withings Health Mate app. Data is encrypted in transit and at rest. However, it's not clear if Withings applies differential privacy or other specific de-identification techniques to health data. <br />Regarding data sharing, the privacy policy mentions that Withings might share anonymized and aggregated data with third parties. Yet, the specifics of their de-identification processes or how they aggregate data are not explicitly described. To get a comprehensive understanding of Withings' data handling and privacy practices, referring directly to the company's most recent privacy policy is advised."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Withings Sleep mentions that they 'may share personal data with third-party service providers for the purpose of improving their services and for operational reasons.' "
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'partners' and 'third party service providers'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [],
+      "nighttime": [
+        [
+          "SOL",
+          "15.9",
+          "MAE"
+        ],
+        [
+          "TST",
+          "30.2",
+          "MAE"
+        ],
+        [
+          "Stages",
+          "W/R",
+          "MAE"
+        ],
+        [
+          "Apnea",
+          "N",
+          ""
+        ],
+        [
+          "Snoring",
+          "N",
+          ""
+        ]
+      ],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "Withings_Sleep_Cardiology.txt",
+      "Withings_Sleep_ChronicPainOrDiseases.txt",
+      "Withings_Sleep_Oncology.txt",
+      "Withings_Sleep_Pulmonology.txt",
+      "Withings_Sleep_Somnology.txt"
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+{
+    "name": "Dreem Headband",
+    "id": "dreem-headband",
+    "ordering_priority": 20,
+    "picture": "/assets/dreem-headband.png",
+    "description": "The Dreem Headband is a wearable sleep technology device designed to monitor, analyze, and improve sleep quality. It uses sensors to track brain activity, heart rate, and movement throughout the night, providing detailed insights into sleep patterns. The headband pairs with a smartphone app, offering users a comprehensive analysis of their sleep stages, including deep, light, and REM sleep. One of the key features of the Dreem Headband is its ability to provide real-time audio feedback through bone conduction, designed to enhance the quality of deep sleep. It also offers personalized sleep coaching programs based on the user's sleep data, aiming to improve sleep habits and overall sleep quality. This device is particularly useful for individuals experiencing sleep issues or those looking to optimize their sleep for better health and well-being. Its data-driven approach and non-invasive nature make it a valuable tool for personal sleep management.",
+    "tags": ["EEG"],
+    "notebooks": [
+      {
+        "name": "dreem_headband_3.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/dreem_headband_3.ipynb"
+      }
+    ],
+    "link": "https://dreem.com/clinicaltrials",
+    "specs": {
+      "product_details": {
+        "Location": "Forehead",
+        "Price": "$129.95",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi"
+        },
+        "API Access Security": {
+          "short": "N/A",
+          "long": "No public API is available."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Dreem 3 includes EEG (electroencephalogram) data, which allows for the monitoring of brain waves, heart rate, respiratory rate, and movement during sleep. The device analyzes deep, light, and REM sleep stages, as well as wake periods. In addition to providing insights into overall sleep architecture, the Dreem 3 offers tools and techniques to help improve sleep, such as auditory stimulation to enhance deep sleep and smart alarms to wake users during the optimal sleep stage. <br />These data constitute a health data risk in the following categories: <br /> <br />- Physical activity data: Movements during sleep which might indicate disruptions, restless sleep, or potential sleep disorders <br />- Sleep data: Sleep stages (deep, light, REM), wake periods, and overall sleep architecture derived from EEG readings <br />- Physiological data: Heart rate, respiratory rate during sleep <br />- Predictive health insights: Recommendations for sleep improvement based on analyzed metrics, which may hint at sleep irregularities or potential sleep conditions"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Dreem 3 collects sleep stages, heart rate, breathing patterns, and brain activity. Users receive this data via the Dreem app, which offers insights into their sleep patterns and quality. Interactions with the Dreem platform and any communications with their support might be stored. <br />Data points like sleep stages, heart rate, and brain activity could be considered protected health information under HIPAA. <br />Dreem 3 is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Dreem 3 is a headband designed to monitor and improve sleep quality. It measures parameters such as brain activity, heart rate, and movement to provide detailed sleep insights.  Dreem's privacy policy states that data is encrypted both during transmission and while stored. The policy does not provide specific details regarding the use of differential privacy or other unique de-identification techniques applied to health data. In terms of sharing, Dreem's policy indicates that data may be shared with third parties in an anonymized form. However, the exact methods of de-identification or the specifics of what constitutes 'anonymized' are not clearly laid out. <br />For an up-to-date and detailed understanding of Dreem's data handling and privacy policies, it's recommended to refer directly to the company's official documentation."
+        },
+        "Shares With Third Parties": {
+          "short": "Yes",
+          "long": "Dreem 3 mentions that they 'may share personal data with third-party collaborators or service providers to enhance user experience, provide product support, and for research purposes.'"
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "Yes",
+          "long": "Categories of third parties are disclosed as 'partners', 'affiliates', and 'service providers'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Dreem_Headband_3_Bariatrics.txt",
+      "Dreem_Headband_3_ChronicPainOrDiseases.txt",
+      "Dreem_Headband_3_Gastroenterology.txt",
+      "Dreem_Headband_3_Psychiatry.txt",
+      "Dreem_Headband_3_Somnology.txt"
+    ]
+}

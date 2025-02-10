@@ -1,0 +1,65 @@
+{
+    "name": "Fitbit Sense",
+    "id": "fitbit-sense",
+    "ordering_priority": 1,
+    "picture": "/assets/fitbit-sense.png",
+    "description": "The Fitbit Sense is a smartwatch that focuses on health and wellness tracking. It offers comprehensive monitoring of heart rate, activity levels, sleep patterns, and stress management. The device includes an EDA (electrodermal activity) sensor for stress tracking, a skin temperature sensor, and an ECG (electrocardiogram) app for heart health. In addition to fitness tracking features like step count, calories burned, and workout intensity, the Sense provides detailed sleep analysis, including sleep stages and sleep score. Its built-in GPS tracks outdoor activities accurately, and the watch supports various workout modes. The Fitbit Sense also offers smart features like notifications, voice assistants, and music control. It syncs with the Fitbit app, where users can view their health and fitness data, set goals, and track progress. This smartwatch is designed for individuals looking to closely monitor and manage their overall health and wellness.",
+    "tags": ["SPO2", "HR", "2-Stage", "Pedometer", "Calorimeter"],
+    "notebooks": [
+      {
+        "name": "fitbit-sense.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/fitbit_sense.ipynb"
+      }
+    ],
+    "link": "https://www.fitbit.com/global/us/products/smartwatches/sense",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "$249.00",
+        "Sensors": ["PPG"],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi or bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Fitbit Sense includes steps tracking, distance covered, heart rate monitoring, sleep tracking, blood oxygen levels (SpO2) monitoring, stress tracking, skin temperature variation, and electrodermal activity (EDA) scanning. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Steps tracking, distance covered <br />- Sleep data: Sleep tracking <br />- Physiological data: Heart rate monitoring, blood oxygen levels (SpO2) monitoring, skin temperature variation <br />- Health status data: Stress tracking, electrodermal activity (EDA) scanning"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Google Fitbit Sense collects identity data such as email address, birth date, usernames, and user preferences. The device amasses activity data based on the user's physical activities, including steps, distance traveled, floors climbed, heart rate, blood oxygen levels (SpO2), sleep stages, skin temperature, stress management, and menstrual tracking. Technical data for product and service use, including GPS location, technical logs, device configuration, and app usage, are processed. <br />Heart rate, blood oxygen levels, skin temperature, sleep, and physiological measurement data could be considered protected health information under HIPAA.<br /> Google Fitbit Sense is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Fitbit Sense may share non-personal information that has been aggregated or de-identified, ensuring that it cannot reasonably be used to identify an individual. Such information might be disclosed publicly and to third parties, such as in public reports about exercise and activity. It could also be shared with partners under agreement with Fitbit, or as part of the community benchmarking information provided to users of Fitbit's subscription services."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Fitbit Sense incorporates payment features in some of its devices, requiring users to provide identification and verification details such as name, card number, expiration date, and CVV code. This information is encrypted and sent to the card network, which returns a token to the device, allowing transactions without exposing the card number. Fitbit stores only the last four digits of the card number and the card issuer's information but does not store the full transaction history. If purchasing Fitbit merchandise on their website, payment details are provided but not stored by Fitbit. Shipping addresses are stored for order fulfillment, while third-party payment processors may retain payment information in line with their own policies and terms. Fitbit's handling of payment information emphasizes security and privacy, limiting retention of sensitive financial details."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Fitbit_Sense_Bariatrics.txt",
+      "Fitbit_Sense_Cardiology.txt",
+      "Fitbit_Sense_ChronicPainOrDiseases.txt",
+      "Fitbit_Sense_Endocrinology.txt",
+      "Fitbit_Sense_GeneralPhysiology.txt",
+      "Fitbit_Sense_Oncology.txt",
+      "Fitbit_Sense_Psychiatry.txt"    
+    ]
+}

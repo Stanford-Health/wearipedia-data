@@ -1,0 +1,70 @@
+{
+    "name": "Withings Body+",
+    "id": "withings-body+",
+    "ordering_priority": 17,
+    "picture": "/assets/withings-body+.png",
+    "description": "The Withings Body+ is a smart scale that offers comprehensive body composition analysis. It measures weight, body fat, water percentage, muscle and bone mass, and provides a daily weather report. The scale uses bioelectrical impedance analysis to deliver accurate and detailed body composition data. One of the notable features of the Body+ is its ability to automatically recognize up to eight different users, making it suitable for family use. Each user's data is synced to their individual profile in the Withings Health Mate app, where they can track trends and progress over time. The scale also offers nutrition tracking, allowing users to set a weight goal and manage their daily calorie budget. Its sleek design and compatibility with various health and fitness apps make the Withings Body+ a valuable tool for individuals and families looking to monitor and improve their health and fitness levels.",
+    "tags": ["Calorimeter"],
+    "notebooks": [
+      {
+        "name": "withings-body-plus.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/withings_body_plus.ipynb"
+      }
+    ],
+    "link": "https://www.withings.com/mx/en/body-plus",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Scale)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi (mainly)"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+      "Data Risk": {
+          "short": "No",
+          "long": "Data from the Withings Body+ includes weight, body fat and water percentage, muscle and bone mass, and standing heart rate. When paired with the Health Mate app, users can track their progress over time, set goals, and obtain insights into their overall health and fitness. The scale also provides data on the day's weather, which can be an incentive to plan activities. It can recognize up to eight users, keeping individual data private. <br />These data constitute a health data risk in the following categories: <br />- Physiological data: Standing heart rate <br />- Health status data: Weight, body fat and water percentage, muscle and bone mass <br />- Health risk assessment: Potential inferences on cardiovascular health, hydration levels, and overall fitness from combined data metrics <br />- Predictive health insights: Weight trends, estimations of muscle gain/loss, and body composition changes over time"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Withings Body+ is collects weight, body fat, water percentage, muscle and bone mass data. This device syncs data to the Withings Health Mate app to track their progress over time and gain insights into their health. It can recognize different users based on the weight measurements and can store data for multiple profiles. Interactions with Withings' customer service and any feedback related to the device might be recorded. <br />Body weight, body fat percentage, and other derived measurements could be considered protected health information under HIPAA. <br />Withings Body+ is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Withings Body+ is a smart scale that measures weight, body fat, water percentage, and other related metrics. Data from the scale is processed and stored through Withings' Health Mate app and platform. The privacy policy indicates that data storage and transmission is encrypted. However, the policy doesn't specify if data from the Body+ is de-identified upon collection. <br />The policy does state that Withings may share anonymized or aggregated data with third parties, but it doesn't go into specifics regarding the methods of de-identification or the conditions under which the data is shared."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Withings mentions that they 'may share your personal data with third-party service providers, affiliates, and partners, for purposes including but not limited to data analysis and providing users with services and improvements related to Withings products.'"
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'third parties for advertising and analytics', and 'affiliates'. <br />No mentions of specific companies, organizations, or individuals are provided."
+       
+      } }
+    },
+    "api": {
+      "daytime": [
+        ["SPO2", "0.92", "MAE"],
+        ["HRV", "11.9", "MAE"],
+        ["HR", "10.8", "MAE"],
+        ["Pedometer-walk", "40", "MAE"],
+        ["Pedometer-run", "58", "MAE"]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "Withings_Body+_GeneralPhysiology.txt",
+      "Withings_Body+_Oncology.txt"   
+    ]
+}

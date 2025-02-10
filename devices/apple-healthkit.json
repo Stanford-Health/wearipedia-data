@@ -1,0 +1,57 @@
+{
+    "name": "Apple Healthkit",
+    "id": "apple-healthkit",
+    "ordering_priority": 9999,
+    "picture": "/assets/apple-healthkit.png",
+    "description": "Apple HealthKit is a smartphone app designed to centralize and manage health data. It integrates data from various health and fitness apps, allowing users to track a wide range of health metrics such as physical activity, nutrition, sleep, and heart rate. HealthKit also supports data from external devices like blood pressure monitors and glucose meters, providing a comprehensive health overview. This app is particularly beneficial for individuals aiming to maintain or improve their health and wellness. It enables users to monitor their daily health behaviors and trends, facilitating informed lifestyle choices and health management. For healthcare providers, HealthKit offers a valuable tool to access patient health data, enhancing personalized care and treatment plans. HealthKit's role extends to research, where aggregated data can contribute to health studies and insights. Its ability to compile diverse health data in one platform makes it a key player in personal health management and the broader health technology landscape.",
+    "tags": ["App"],
+    "notebooks": [],
+    "link": "https://developer.apple.com/health-fitness/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone App)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": "N/A"
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "N/A",
+          "long": "N/A"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from Apple HealthKit can include a wide array of health metrics, depending on the apps and devices a user connects. This includes 'physiological data' ('heart rate', 'blood pressure', 'body temperature'), 'activity data' ('steps taken', 'flights climbed', 'distance traveled'), 'nutrition data' ('calories consumed', 'water intake', 'caffeine intake'), 'sleep data', 'menstrual cycle tracking', 'audiogram data', 'respiratory data', and much more. The platform is designed to aggregate and provide insights on a broad spectrum of health and fitness data. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Workouts, steps, distance, active energy, and exercise types <br />- Sleep data: Sleep analysis and bedtime <br />- Physiological data: Metrics like heart rate, blood oxygen levels, blood pressure, and body temperature <br />- Health status data: Dietary energy, carbohydrates, protein, fat, sugar, vitamins, minerals, and water intake, menstrual cycle, sexual activity, and fertility predictions, noise exposure and audiograms, lab results, immunizations, allergies, medications, and various health records."
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Apple devices gather a wide range of data. This includes account and device information, contact and payment details, transaction and fraud prevention data, and usage activity. Geographical specifics, health and fitness data are also logged. Apple also collects financial data, such as income and assets, and information related to the use of Apple-branded financial services. In certain regions, government-issued identification may be necessary for specific tasks. Additionally, interactions and communications with Apple's customer support and social media channels are monitored and stored. <br />Health and fitness data, potentially comprising steps, mobility data, headphone audio levels, sleep history, and health records, could be considered protected health information under HIPAA due to their relevance to health status or the provision of healthcare. <br />Apple Healthkit is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Apple's privacy policy suggests that health data is encrypted both in transit and at rest when iCloud is used. The company has stated that it uses differential privacy, a technique that adds noise to data to protect individual user's identities when collecting other types of data, but it is not explicitly mentioned if this technique is applied to health data. <br />There is no explicit mention whether data is de-identified before sharing with third parties for research purposes. However, Apple states that it 'does not share any personal data with third parties' and personal data is defined as 'data that directly identifies you — such as your name' as well as 'data that does not directly identify you, but that can reasonably be used to identify you — such as the serial number of your device'. Aggregated data, on the other hand, is not considered personal data."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Apple mentions that they 'may share personal data with Apple-affiliated companies, service providers who act on our behalf, our partners, developers, and publishers, or others at your direction'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Apple_HealthKit_Cardiology.txt",
+      "Apple_HealthKit_Endocrinology.txt",
+      "Apple_HealthKit_GeneralPhysiology.txt",
+      "Apple_HealthKit_Obstetrics.txt"
+    ]
+}

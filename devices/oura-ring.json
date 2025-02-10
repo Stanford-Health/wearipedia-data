@@ -1,0 +1,90 @@
+{
+    "name": "Oura Ring",
+    "id": "oura-ring",
+    "ordering_priority": 2,
+    "picture": "/assets/oura-ring.png",
+    "description": "Excellent device that is validated for 2 stage sleep classification and can perform 5 stage sleep detection (though not validated for clinical use). The readiness scores, activity goals are well tailored and the app even has a setting to turn off activity goals if the ring detects that you have elevated body temperature, lower trending HRV, and elevated HR. The device has recently had updates to SPO2 which have made battery life somewhat unreliable. Take a look at the 1 star reviews. Physical activity and lifting are slightly impacted as the ring is difficult to use during heavy lifts and calisthenics training.",
+    "tags": ["SPO2", "HR", "2-Stage", "Pedometer", "Calorimeter"],
+    "notebooks": [
+      {
+        "name": "oura-ring-3.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/oura_ring_gen_3.ipynb"
+      }
+    ],
+    "link": "https://ouraring.com/product/heritage-silver",
+    "specs": {
+      "product_details": {
+        "Location": "Index finger",
+        "Price": "$299.00",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Wifi or bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Oura Ring includes sleep duration and quality, heart rate variability (HRV), resting heart rate, temperature deviation, respiratory rate, body movement, and activity levels. When paired with the Oura app, users can receive insights into their sleep patterns, overall readiness for the day based on physiological signals, and activity feedback. The ring also monitors nighttime body temperature trends, which can be valuable for various health insights, including menstrual cycle tracking. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Activity type, duration, and intensity <br />- Sleep data: Sleep duration, disturbances, efficiency, and stages <br />- Physiological data: Heart rate variability, resting heart rate, temperature deviation, and respiratory rate <br />- Health status data: Body temperature trends <br />- Predictive health insights: Sleep quality predictions, readiness score for the day based on various metrics, and activity recommendations"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Oura Ring monitors sleep, heart rate, and activity. It collects data on body temperature, heart rate variability, and respiratory rate. This data is transferred to the Oura app for user analysis. Interactions with Oura's customer service or platforms might be stored. <br />Sleep metrics, heart rate, body temperature, and other biometric data could be considered protected health information under HIPAA. <br />Oura Ring is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Oura Ring is a wearable device designed to monitor sleep patterns, body temperature, heart rate variability, and other physiological metrics. Data gathered by the device is processed and stored using the Oura Cloud. Oura's privacy policy outlines that they employ strong encryption for data both in transit and at rest. The specific methodology for de-identification of the collected data, if applied upon collection, is not explicitly mentioned in the policy. <br />Regarding sharing with third parties, Oura does state that they may share anonymized or aggregated data but does not provide detailed specifics on the de-identification processes used."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Oura mentions that they 'may share personal data with third-party service providers for purposes such as data analysis and processing, as well as with partners for research and collaboration purposes, always ensuring the data is anonymized or aggregated to protect user privacy.'"
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'business partners', and 'third parties in connection with a merger or acquisition'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        ["HR", "12.9", "MAE"],
+        ["Pedometer-walk", "52", "daily (per min)"],
+        ["Pedometer-run", "89", "daily (per min)"]
+      ],
+      "nighttime": [
+        ["SPO2", "3.2", "MAE"],
+        ["HR", "3.6", "MAE"],
+        ["SOL", "9.1", "MAE"],
+        ["TST", "19.97", "MAE"],
+        ["WASO", "-3.4", "MAE"],
+        ["SE", "0.3", "MAE"],
+        ["Stages", "W/R", "MAE"],
+        ["Apnea", "N", "MAE"],
+        ["Snoring", "N", "MAE"]
+      ],
+      "sensor_performance": [
+        ["Oura Ring 3", "28.2 MAE", "63 MAE"]
+      ]
+    },
+    "summaries": [
+      "Oura_Ring_Gen_3_Bariatrics.txt",
+      "Oura_Ring_Gen_3_Cardiology.txt",
+      "Oura_Ring_Gen_3_ChronicPainOrDiseases.txt",
+      "Oura_Ring_Gen_3_Endocrinology.txt",
+      "Oura_Ring_Gen_3_Gastroenterology.txt",
+      "Oura_Ring_Gen_3_GeneralPhysiology.txt",
+      "Oura_Ring_Gen_3_Gynecology.txt",
+      "Oura_Ring_Gen_3_Obstetrics.txt",
+      "Oura_Ring_Gen_3_Oncology.txt",
+      "Oura_Ring_Gen_3_Psychiatry.txt",
+      "Oura_Ring_Gen_3_Pulmonology.txt",
+      "Oura_Ring_Gen_3_Somnology.txt"
+    ]
+}
