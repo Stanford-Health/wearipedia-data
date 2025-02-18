@@ -1,22 +1,12 @@
 [
   {
+    "name": "2-Stage",
+    "color": "brown",
+    "id": "citemetrics"
+  },
+  {
     "name": "SPO2",
     "color": "orange",
-    "id": "citemetrics"
-  },
-  {
-    "name": "Continuous HRV",
-    "color": "red",
-    "id": "citemetrics"
-  },
-  {
-    "name": "Pedometer",
-    "color": "purple",
-    "id": "citemetrics"
-  },
-  {
-    "name": "Calorimeter",
-    "color": "green",
     "id": "citemetrics"
   },
   {
@@ -25,13 +15,23 @@
     "id": "citemetrics"
   },
   {
+    "name": "Calorimeter",
+    "color": "green",
+    "id": "citemetrics"
+  },
+  {
     "name": "CGM",
     "color": "teal",
     "id": "citemetrics"
   },
   {
-    "name": "2-Stage",
-    "color": "brown",
+    "name": "Continuous HRV",
+    "color": "red",
+    "id": "citemetrics"
+  },
+  {
+    "name": "EEG",
+    "color": "magenta",
     "id": "citemetrics"
   },
   {
@@ -45,8 +45,8 @@
     "id": "citemetrics"
   },
   {
-    "name": "EEG",
-    "color": "magenta",
+    "name": "Pedometer",
+    "color": "purple",
     "id": "citemetrics"
   }
 ]
