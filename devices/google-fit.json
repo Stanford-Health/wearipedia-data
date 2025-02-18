@@ -1,0 +1,65 @@
+{
+    "name": "Google Fit",
+    "id": "google-fit",
+    "ordering_priority": 15,
+    "picture": "/assets/google-fit.png",
+    "description": "Google Fit is a health-tracking smartphone app that consolidates data from various activities to help users monitor their fitness and wellness. It tracks steps, distance, calories burned, and heart rate, using sensors in the user's smartphone or connected wearable devices. The app also records workout sessions and supports different types of physical activities, from walking to cycling. A key feature of Google Fit is its focus on two metrics: Move Minutes and Heart Points. Move Minutes encourage users to increase daily activity, while Heart Points are earned for more intense activities, promoting cardiovascular health.  Google Fit integrates with other health apps and devices, providing a centralized platform for users to view their health data. This makes it a useful tool for those looking to maintain or improve their fitness levels, offering a simple and accessible way to track and understand their physical activity and health trends.",
+    "tags": ["App"],
+    "notebooks": [
+      {
+        "name": "google-fit.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/google_fit.ipynb"
+      }
+    ],
+    "link": "https://www.google.com/fit/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone App)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": "N/A"
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "N/A",
+          "long": "N/A"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from Google Fit includes 'physical activity data' (steps taken, 'distance traveled', 'calories burned', and 'activity type'), 'heart rate data', 'weight', 'sleep patterns', and other health metrics that might be provided by integrated third-party devices or apps. The platform provides an overview of 'Daily Activity', 'Heart Points' to measure more intense activity levels, and can even capture and log manual fitness sessions. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Tracking of steps, walking, running, cycling, and other manually inputted workouts <br />- Sleep data: Sleep duration and patterns if synced with compatible sleep trackers or apps <br />- Physiological data: Heart rate, and any additional metrics inputted by the user or synced from other devices <br />- Health status data: Weight trends, and any other body measurements provided by the user or linked devices/apps"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Google Fit collect data from various sources, including smartphones and wearables, to track physical activities, heart rate, sleep patterns, and other wellness metrics. <br />Data such as physical activity, heart rate, and sleep could be considered protected health information under HIPAA. <br />Google Fit is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "No",
+          "long": "Google Fit does not guarantee data de-identification to meet HIPAA standards. Sensitive data should not be used through Google Fit. Google fit specifies that the responsibility for data de-identification lies with the user and is not accountable for any breaches."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Google Fit mention that they may share information with third parties. Google's general privacy policy, which encompasses a broad range of their products including Google Fit, mentions sharing data with third-party partners, vendors, researchers, and other entities for purposes ranging from product improvements to personalized advertising. Broad and encompassing language within its policies might mean that users' health and activity data, even if anonymized or aggregated, could be accessible to various third-party entities."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'affiliates', 'external processing' entities, and 'legal reasons'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Google_Fit_Bariatrics.txt",
+      "Google_Fit_Cardiology.txt",
+      "Google_Fit_ChronicPainOrDiseases.txt",
+      "Google_Fit_GeneralPhysiology.txt",
+      "Google_Fit_Obstetrics.txt",
+      "Google_Fit_Oncology.txt",
+      "Google_Fit_Other.txt"
+    ]
+}

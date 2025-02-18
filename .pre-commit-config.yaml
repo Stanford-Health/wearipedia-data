@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: generate-jsons
+        name: Generate JSONs
+        entry: python3 generate_jsons.py
+        language: system
+        stages: [commit]

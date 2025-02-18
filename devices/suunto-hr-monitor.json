@@ -1,0 +1,58 @@
+{
+    "name": "Suunto HR Monitor",
+    "id": "suunto-hr-monitor",
+    "ordering_priority": 9999,
+    "picture": "/assets/suunto-hr-monitor.png",
+    "description": "The Suunto Heart Rate Monitor is a chest strap device designed to accurately track heart rate during various physical activities. It pairs with Suunto watches and compatible fitness apps, providing real-time heart rate data to help users optimize their training intensity. The monitor uses a comfortable and adjustable strap, ensuring a secure fit during intense workouts or sports activities. This heart rate monitor is known for its precision and reliability, making it a favored choice for athletes and fitness enthusiasts who require accurate heart rate measurements for performance analysis and training adjustments. It's also water-resistant, suitable for swimming and other water-based activities. The Suunto Heart Rate Monitor's compatibility with a wide range of devices and apps offers flexibility in how users track and analyze their workout data.",
+    "tags": ["HR", "HRV"],
+    "notebooks": [],
+    "link": "https://www.suunto.com/Products/Heart-Rate-Belts/SuuntoSmartSensor/",
+    "specs": {
+      "product_details": {
+        "Location": "Chest",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+      "Data Risk": {
+          "short": "No",
+          "long": "Data from the Suunto HR Monitor includes real-time heart rate measurements and heart rate variability obtained during workouts, physical activities, and possibly resting periods. When synchronized with the Suunto app or other compatible platforms, users can gain insights into their cardiovascular performance, intensity of workouts, and potential recovery periods. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Heart rate data related to specific workouts (duration, intensity, type of exercise) <br />- Physiological data: Heart rate, heart rate variability <br />- Health risk assessment: Cardiovascular health insights derived from continuous heart rate tracking, potential arrhythmias or irregularities detected  <br />- Predictive health insights: Indicators of training intensity, risks of overtraining, and inferred recovery status from heart rate trends"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Suunto HR Monitor primarily collects real-time heart rate data. This data, alongside related metrics such as exercise duration and intensity, is used to inform users about their physical performance and recovery needs. Data from the monitor can be synchronized with Suunto's companion app or other fitness platforms for further analysis and storage. Additionally, interactions with Suunto's customer service and any device-related feedback might be recorded. <br />Heart rate data could be considered protected health information under HIPAA. <br />Suunto HR Monitor is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "No",
+          "long": "Suunto HR Monitor is a device focused on tracking heart rate data. This data is processed through Suunto's associated apps and services for a comprehensive understanding of one's fitness and health metrics. Sunnto's documentation does not explicitly state if the health data from the HR Monitor undergoes de-identification immediately upon collection. This omission leaves questions about their exact data de-identification practices. <br />Suunto's general privacy policy mentions that they might share aggregated or de-identified data with third parties for research and analytics. However, the precise methods and conditions under which Suunto de-identifies data acquired by the HR Monitor are not detailed."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Suunto's policy states that they 'may share your personal data with Suunto's affiliates and trusted partners, depending on the service you are using and the purpose of the use.'"
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'business partners', and 'third parties in the event of a merger, acquisition, or sale'. <br />No mentions of specific companies, organizations, or individuals are provided."
+       
+      } }
+    },
+    "api": {
+      "daytime": [
+        ["HR", "0.85", "MAE"]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": []
+}

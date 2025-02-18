@@ -1,0 +1,67 @@
+{
+    "name": "MyFitnessPal",
+    "id": "myfitnesspal",
+    "ordering_priority": 8,
+    "picture": "/assets/myfitnesspal.png",
+    "description": "MyFitnessPal is a widely-used nutrition and fitness tracking app that helps users monitor their diet and exercise routines. It features a large food database, making it easy to log meals and track calorie intake. Users can also record their physical activities and workouts, allowing for a comprehensive view of their fitness journey. The app calculates daily calorie needs based on individual goals, whether it's weight loss, gain, or maintenance, and tracks progress over time. MyFitnessPal also provides a breakdown of macronutrients (carbs, fats, proteins) and other nutritional information to help users make healthier food choices. One of the strengths of MyFitnessPal is its community aspect, offering motivation and support through forums and challenges. The app's user-friendly interface and integration with various fitness devices make it a popular choice for those looking to improve their dietary habits and overall health.",
+    "tags": ["App"],
+    "notebooks": [
+      {
+        "name": "my-fitness-pal.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/my_fitness_pal.ipynb"
+      }
+    ],
+    "link": "https://www.myfitnesspal.com/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone App)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": "N/A"
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "N/A",
+          "long": "N/A"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+      "Data Risk": {
+          "short": "No",
+          "long": "Data from MyFitnessPal encompasses detailed 'food consumption' data, offering an extensive breakdown of nutrient profiles for foods consumed, including 'macronutrients' ('carbohydrates', 'proteins', 'fats'), and 'micronutrients' (vitamins, minerals, etc.). Additionally, the platform records 'caloric intake' and 'caloric burn' from physical activities, which can be manually entered or integrated from various fitness tracking devices. Users can also register 'weight' and other body measurements and set personalized health objectives. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Information on exercise type, duration, intensity, and estimated calorie expenditure.<br />- Health status data: Comprehensive logs of daily food consumption detailing both macronutrients and micronutrients, trends in weight, body measurements, and sometimes more detailed metrics if synchronized with other devices, dietary patterns & habits: Illuminates consistent eating patterns, potential dietary imbalances, or nutrient deficiencies."
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "MyFitnessPal collects daily food consumption, exercise activities, and sometimes weight or other health metrics. The application provides insights based on these inputs to assist users in meeting their health goals. <br />The recorded dietary, exercise, and health metrics could be considered protected health information under HIPAA. <br />MyFitnessPal is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "No",
+          "long": "MyFitnessPal collects, uses, discloses and processes Personal Data as outlined in this Privacy Policy, including to operate and improve the Services and our business; for advertising and marketing; and to provide you with innovative fitness and wellness services, as further described in this Privacy Policy. <br />We may create de-identified or anonymous data from Personal Data by excluding data components (such as your name, email address, or linkable tracking ID) that makes the data personally identifiable to you, through obfuscation, or through other means. Our use of anonymized and de-identified data is not subject to this Privacy Policy."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "MyFitnessPal, owned by Under Armour, mentions that they may share user data with third parties for several reasons, including for advertising and promotional purposes. The company specifies that they may share 'de-identified or aggregated data with others for their own uses'. Furthermore, third-party service providers may be given access to personal data as necessary to perform their functions."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are not specifically outlined in the privacy policy. <br />No mentions of specific companies, organizations, or individuals are provided."
+       
+      } }
+    },
+    "api": {},
+    "summaries": [
+      "MyFitnessPal_Bariatrics.txt",
+      "MyFitnessPal_Cardiology.txt",
+      "MyFitnessPal_Endocrinology.txt",
+      "MyFitnessPal_Gastroenterology.txt",
+      "MyFitnessPal_GeneralPhysiology.txt",
+      "MyFitnessPal_Obstetrics.txt",
+      "MyFitnessPal_Oncology.txt",
+      "MyFitnessPal_Other.txt",
+      "MyFitnessPal_Psychiatry.txt"
+    ]
+}

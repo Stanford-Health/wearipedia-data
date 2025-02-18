@@ -1,0 +1,57 @@
+{
+    "name": "Elite HRV",
+    "id": "elite-hrv",
+    "ordering_priority": 22,
+    "picture": "/assets/elite-hrv.png",
+    "description": "The Elite HRV app is designed to track heart rate variability (HRV), heart rate, and respiratory rate to provide insights into autonomic nervous system function, stress, and recovery. It supports integration with compatible wearables, such as chest straps, to deliver accurate HRV measurements. The app provides personalized recommendations based on HRV trends, helping users monitor stress, optimize recovery, and improve performance. It includes guided breathing exercises aimed at enhancing HRV and managing stress. The Elite HRV platform also allows for team and group data tracking, which is useful for coaches, trainers, and researchers who need to monitor multiple individuals.",
+    "tags": ["HRV"],
+    "notebooks": [
+      {
+        "name": "polar-h10.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/polar_h10.ipynb"
+      }
+    ],
+    "link": "https://elitehrv.com/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone App)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": "N/A"
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "",
+          "long": ""
+        },
+        "API Access Security": {
+          "short": "",
+          "long": ""
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "",
+          "long": ""
+        },
+        "HIPAA Compliance": {
+          "short": "",
+          "long": ""
+        },
+        "De-identification (When Sharing)": {
+          "short": "",
+          "long": ""
+        },
+        "Shares With Third Parties": {
+          "short": "",
+          "long": ""
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "",
+          "long": ""
+        }
+      }
+    },
+    "api": {},
+    "summaries": []
+}

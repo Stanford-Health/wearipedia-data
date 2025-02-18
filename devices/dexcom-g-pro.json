@@ -1,0 +1,64 @@
+{
+    "name": "Dexcom G Pro",
+    "id": "dexcom-g-pro",
+    "ordering_priority": 5,
+    "picture": "/assets/dexcom-g-pro.png",
+    "description": "The Dexcom G Pro is a continuous glucose monitoring (CGM) system designed for diabetes management in both clinical and personal settings. It features a small, wearable sensor that continuously measures glucose levels in interstitial fluid and a transmitter that sends data to a display device. The G Pro allows for unblinded or blinded monitoring, giving healthcare providers flexibility in how they use the device for patient care. This CGM system is particularly useful for gaining insights into a patient's glucose patterns and variability, which can inform treatment decisions. It does not require fingerstick calibrations, offering convenience and ease of use. The real-time glucose data and trend analysis provided by the Dexcom G Pro are valuable for managing both type 1 and type 2 diabetes, helping to reduce the risk of hypoglycemia and improve glycemic control. Its accuracy and reliability make it a trusted tool in diabetes care.",
+    "tags": ["CGM"],
+    "notebooks": [
+      {
+        "name": "dexcom_g6_pro.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/dexcom_g6_pro.ipynb"
+      }
+    ],
+    "link": "https://provider.dexcom.com/products/dexcom-g6-pro",
+    "specs": {
+      "product_details": {
+        "Location": "Back of upper arm, abdomen, upper buttocks",
+        "Price": "$59.00",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "No",
+          "long": "Data from the Dexcom Pro CGM includes real-time glucose readings taken at regular intervals. The device can alert the user to high and low glucose levels, allowing for timely interventions. Through trends and historical data, the CGM offers insights into glucose variations due to factors like meals, insulin dosages, and physical activity. Additionally, it may include data points such as the time and date of readings, any calibrations done, and potentially user-inputted events like meals or exercise. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Physical activity can influence glucose dynamics, and annotations or trends could be linked to exercise routines. <br />- Physiological data: Rapid changes in glucose levels can provide insights into certain physiological responses like stress, illness, or reactions to medications. <br />- Health status data: Continuous glucose levels, which directly reflect the user's metabolic state and responses to insulin, food intake, or other factors. <br />- Predictive health insights: Analysis of glucose trends can be used to predict potential future hypoglycemic or hyperglycemic events, allowing for preventive measures."
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Dexcom Pro CGM collects real-time glucose readings, trends, and provides alerts for high or low glucose levels. This information is relayed to the user's smartphone or receiver device, aiding in diabetes management. <br />Glucose readings and associated trends can be seen as protected health information under HIPAA since they directly relate to a person's health condition and treatment. <br />Dexcom Pro CGM is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Dexcom Pro CGM interfaces with Dexcom CLARITY, a management tool that processes data from the CGM. The Dexcom Receiver used by CLARITY anonymizes this data. The Dexcom G6, a CGM system by Dexcom, features a 'Share' function. This allows users to transmit their glucose data to chosen recipients, like family members or healthcare professionals. Data shared via this function is encrypted, ensuring that only authorized individuals can access it. <br />Dexcom's policy on data handling states that Personal Information is shared with Service Providers. This includes reasons like managing their business, maintaining their products, delivering services, or upholding contracts. They also share data for purposes where the user has given consent, for sending surveys when legally permissible, to meet legal obligations, and to assert or protect legal rights."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Dexcom Pro CGM mentions that they 'share Personal Information with our Service Providers for specified purposes such as operating and managing our business, product support, and establishing legal claims.' It also mentions sharing data for the delivery of their Products and Services, where consent has been given, and for compliance with applicable law. The data is shared in compliance with applicable data protection law and under the constraints of specified contracts that maintain confidentiality and prescribed use."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'Service Providers'. <br />No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {},
+    "summaries": [
+      "Dexcom_G6_Pro_Cardiology.txt",
+      "Dexcom_G6_Pro_Endocrinology.txt",
+      "Dexcom_G6_Pro_GeneralPhysiology.txt",
+      "Dexcom_G6_Pro_Obstetrics.txt",
+      "Dexcom_G6_Pro_Pulmonology.txt",
+      "Dexcom_G6_Pro_Somnology.txt"
+    ]
+}

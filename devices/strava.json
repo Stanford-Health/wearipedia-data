@@ -1,0 +1,64 @@
+{
+    "name": "Strava",
+    "id": "strava",
+    "ordering_priority": 9999,
+    "picture": "/assets/strava.png",
+    "description": "Strava is a fitness tracking app primarily focused on cycling and running. It allows users to record and analyze their workouts using GPS data. The app tracks metrics such as distance, pace, speed, elevation gained, and calories burned, providing athletes with detailed insights into their performance. A key feature of Strava is its social networking aspect, where users can share their activities, compete with others, and join challenges. The app's segment feature lets users compare their times on specific routes with other community members, fostering a competitive and motivational environment. Strava also offers route planning tools, making it useful for discovering new trails and paths. The app integrates with various GPS watches and cycling computers, enhancing its tracking capabilities.",
+    "tags": ["App"],
+    "notebooks": [
+      {
+        "name": "strava.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/strava.ipynb"
+      }
+    ],
+    "link": "https://www.strava.com/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone App)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "N/A",
+          "long": "N/A"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+      "Data Risk": {
+          "short": "No",
+          "long": "Data from Strava includes 'physical activity data' ('route', 'distance traveled', 'pace', 'elevation', 'calories burned', and 'activity type'), 'location data' (GPS traces of runs, rides, etc.), 'heart rate data', 'power data', and other performance metrics that might be provided by integrated third-party devices or apps. Strava provides detailed analytics on activities and tracks metrics over time, allowing users to see trends, improvements, and compare with others. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Tracking of activities including runs, rides, swims, and hikes, GPS routes and heat maps of user's activities <br />- Physiological data: Heart rate, power data, and any additional metrics inputted by the user or synced from other devices <br />- Health status data: Analyzing improvements or declines in performance, setting personal records, and comparing performances to past activities or other users"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Strava collects and analyzes exercise activities, such as running, cycling, and swimming, using GPS data. Users can share their activities, routes, photos, and interact with other athletes. <br />Exercise activities, routes, and related metrics could be considered protected health information under HIPAA. <br />Strava is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "No",
+          "long": "Strava does not guarantee data de-identification to meet HIPAA standards. Data may not be de-identified when stored or shared with third parties. Using Strava could expose personal information. Strava specifies that the responsibility for data de-identification lies with the user and is not accountable for any breaches."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Strava mentions that they share certain user data with third-party partners for advertising, analytics, and other business purposes."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'third party services', 'third party applications', and 'business transfers'. <br />No mentions of specific companies, organizations, or individuals are provided."
+       
+      } }
+    },
+    "api": {},
+    "summaries": [
+      "Strava_Bariatrics.txt",
+      "Strava_Cardiology.txt",
+      "Strava_ChronicPainOrDiseases.txt",
+      "Strava_GeneralPhysiology.txt",
+      "Strava_Oncology.txt",
+      "Strava_Psychiatry.txt"
+    ]
+}

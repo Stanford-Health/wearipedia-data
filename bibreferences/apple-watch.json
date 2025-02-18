@@ -1,0 +1,162 @@
+{
+  "apple2024differentialprivacy": {
+    "name": "apple2024differentialprivacy",
+    "type": "misc",
+    "author": "Apple",
+    "title": "Differential Privacy",
+    "year": "",
+    "url": "https://www.apple.com/privacy/docs/Differential_Privacy_Overview.pdf"
+  },
+  "apple2024watch": {
+    "name": "apple2024watch",
+    "type": "misc",
+    "author": "Apple",
+    "title": "Watch - Apple",
+    "year": "",
+    "url": "https://www.apple.com/watch/"
+  },
+  "apple2024watchbattery": {
+    "name": "apple2024watchbattery",
+    "type": "misc",
+    "author": "Apple",
+    "title": "Apple Watch - Battery - Apple",
+    "year": "",
+    "url": "https://www.apple.com/watch/battery/"
+  },
+  "apple2024connect": {
+    "name": "apple2024connect",
+    "type": "misc",
+    "author": "Apple",
+    "title": "Connect to wi-fi",
+    "year": "2024",
+    "month": "Feb",
+    "url": "https://support.apple.com/en-us/111818"
+  },
+  "esposito2022watchOS" : {
+    "name": "esposito2022watchOS",
+    "type": "misc",
+    "author": "Esposito, Filipe",
+    "title": "watchOS 9 adds new APIs for sharing and VoIP apps on Apple Watch",
+    "year": "2022",
+    "month": "Jun",
+    "url": "https://9to5mac.com/2022/06/08/watchos-9-apis-sharing-and-voip-apps/"
+  },
+  "appleintro": {
+    "name": "appleintro",
+    "type": "misc",
+    "author": "Apple",
+    "title": "Intro to Health data on iPhone",
+    "year": "",
+    "month": "",
+    "url": "https://support.apple.com/guide/iphone/intro-to-health-data-iphbb8259c61/ios"
+  },
+  "apple2022privacypolicy": {
+    "name": "apple2022privacypolicy",
+    "type": "misc",
+    "author": "Apple",
+    "title": "Apple Privacy Policy",
+    "year": "2022",
+    "month": "Dec",
+    "url": "https://www.apple.com/legal/privacy/en-ww/"
+  },
+  "schroder2023applewatch": {
+    "name": "schroder2023applewatch",
+    "type": "article",
+    "author": "Christina Schröder and Robert Förster and Daniel R. Zwahlen and Paul Windisch",
+    "title": "The Apple Watch spO2 sensor and outliers in healthy users",
+    "journal": "npj Digital Medicine",
+    "year": "2022",
+    "month": "Nov",
+    "url": "https://doi.org/10.1038/s41746-023-00814-x"
+  },
+  "windisch2023accuracy": {
+    "name": "windisch2023accuracy",
+    "type": "article",
+    "author": "Paul Windisch and Christina Schröder and Robert Förster and Nikola Cihoric and Daniel R Zwahlen",
+    "title": "Accuracy of the Apple Watch Oxygen Saturation Measurement in Adults: A Systematic Review",
+    "journal": "Cureus",
+    "year": "2023",
+    "month": "Feb",
+    "url": "https://doi.org/10.7759/cureus.35355"
+  },
+  "hernando2018validation": {
+    "name": "hernando2018validation",
+    "type": "article",
+    "author": "David Hernando and Surya Roca and Jorge Sancho and Álvaro Alesanco and Raquel Bailón",
+    "title": "Validation of the Apple Watch for Heart Rate Variability Measurements during Relax and Mental Stress in Healthy Subjects",
+    "journal": "Sensors (Basel)",
+    "year": "2018",
+    "month": "Aug",
+    "url": "https://doi.org/10.3390/s18082619"
+  },
+  "velmovitsky2023heartrate": {
+    "name": "velmovitsky2023heartrate",
+    "type": "article",
+    "author": "Pedro Elkind Velmovitsky and Matheus Lotto and Paulo Alencar and Scott T. Leatherdale and Donald Cowan and Plinio Pelegrini Morita",
+    "title": "Can heart rate variability data from the Apple Watch electrocardiogram quantify stress?",
+    "journal": "Frontiers in Public Health",
+    "year": "2023",
+    "month": "Jul",
+    "url": "https://doi.org/10.3389/fpubh.2023.1178491"
+  },
+  "falter2019accuracy": {
+    "name": "falter2019accuracy",
+    "type": "article",
+    "author": "Maarten Falter and Werner Budts and Kaatje Goetschalckx and Véronique Cornelissen and Roselien Buys",
+    "title": "Accuracy of Apple Watch Measurements for Heart Rate and Energy Expenditure in Patients With Cardiovascular Disease: Cross-Sectional Study",
+    "journal": "JMIR mHealth and uHealth",
+    "year": "2019",
+    "month": "Mar",
+    "url": "https://doi.org/10.2196/11889"
+  },
+  "nuss2018accuracy": {
+    "name": "nuss2018accuracy",
+    "type": "article",
+    "author": "Kayla J. Nuss and Joseph L. Sanford and Lucas J. Archambault and Ethan J. Schlemer and Sophie Blake and Jimikaye Beck Courtney and Nicholas A. Hulett and Kaigang Li",
+    "title": "Accuracy of Heart Rate and Energy Expenditure Estimations of Wrist-Worn and Arm-Worn Apple Watches",
+    "journal": "Journal for the Measurement of Physical Behaviour",
+    "year": "2018",
+    "month": "",
+    "url": "https://doi.org/10.2196/11889"
+  },
+  "veerabhadrappa2018tracking": {
+    "name": "veerabhadrappa2018tracking",
+    "type": "article",
+    "author": "Praveen Veerabhadrappa and Matthew Duffy Moran and Mitchell D. Renninger and Matthew B. Rhudy and Scott B. Dreisbach and Kristin M. Gift",
+    "title": "Tracking Steps on Apple Watch at Different Walking Speeds",
+    "journal": "Journal of General Internal Medicine",
+    "year": "2018",
+    "month": "Apr",
+    "url": "https://doi.org/10.1007/s11606-018-4332-y"
+  },
+  "germini2022accuracy": {
+    "name": "germini2022accuracy",
+    "type": "article",
+    "author": "Federico Germini and Noella Noronha and Victoria Borg Debono and Binu Abraham Philip and Drashti Pete and Tamara Navarro and Arun Keepanasseril and Sameer Parpia and Kerstin de Wit and Alfonso Iorio",
+    "title": "Accuracy and Acceptability of Wrist-Wearable Activity-Tracking Devices: Systematic Review of the Literature",
+    "journal": "Journal of Medical Internet Research",
+    "year": "2022",
+    "month": "Jan",
+    "url": "https://doi.org/10.2196/30791"
+  },
+  "miller2022validation": {
+    "name": "miller2022validation",
+    "type": "article",
+    "author": "Dean J. Miller and Charli Sargent and Gregory D. Roach",
+    "title": "A Validation of Six Wearable Devices for Estimating Sleep, Heart Rate and Heart Rate Variability in Healthy Adults",
+    "journal": "Sensors (Basel)",
+    "year": "2022",
+    "month": "Aug",
+    "url": "https://doi.org/10.3390/s22166317"
+  },
+  "roomkham2019sleepmonitoring": {
+    "name": "roomkham2019sleepmonitoring",
+    "type": "article",
+    "author": "Sirinthip Roomkham and Michael Hittle and Joseph Cheung and David Lovell and Emmanuel Mignot and Dimitri Perrin",
+    "title": "Sleep monitoring with the Apple Watch: comparison to a clinically validated actigraph",
+    "journal": "F1000Research",
+    "year": "2019",
+    "month": "May",
+    "url": "https://doi.org/10.12688/f1000research.19020.1"
+  }
+}

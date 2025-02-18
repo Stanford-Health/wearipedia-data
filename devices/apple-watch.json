@@ -1,0 +1,93 @@
+{
+    "name": "Apple Watch",
+    "id": "apple-watch",
+    "ordering_priority": 3,
+    "picture": "/assets/apple-watch.png",
+    "description": "Easy to access consumer wearable. Great for personal use if interested in general fitness/sleep tracking. Can also double as a research wearable if high granularity or unprocessed data is not needed. Most accurate pedometer, calorimetry, and SPO2. Keep in mind that Apple Watch samples HRV at random times so it is difficult to get quality HRV data readings from this device unless you have timed 'Breath' HRV.",
+    "tags": ["SPO2", "Continuous HRV", "2-Stage", "Calorimeter"],
+    "notebooks": [],
+    "link": "https://www.apple.com",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "$249.00 - $799.00[@apple2024watch]",
+        "Sensors": [
+          "PPG",
+          "Gyroscope",
+          "Barometer",
+          "Altimeter",
+          "Electrical EEG",
+          "Magnetic Compass",
+          "Light",
+          "Microphone"
+        ],
+        "Battery": "18 hours[@apple2024watchbattery]"
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "Yes",
+          "long": "Bluetooth[@apple2024connect]."
+        },
+        "API Access Security": {
+          "short": "N/A",
+          "long": "No public API is available. Data may be accessbile through the Apple HealthKit and third party apps[@esposito2022watchOS]."
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "Yes",
+          "long": "Data from the Apple Watch includes location[@appleintro], ecg[@appleintro], heart rate[@appleintro], and heart health[@appleintro]. These data constitute a health data risk in the following categories: <br />- Physical Activity Data: Heart rate, ecg <br />- Health Status Data: Heart health <br />- Health Risk Assessment: Likelihood of heart related health issues"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Apple Watch collects account and device information, contact and payment details, transaction and fraud prevention data, and usage activity. Geographical specifics, health and fitness data are also logged. The Apple Watch also collects financial data, such as income and assets, and information related to the use of Apple-branded financial services. In certain regions, government-issued identification may be necessary for specific tasks. Additionally, interactions and communications with Apple's customer support and social media channels are monitored and stored. <br /> Steps, mobility, headphone audio levels, sleep, and health data could be considered protected health information under HIPAA. <br /> Apple Watch is not HIPAA compliant[@apple2022privacypolicy]."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Apple's privacy policy suggests that health data is encrypted both in transit and at rest when iCloud is used. The company has stated that it uses differential privacy, a technique that adds noise to data to protect individual user's identities when collecting other types of data, but it is not explicitly mentioned if this technique is applied to health data.[@apple2024differentialprivacy]<br /><br /> There is no explicit mention whether data is de-identified before sharing with third parties for research purposes. However, Apple states that it 'does not share any personal data with third parties' and personal data is defined as 'data that directly identifies you — such as your name' as well as 'data that does not directly identify you, but that can reasonably be used to identify you — such as the serial number of your device'[@apple2022privacypolicy]. Aggregated data, on the other hand, is not considered personal data.<br /><br />"
+        },
+        "Shares With Third Parties": {
+          "short": "Yes",
+          "long": "Apple mentions that they 'may share personal data with Apple-affiliated companies, service providers who act on our behalf, our partners, developers, and publishers, or others at your direction'[@apple2022privacypolicy]."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement[@apple2022privacypolicy].<br /><br /> No mentions of specific companies, organizations, or individuals are provided."
+        }
+      }
+    },
+    "api": {
+      "daytime": [
+        ["SPO2", "0.81[@schroder2023applewatch],[@windisch2023accuracy]", "daily (per min)"],
+        ["HRV", "10.8[@hernando2018validation],[@velmovitsky2023heartrate]", "MAE"],
+        ["HR", "7.8[@falter2019accuracy],[@nuss2018accuracy]", "MAE"],
+        ["Pedometer-walk", "27.0[@veerabhadrappa2018tracking],[@germini2022accuracy]", "daily"],
+        ["Pedometer-run", "59.0", "daily"]
+      ],
+      "nighttime": [
+        ["HR", "6.2", "MAE"],
+        ["SOL", "10.6[@miller2022validation],[@roomkham2019sleepmonitoring]", "MAE"],
+        ["TST", "23.8", "MAE"],
+        ["Stages", "W/R", "-"],
+        ["Apnea", "N", "-"],
+        ["Snoring", "N", "-"]
+      ],
+      "sensor_performance": [
+        ["Apple Watch 5", "9.6 MAE", "29 MAE"],
+        ["Apple Watch 6", "8.5 MAE", "22 MAE"],
+        ["Apple Watch 7", "8.2 MAE", "20 MAE"],
+        ["Apple Watch 8", "9.5 MAE", "20 MAE"],
+        ["Apple Watch Ultra", "7.7 MAE", "20 MAE"]
+      ]
+    },
+    "summaries": [
+      "Apple_Watch_5_Cardiology.txt",
+      "Apple_Watch_5_ChronicPainOrDiseases.txt",
+      "Apple_Watch_5_Gastroenterology.txt",
+      "Apple_Watch_5_GeneralPhysiology.txt",
+      "Apple_Watch_5_Other.txt",
+      "Apple_Watch_5_Psychiatry.txt",
+      "Apple_Watch_5_Pulmonology.txt",
+      "Apple_Watch_5_Somnology.txt"
+    ]
+}

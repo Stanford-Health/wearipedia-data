@@ -1,0 +1,63 @@
+{
+    "name": "Withings ScanWatch",
+    "id": "withings-scanwatch",
+    "ordering_priority": 18,
+    "picture": "/assets/withings-scanwatch.png",
+    "description": "Excellent device that can double as both a personal and research wearable. Study participants noted ease of use and aesthetics of the watch which were preferred over the more standard looking smart watches.",
+    "tags": ["SPO2", "HR", "Pedometer"],
+    "notebooks": [
+      {
+        "name": "withings-scanwatch.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/withings_scanwatch.ipynb"
+      }
+    ],
+    "link": "https://www.withings.com/us/en/scanwatch",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+      "Data Risk": {
+          "short": "No",
+          "long": "Data from the Withings ScanWatch includes activity detection, elevation tracking, step goal tracking, swimming sessions tracking, sleep data retrieval, respiratory scan, heart rate tracking, electrocardiogram (ECG) recording, heart arrhythmia tracking, SpO2 (oxygen saturation) tracking, and Fitness Level (VO2 max) estimation [1, 2]. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Activity detection, elevation tracking, step goal tracking, swimming sessions tracking <br />- Sleep data: Sleep data retrieval, respiratory scan <br />- Physiological data: Heart rate tracking, electrocardiogram (ECG) recording, SpO2 (oxygen saturation) tracking <br />- Health risk assessment: Heart arrhythmia tracking, signs of Atrial Fibrillation (AFib), breathing disturbances <br />- Physical fitness level: Fitness Level (VO2 max) estimation"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Withings ScanWatch collects identity data such as email address, birth date, usernames, names, phone numbers, and delivery address. The device also amasses activity data based on user's physical activities, including steps, distance travelled, swimming strokes, calories burned, type of activity, activity level, sport session time, and body data such as weight, muscle mass, fat, water percentage, heart rate, blood pressure, electrocardiogram, heart sound, temperature, sleep cycles, and snoring episodes. Technical data for product and service use, including Wi-Fi network, technical logs, date of product activation, battery measurement, manufacturing ID, debug technical information, and website cookies are processed. Bank details are used for auditing purposes during website product purchases. <br />Heart rate, blood pressure, electrocardiogram, body temperature, weight, muscle mass, fat percentage, and water percentage could be considered protected health information under HIPAA. <br />Withings ScanWatch is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Withings' privacy policy states that they may communicate your data to Withings' affiliates and authorized third parties complying with GDPR and their Privacy Policy. These third parties include service providers that help securely and confidentially fulfill tasks such as parcel delivery or secure data hosting, and they must work in compliance with the GDPR. <br />The only third parties with whom Withings shares your personal data are service providers chosen for their competencies and compliance with regulations. There is no mention of whether data is encrypted in transit or at rest, or if differential privacy or other techniques are used to protect individual user identities. There is also no explicit mention of whether data is de-identified before sharing or what constitutes aggregated data in Withings' context."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Withings states that they 'may communicate your data to Withings' affiliates, as well as authorised third parties complying with GDPR and this Privacy Policy, such as for the delivery of your purchases, the customer support, the verification of banking data'. They share 'personal data with services providers'."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties with whom data is shared are disclosed as 'Withings' affiliates', and authorised third parties complying with GDPR and this Privacy Policy, such as those involved in the delivery of purchases, customer support, and verification of banking data. <br />The only specified third parties are the service providers, chosen for their competencies and compliance with GDPR. No mentions of specific companies, organizations, or individuals are provided."
+       
+      } }
+    },
+    "api": {},
+    "summaries": [
+      "Withings_ScanWatch_Cardiology.txt",
+      "Withings_ScanWatch_ChronicPainOrDiseases.txt",
+      "Withings_ScanWatch_GeneralPhysiology.txt",
+      "Withings_ScanWatch_Oncology.txt",
+      "Withings_ScanWatch_Somnology.txt"
+    ]
+}

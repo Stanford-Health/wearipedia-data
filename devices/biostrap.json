@@ -1,0 +1,52 @@
+{
+    "name": "Biostrap",
+    "id": "biostrap",
+    "ordering_priority": 9999,
+    "picture": "/assets/biostrap.png",
+    "description": "The Biostrap is a wearable designed for health and fitness tracking, focusing on metrics like heart rate variability (HRV), respiratory rate, and SpO2. It also provides detailed sleep analysis, including sleep stages and movement tracking. The device is capable of capturing high-resolution biometric data, which can be useful for monitoring health and detecting early signs of illness, including respiratory and cardiovascular issues. Biostrap integrates with third-party apps and supports remote monitoring for health professionals, making it suitable for both individual users and clinical applications. It uses a wristband and chest strap for data collection, depending on the specific activity or health metric being tracked.",
+    "tags": ["HR", "HRV"],
+    "notebooks": [],
+    "link": "https://biostrap.com/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "",
+          "long": ""
+        },
+        "API Access Security": {
+          "short": "",
+          "long": ""
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "",
+          "long": ""
+        },
+        "HIPAA Compliance": {
+          "short": "",
+          "long": ""
+        },
+        "De-identification (When Sharing)": {
+          "short": "",
+          "long": ""
+        },
+        "Shares With Third Parties": {
+          "short": "",
+          "long": ""
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "",
+          "long": ""
+        }
+      }
+    },
+    "api": {},
+    "summaries": []
+}

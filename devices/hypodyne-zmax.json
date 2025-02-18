@@ -1,0 +1,52 @@
+{
+    "name": "Hypnodyne ZMax",
+    "id": "hypnodyne-zmax",
+    "ordering_priority": 16,
+    "picture": "/assets/hypnodyne-zmax.png",
+    "description": "The Hypnodyne ZMax is a sleep-monitoring device capable of two-stage sleep classification and five-stage sleep detection, though it is not cleared for clinical diagnosis. It uses advanced EEG technology alongside metrics such as SpO2, heart rate, and heart rate variability (HRV) to monitor sleep patterns and detect potential sleep disorders, including sleep apnea. The device offers customization through its app, allowing adjustments based on real-time vital signs. It is primarily designed for research and detailed sleep analysis rather than for use during physical activities or exercise.",
+    "tags": ["EEG"],
+    "notebooks": [],
+    "link": "https://hypnodynecorp.com/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "",
+          "long": ""
+        },
+        "API Access Security": {
+          "short": "",
+          "long": ""
+        }
+      },
+      "privacy": {
+        "Data Risk": {
+          "short": "",
+          "long": ""
+        },
+        "HIPAA Compliance": {
+          "short": "",
+          "long": ""
+        },
+        "De-identification (When Sharing)": {
+          "short": "",
+          "long": ""
+        },
+        "Shares With Third Parties": {
+          "short": "",
+          "long": ""
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "",
+          "long": ""
+        }
+      }
+    },
+    "api": {},
+    "summaries": []
+}

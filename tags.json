@@ -1,0 +1,52 @@
+[
+  {
+    "name": "2-Stage",
+    "color": "brown",
+    "id": "citemetrics"
+  },
+  {
+    "name": "SPO2",
+    "color": "orange",
+    "id": "citemetrics"
+  },
+  {
+    "name": "App",
+    "color": "blue",
+    "id": "citemetrics"
+  },
+  {
+    "name": "Calorimeter",
+    "color": "green",
+    "id": "citemetrics"
+  },
+  {
+    "name": "CGM",
+    "color": "teal",
+    "id": "citemetrics"
+  },
+  {
+    "name": "Continuous HRV",
+    "color": "red",
+    "id": "citemetrics"
+  },
+  {
+    "name": "EEG",
+    "color": "magenta",
+    "id": "citemetrics"
+  },
+  {
+    "name": "HR",
+    "color": "crimson",
+    "id": "citemetrics"
+  },
+  {
+    "name": "HRV",
+    "color": "turquoise",
+    "id": "citemetrics"
+  },
+  {
+    "name": "Pedometer",
+    "color": "purple",
+    "id": "citemetrics"
+  }
+]

@@ -1,0 +1,59 @@
+{
+    "name": "SleepOn go2sleep",
+    "id": "sleepon-go2sleep",
+    "ordering_priority": 9999,
+    "picture": "/assets/sleepon-go2sleep.png",
+    "description": "The Sleepon Go2Sleep is a wearable sleep tracker designed to monitor sleep quality and detect sleep-related health issues. It is worn on the finger, using sensors to measure heart rate, blood oxygen levels, and sleep patterns. The device tracks various sleep stages, including deep, light, and REM sleep, and provides analysis of sleep quality. One of the key features of Go2Sleep is its ability to detect signs of sleep apnea, a common sleep disorder. It alerts users to potential issues through its smartphone app, where detailed sleep reports and recommendations are provided. The Go2Sleep tracker is small and lightweight, making it comfortable to wear overnight. It's suitable for individuals looking to gain insights into their sleep habits or those concerned about sleep-related health conditions. By offering detailed sleep analysis and health monitoring, Go2Sleep aids in improving overall sleep quality and well-being.",
+    "tags": ["HR", "HRV"],
+    "notebooks": [],
+    "link": "https://www.sleepon.us/go2sleep/",
+    "specs": {
+      "product_details": {
+        "Location": "Middle or ring finger",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "N/A",
+          "long": "No public API is available."
+        }
+      },
+      "privacy": {
+      "Data Risk": {
+          "short": "No",
+          "long": "Data from the SleepOn Go2Sleep includes sleep stages, heart rate variability (HRV), oxygen saturation (SpO2) levels, total sleep duration, sleep efficiency, toss and turn count, and apnea detection. When paired with its companion app, users can receive comprehensive insights into their sleep health, highlighting potential issues like sleep apnea, low oxygen events, and heart health problems. <br />These data constitute a health data risk in the following categories: <br />- Sleep data: Sleep stages, disturbances, total sleep duration, and efficiency <br />- Physiological data: Heart rate variability, oxygen saturation levels <br />- Health status data: Detection of sleep disorders such as sleep apnea <br />- Predictive health insights: Risk assessment of sleep disorders and associated health conditions based on monitored metrics"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "SleepOn go2sleep collects heart rate, blood oxygen saturation, and sleep stages data. This information is processed and made available to users via its accompanying application. Interaction data with SleepOn's platforms or customer service may also be collected. <br />Metrics like sleep stages, heart rate, and blood oxygen levels could be considered protected health information under HIPAA. <br />SleepOn go2sleep is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "No",
+          "long": "SleepOn go2sleep processes and stores data on the SleepOn cloud platform. SleepOn's privacy policy indicates that data is encrypted during transmission. However, the policy does not specify whether the health data undergoes differential privacy or other de-identification methods when stored or collected. <br />When it comes to third-party sharing, the privacy policy doesn't explicitly mention the protocols for de-identifying data before sharing. They note that personal information may be shared under certain conditions but don't detail the specifics of data aggregation or anonymization."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "SleepOn mentions that they 'may share personal data with third-party service providers for the purpose of measuring and analyzing usage and activity using tools like web beacons and pixel tags. These third-party service providers may help SLEEPON in improving their functionality by analyzing the data collected.'"
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'third party service providers'. <br />No mentions of specific companies, organizations, or individuals are provided."
+       
+      } }
+    },
+    "api": {
+      "daytime": [],
+      "nighttime": [
+        ["SPO2", "5.4", "MAE"],
+        ["HR", "8.4", "MAE"]
+      ],
+      "sensor_performance": []
+    },
+    "summaries": []
+}

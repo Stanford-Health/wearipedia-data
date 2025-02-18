@@ -1,0 +1,61 @@
+{
+    "name": "Cronometer",
+    "id": "cronometer",
+    "ordering_priority": 7,
+    "picture": "/assets/cronometer.png",
+    "description": "Cronometer is a nutrition tracking app that provides detailed analysis of dietary intake. It allows users to log their food consumption and monitor nutrients, including calories, macronutrients (carbs, fats, proteins), and micronutrients (vitamins and minerals). The app's extensive food database ensures accurate tracking of various food items and recipes. A key feature of Cronometer is its ability to customize nutrition goals based on individual needs, making it suitable for various dietary plans, including weight loss, muscle gain, or maintenance. It also supports integration with fitness devices to track physical activity and caloric expenditure. Cronometer offers detailed reports and charts, giving users insights into their nutritional habits and helping them make informed dietary choices. Its focus on comprehensive nutrient tracking sets it apart from other food diary apps, making it a valuable tool for anyone serious about their nutrition and overall health.",
+    "tags": ["App"],
+    "notebooks": [
+      {
+        "name": "cronometer.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/cronometer.ipynb"
+      }
+    ],
+    "link": "https://cronometer.com/",
+    "specs": {
+      "product_details": {
+        "Location": "N/A (Smartphone App)",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": "N/A"
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "N/A",
+          "long": "N/A"
+        },
+        "API Access Security": {
+          "short": "N/A",
+          "long": "No public API is available."
+        }
+      },
+      "privacy": {
+      "Data Risk": {
+          "short": "No",
+          "long": "Data from Cronometer includes detailed 'food consumption' data, which breaks down the nutrient profile of foods consumed, such as 'macronutrients' ('carbohydrates', 'proteins', 'fats'), 'micronutrients' (vitamins, minerals, etc.), 'caloric intake', and more. The platform also captures 'physical activity' data, either entered manually or imported from connected fitness tracking devices. Users can also log 'biometric data' such as 'weight', 'blood pressure', and 'sleep hours', and set personal health and wellness goals. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Activity type, duration, intensity, and estimated caloric burn.<br />- Health status data: Detailed breakdown of daily food consumption and nutrient intake, including both macronutrients and micronutrients, weight trends, body measurements, blood pressure, cholesterol levels, captures patterns of consumption, such as frequency of specific foods or meals, highlighting potential dietary imbalances or deficiencies."
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Cronometer collects dietary intake, exercise routines, and biometric data. It offers analysis of macro and micronutrient intake based on user entries. <br />Data related to dietary intake, exercise, and biometrics could be considered protected health information under HIPAA. <br />Cronometer is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "No",
+          "long": "Non Personal Information. As used in this Privacy Notice, 'Non-Personal Information' means information that does not identify you and cannot be used to contact you personally and may include: (a) certain [A1]publicly available information; (b) aggregate information, meaning data about a group or category of services or users from which individual identities and other Personal Information has been removed; (c) deidentified information that cannot be easily linked back to the individual; or (d) [A2]and in full compliance with HIPAA and Privacy laws, and on an aggregated and anonymous basis, your diary entries, health data[A3], recipes, targets and profile."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Cronometer mentions that they 'may share data with third parties for the purposes of operating our services, maintaining the safety and security of our services, and for marketing purposes.'"
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are not specifically outlined in the privacy policy. <br />No mentions of specific companies, organizations, or individuals are provided."
+       
+      } }
+    },
+    "api": {},
+    "summaries": [
+      "Cronometer_ChronicPainOrDiseases.txt",
+      "Cronometer_Endocrinology.txt",
+      "Cronometer_Gastroenterology.txt"
+    ]
+}

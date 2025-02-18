@@ -1,0 +1,67 @@
+{
+    "name": "Polar Vantage",
+    "id": "polar-vantage",
+    "ordering_priority": 11,
+    "picture": "/assets/polar-vantage.png",
+    "description": "The Polar Vantage is a multisport GPS watch designed for athletes seeking detailed data to optimize their training. It tracks a wide range of metrics including heart rate, speed, distance, and altitude. The watch features advanced training tools like Training Load Pro and Recovery Pro, which help users balance training intensity and recovery to prevent overtraining. Equipped with a built-in GPS and barometer, the Vantage V2 is effective for outdoor activities like running, cycling, and hiking. It also supports over 130 sports profiles, making it versatile for various training needs. The watch offers detailed insights into performance metrics, including running power from the wrist, making it valuable for runners looking to improve efficiency. The Polar Vantage syncs with the Polar Flow app, where users can analyze their data, set goals, and track progress. Its lightweight design and long battery life make it suitable for daily wear and extended training sessions.",
+    "tags": ["HR", "SPO2", "Pedometer", "Calorimeter"],
+    "notebooks": [
+      {
+        "name": "polar-vantage.ipynb",
+        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/polar_vantage.ipynb"
+      }
+    ],
+    "link": "https://www.polar.com/en/vantage/v2",
+    "specs": {
+      "product_details": {
+        "Location": "Wrist",
+        "Price": "N/A",
+        "Sensors": [],
+        "Battery": ""
+      },
+      "security": {
+        "Wearable Connectivity": {
+          "short": "No",
+          "long": "Bluetooth"
+        },
+        "API Access Security": {
+          "short": "Yes",
+          "long": "API is available through OAuth 2.0."
+        }
+      },
+      "privacy": {
+      "Data Risk": {
+          "short": "No",
+          "long": "Data from the Polar Vantage includes heart rate tracking, sleep tracking, GPS location tracking, steps count, distance covered, swimming metrics, cycling dynamics, running power, VO2 max estimation, recovery status, stress and relaxation levels, daily activity, calories burned, and training load. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Steps count, distance covered, swimming metrics, cycling dynamics, running power, daily activity, calories burned <br />- Sleep data: Sleep tracking <br />- Physiological data: Heart rate tracking <br />- Environmental exposure: GPS location tracking <br />- Physical fitness level: VO2 max estimation, recovery status, training load <br />- Lifestyle habits: Stress and relaxation levels"
+        },
+        "HIPAA Compliance": {
+          "short": "No",
+          "long": "Polar Vantage collects identity data such as email address, birth date, usernames, and user preferences. The device amasses activity data based on the user's physical activities, including steps, distance traveled, heart rate, sleep tracking, swimming metrics, running metrics, cycling performance, and recovery status. Technical data for product and service use, including GPS location, technical logs, device configuration, and app usage, are processed. <br />Heart rate, sleep stages, and physiological measurement data could be considered protected health information under HIPAA. <br />Polar Vantage is not HIPAA compliant."
+        },
+        "De-identification (When Sharing)": {
+          "short": "Yes",
+          "long": "Polar Vantage collects and processes sensitive personal information based on the service and device being used. The actual service data is stored within the EU/EEA area, with some monitoring and ancillary activities potentially involving a transfer outside the EU. Polar ensures compliance with applicable laws for sufficient privacy protection and adheres to European Commission’s standard contractual clauses. Information may be transferred to Polar’s subcontractors for specific tasks related to Polar’s products and services but remains under Polar’s control. Polar does not disclose personal information without specific permission and ensures that any disclosure complies with legal requirements. For statistical purposes, Polar may deliver collected anonymized statistical data to reputable third parties, ensuring that these statistics do not contain identifiable personal information."
+        },
+        "Shares With Third Parties": {
+          "short": "No",
+          "long": "Polar Vantage employs web and mobile tracking techniques, including the use of cookies, to collect device information and track user behavior for improving services and providing targeted advertising. Tools from Google, Facebook, LinkedIn, and Criteo are used, but personal data is not shared without user permission. In-house research and collaboration with third-party partners are key to the development of Polar's products and services, utilizing anonymized customer data when possible. Marketing messages and targeted content are sent to those who provide consent, with the assurance that customer data is not sold or given to any third parties for marketing purposes. Polar's approach aims to blend innovation and personalized content with a strong commitment to ethical data handling."
+        },
+        "Transparency in Third Party Sharing": {
+          "short": "No",
+          "long": "Categories of third parties are disclosed as 'service providers', 'advertising partners', 'professional advisors' and 'authorities and others', and 'business transferees'. <br />No mentions of specific companies, organizations, or individuals are provided."
+       
+      } }
+    },
+    "api": {
+      "daytime": [
+        ["SPO2", "0.91", "MAE"],
+        ["HRV", "19.6", "MAE"],
+        ["HR", "6.83", "MAE"]
+      ],
+      "nighttime": [],
+      "sensor_performance": []
+    },
+    "summaries": [
+      "Polar_Vantage_V2_Psychiatry.txt"
+    ]
+}
