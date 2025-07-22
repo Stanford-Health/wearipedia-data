@@ -52,13 +52,7 @@
        
       } }
     },
-    "api": {
-      "daytime": [
-        ["HR", "2.3", "MAE"]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Polar_H10_Bariatrics.txt",
       "Polar_H10_Cardiology.txt",

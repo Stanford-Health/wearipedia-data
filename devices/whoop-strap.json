@@ -52,20 +52,7 @@
        
       } }
     },
-    "api": {
-      "daytime": [
-        ["HRV", "14.2", "MAE"],
-        ["HR", "9.1", "MAE"]
-      ],
-      "nighttime": [
-        ["TST", "8.2", "MAE"],
-        ["WASO", "7.1", "MAE"],
-        ["Stages", "W/R", "MAE"],
-        ["Apnea", "N", "-"],
-        ["Snoring", "N", "-"]
-      ],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Whoop_Strap_4.0_Cardiology.txt",
       "Whoop_Strap_4.0_GeneralPhysiology.txt",

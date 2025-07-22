@@ -52,17 +52,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        ["SPO2", "0.78", "daily (per min)"],
-        ["HRV", "11.7", "MAE"],
-        ["HR", "7.8", "MAE"],
-        ["Pedometer-walk", "40", "daily (per min)"],
-        ["Pedometer-run", "76", "daily (per min)"]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Garmin_Fenix_7S_Cardiology.txt",
       "Garmin_Fenix_7S_ChronicPainOrDiseases.txt",

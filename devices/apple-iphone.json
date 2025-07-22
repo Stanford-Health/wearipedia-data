@@ -47,13 +47,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        ["Pedometer-walk", "39", "MAE"]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "IPhone_Bariatrics.txt",
       "IPhone_Cardiology.txt",

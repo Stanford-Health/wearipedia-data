@@ -47,12 +47,6 @@
        
       } }
     },
-    "api": {
-      "daytime": [
-        ["HR", "0.85", "MAE"]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": []
 }

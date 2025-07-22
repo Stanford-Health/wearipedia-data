@@ -52,15 +52,7 @@
        
       } }
     },
-    "api": {
-      "daytime": [
-        ["SPO2", "0.91", "MAE"],
-        ["HRV", "19.6", "MAE"],
-        ["HR", "6.83", "MAE"]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Polar_Vantage_V2_Psychiatry.txt"
     ]

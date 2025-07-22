@@ -47,13 +47,6 @@
        
       } }
     },
-    "api": {
-      "daytime": [],
-      "nighttime": [
-        ["SPO2", "5.4", "MAE"],
-        ["HR", "8.4", "MAE"]
-      ],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": []
 }

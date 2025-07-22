@@ -52,17 +52,7 @@
        
       } }
     },
-    "api": {
-      "daytime": [
-        ["SPO2", "0.92", "MAE"],
-        ["HRV", "11.9", "MAE"],
-        ["HR", "10.8", "MAE"],
-        ["Pedometer-walk", "40", "MAE"],
-        ["Pedometer-run", "58", "MAE"]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Withings_Body+_GeneralPhysiology.txt",
       "Withings_Body+_Oncology.txt"   
