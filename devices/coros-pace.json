@@ -47,15 +47,6 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        ["SPO2", "0.73", "MAE"],
-        ["HR", "13.2", "MAE"],
-        ["Pedometer-walk", "45", "MAE"],
-        ["Pedometer-run", "87", "MAE"]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": []
 }

@@ -56,30 +56,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        ["SPO2", "0.81[@schroder2023applewatch],[@windisch2023accuracy]", "daily (per min)"],
-        ["HRV", "10.8[@hernando2018validation],[@velmovitsky2023heartrate]", "MAE"],
-        ["HR", "7.8[@falter2019accuracy],[@nuss2018accuracy]", "MAE"],
-        ["Pedometer-walk", "27.0[@veerabhadrappa2018tracking],[@germini2022accuracy]", "daily"],
-        ["Pedometer-run", "59.0", "daily"]
-      ],
-      "nighttime": [
-        ["HR", "6.2", "MAE"],
-        ["SOL", "10.6[@miller2022validation],[@roomkham2019sleepmonitoring]", "MAE"],
-        ["TST", "23.8", "MAE"],
-        ["Stages", "W/R", "-"],
-        ["Apnea", "N", "-"],
-        ["Snoring", "N", "-"]
-      ],
-      "sensor_performance": [
-        ["Apple Watch 5", "9.6 MAE", "29 MAE"],
-        ["Apple Watch 6", "8.5 MAE", "22 MAE"],
-        ["Apple Watch 7", "8.2 MAE", "20 MAE"],
-        ["Apple Watch 8", "9.5 MAE", "20 MAE"],
-        ["Apple Watch Ultra", "7.7 MAE", "20 MAE"]
-      ]
-    },
+    "api": {},
     "summaries": [
       "Apple_Watch_5_Cardiology.txt",
       "Apple_Watch_5_ChronicPainOrDiseases.txt",

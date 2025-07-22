@@ -52,17 +52,7 @@
        
       } }
     },
-    "api": {
-      "daytime": [],
-      "nighttime": [
-        ["SOL", "15.9", "MAE"],
-        ["TST", "30.2", "MAE"],
-        ["Stages", "W/R", "MAE"],
-        ["Apnea", "N", ""],
-        ["Snoring", "N", ""]
-      ],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Withings_Sleep_Cardiology.txt",
       "Withings_Sleep_ChronicPainOrDiseases.txt",

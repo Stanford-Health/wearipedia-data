@@ -52,23 +52,7 @@
         }
       }
     },
-    "api": {
-      "sensor_performance": [
-        ["Fitbit Charge", "13.3 MAE", "54 MAE"],
-        ["Fitbit Charge 5", "8.4 MAE", "47 MAE"],
-        ["Fitbit Charge 6", "7.2 MAE", "33 MAE"]
-      ],
-      "daytime": [
-        ["SPO2", "0.64", "daily (per min)"],
-        ["HRV", "9.2", "MAE"],
-        ["HR", "7.2", "MAE"],
-        ["Pedometer-walk", "39", "daily (per min)"],
-        ["Pedometer-run", "48", "daily (per min)"]
-      ],
-      "nighttime": [
-        ["HR", "6.8", "MAE"]
-      ]
-    },
+    "api": {},
     "summaries": [
       "Fitbit_Charge_4_ChronicPainOrDiseases.txt",
       "Fitbit_Charge_4_Endocrinology.txt",

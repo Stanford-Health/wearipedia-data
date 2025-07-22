@@ -52,27 +52,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        ["HR", "12.9", "MAE"],
-        ["Pedometer-walk", "52", "daily (per min)"],
-        ["Pedometer-run", "89", "daily (per min)"]
-      ],
-      "nighttime": [
-        ["SPO2", "3.2", "MAE"],
-        ["HR", "3.6", "MAE"],
-        ["SOL", "9.1", "MAE"],
-        ["TST", "19.97", "MAE"],
-        ["WASO", "-3.4", "MAE"],
-        ["SE", "0.3", "MAE"],
-        ["Stages", "W/R", "MAE"],
-        ["Apnea", "N", "MAE"],
-        ["Snoring", "N", "MAE"]
-      ],
-      "sensor_performance": [
-        ["Oura Ring 3", "28.2 MAE", "63 MAE"]
-      ]
-    },
+    "api": {},
     "summaries": [
       "Oura_Ring_Gen_3_Bariatrics.txt",
       "Oura_Ring_Gen_3_Cardiology.txt",
