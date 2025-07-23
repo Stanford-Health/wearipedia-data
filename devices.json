@@ -236,17 +236,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "Pedometer-walk",
-          "39",
-          "MAE"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "IPhone_Bariatrics.txt",
       "IPhone_Cardiology.txt",
@@ -327,94 +317,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "SPO2",
-          "0.81[@schroder2023applewatch],[@windisch2023accuracy]",
-          "daily (per min)"
-        ],
-        [
-          "HRV",
-          "10.8[@hernando2018validation],[@velmovitsky2023heartrate]",
-          "MAE"
-        ],
-        [
-          "HR",
-          "7.8[@falter2019accuracy],[@nuss2018accuracy]",
-          "MAE"
-        ],
-        [
-          "Pedometer-walk",
-          "27.0[@veerabhadrappa2018tracking],[@germini2022accuracy]",
-          "daily"
-        ],
-        [
-          "Pedometer-run",
-          "59.0",
-          "daily"
-        ]
-      ],
-      "nighttime": [
-        [
-          "HR",
-          "6.2",
-          "MAE"
-        ],
-        [
-          "SOL",
-          "10.6[@miller2022validation],[@roomkham2019sleepmonitoring]",
-          "MAE"
-        ],
-        [
-          "TST",
-          "23.8",
-          "MAE"
-        ],
-        [
-          "Stages",
-          "W/R",
-          "-"
-        ],
-        [
-          "Apnea",
-          "N",
-          "-"
-        ],
-        [
-          "Snoring",
-          "N",
-          "-"
-        ]
-      ],
-      "sensor_performance": [
-        [
-          "Apple Watch 5",
-          "9.6 MAE",
-          "29 MAE"
-        ],
-        [
-          "Apple Watch 6",
-          "8.5 MAE",
-          "22 MAE"
-        ],
-        [
-          "Apple Watch 7",
-          "8.2 MAE",
-          "20 MAE"
-        ],
-        [
-          "Apple Watch 8",
-          "9.5 MAE",
-          "20 MAE"
-        ],
-        [
-          "Apple Watch Ultra",
-          "7.7 MAE",
-          "20 MAE"
-        ]
-      ]
-    },
+    "api": {},
     "summaries": [
       "Apple_Watch_5_Cardiology.txt",
       "Apple_Watch_5_ChronicPainOrDiseases.txt",
@@ -534,32 +437,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "SPO2",
-          "0.73",
-          "MAE"
-        ],
-        [
-          "HR",
-          "13.2",
-          "MAE"
-        ],
-        [
-          "Pedometer-walk",
-          "45",
-          "MAE"
-        ],
-        [
-          "Pedometer-run",
-          "87",
-          "MAE"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": []
   },
   {
@@ -875,59 +753,7 @@
         }
       }
     },
-    "api": {
-      "sensor_performance": [
-        [
-          "Fitbit Charge",
-          "13.3 MAE",
-          "54 MAE"
-        ],
-        [
-          "Fitbit Charge 5",
-          "8.4 MAE",
-          "47 MAE"
-        ],
-        [
-          "Fitbit Charge 6",
-          "7.2 MAE",
-          "33 MAE"
-        ]
-      ],
-      "daytime": [
-        [
-          "SPO2",
-          "0.64",
-          "daily (per min)"
-        ],
-        [
-          "HRV",
-          "9.2",
-          "MAE"
-        ],
-        [
-          "HR",
-          "7.2",
-          "MAE"
-        ],
-        [
-          "Pedometer-walk",
-          "39",
-          "daily (per min)"
-        ],
-        [
-          "Pedometer-run",
-          "48",
-          "daily (per min)"
-        ]
-      ],
-      "nighttime": [
-        [
-          "HR",
-          "6.8",
-          "MAE"
-        ]
-      ]
-    },
+    "api": {},
     "summaries": [
       "Fitbit_Charge_4_ChronicPainOrDiseases.txt",
       "Fitbit_Charge_4_Endocrinology.txt",
@@ -1069,37 +895,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "SPO2",
-          "0.78",
-          "daily (per min)"
-        ],
-        [
-          "HRV",
-          "11.7",
-          "MAE"
-        ],
-        [
-          "HR",
-          "7.8",
-          "MAE"
-        ],
-        [
-          "Pedometer-walk",
-          "40",
-          "daily (per min)"
-        ],
-        [
-          "Pedometer-run",
-          "76",
-          "daily (per min)"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Garmin_Fenix_7S_Cardiology.txt",
       "Garmin_Fenix_7S_ChronicPainOrDiseases.txt",
@@ -1362,79 +1158,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "HR",
-          "12.9",
-          "MAE"
-        ],
-        [
-          "Pedometer-walk",
-          "52",
-          "daily (per min)"
-        ],
-        [
-          "Pedometer-run",
-          "89",
-          "daily (per min)"
-        ]
-      ],
-      "nighttime": [
-        [
-          "SPO2",
-          "3.2",
-          "MAE"
-        ],
-        [
-          "HR",
-          "3.6",
-          "MAE"
-        ],
-        [
-          "SOL",
-          "9.1",
-          "MAE"
-        ],
-        [
-          "TST",
-          "19.97",
-          "MAE"
-        ],
-        [
-          "WASO",
-          "-3.4",
-          "MAE"
-        ],
-        [
-          "SE",
-          "0.3",
-          "MAE"
-        ],
-        [
-          "Stages",
-          "W/R",
-          "MAE"
-        ],
-        [
-          "Apnea",
-          "N",
-          "MAE"
-        ],
-        [
-          "Snoring",
-          "N",
-          "MAE"
-        ]
-      ],
-      "sensor_performance": [
-        [
-          "Oura Ring 3",
-          "28.2 MAE",
-          "63 MAE"
-        ]
-      ]
-    },
+    "api": {},
     "summaries": [
       "Oura_Ring_Gen_3_Bariatrics.txt",
       "Oura_Ring_Gen_3_Cardiology.txt",
@@ -1507,17 +1231,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "HR",
-          "2.3",
-          "MAE"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Polar_H10_Bariatrics.txt",
       "Polar_H10_Cardiology.txt",
@@ -1590,27 +1304,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "SPO2",
-          "0.91",
-          "MAE"
-        ],
-        [
-          "HRV",
-          "19.6",
-          "MAE"
-        ],
-        [
-          "HR",
-          "6.83",
-          "MAE"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Polar_Vantage_V2_Psychiatry.txt"
     ]
@@ -1731,22 +1425,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [],
-      "nighttime": [
-        [
-          "SPO2",
-          "5.4",
-          "MAE"
-        ],
-        [
-          "HR",
-          "8.4",
-          "MAE"
-        ]
-      ],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": []
   },
   {
@@ -1867,17 +1546,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "HR",
-          "0.85",
-          "MAE"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": []
   },
   {
@@ -1940,48 +1609,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "HRV",
-          "14.2",
-          "MAE"
-        ],
-        [
-          "HR",
-          "9.1",
-          "MAE"
-        ]
-      ],
-      "nighttime": [
-        [
-          "TST",
-          "8.2",
-          "MAE"
-        ],
-        [
-          "WASO",
-          "7.1",
-          "MAE"
-        ],
-        [
-          "Stages",
-          "W/R",
-          "MAE"
-        ],
-        [
-          "Apnea",
-          "N",
-          "-"
-        ],
-        [
-          "Snoring",
-          "N",
-          "-"
-        ]
-      ],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Whoop_Strap_4.0_Cardiology.txt",
       "Whoop_Strap_4.0_GeneralPhysiology.txt",
@@ -2047,37 +1675,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "SPO2",
-          "0.92",
-          "MAE"
-        ],
-        [
-          "HRV",
-          "11.9",
-          "MAE"
-        ],
-        [
-          "HR",
-          "10.8",
-          "MAE"
-        ],
-        [
-          "Pedometer-walk",
-          "40",
-          "MAE"
-        ],
-        [
-          "Pedometer-run",
-          "58",
-          "MAE"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Withings_Body+_GeneralPhysiology.txt",
       "Withings_Body+_Oncology.txt"
@@ -2206,37 +1804,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [],
-      "nighttime": [
-        [
-          "SOL",
-          "15.9",
-          "MAE"
-        ],
-        [
-          "TST",
-          "30.2",
-          "MAE"
-        ],
-        [
-          "Stages",
-          "W/R",
-          "MAE"
-        ],
-        [
-          "Apnea",
-          "N",
-          ""
-        ],
-        [
-          "Snoring",
-          "N",
-          ""
-        ]
-      ],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Withings_Sleep_Cardiology.txt",
       "Withings_Sleep_ChronicPainOrDiseases.txt",
