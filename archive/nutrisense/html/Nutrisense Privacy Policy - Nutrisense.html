@@ -1,0 +1,702 @@
+<!DOCTYPE html><!-- Last Published: Wed Jul 23 2025 13:12:38 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.nutrisense.io" data-wf-page="65a5b3e784822e5c0c13c327" data-wf-site="62c477aa7b7db12cfffa5de3" lang="en" data-wf-collection="65a5b3e784822e5c0c13c36d" data-wf-item-slug="privacy-policy"><head><meta charset="utf-8"/><title>Nutrisense Privacy Policy - Nutrisense</title><meta content="Nutrisense Privacy Policy - Nutrisense" property="og:title"/><meta content="Nutrisense Privacy Policy - Nutrisense" property="twitter:title"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://assets.nutrisense.io/62c477aa7b7db12cfffa5de3/css/nutrisense-v2.shared.fd9ab3ec6.min.css" rel="stylesheet" type="text/css" /><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://assets.nutrisense.io/62c477aa7b7db12cfffa5de3/6359393e6d286570f5818dc2_Favicon.png" rel="shortcut icon" type="image/x-icon" /><link href="https://assets.nutrisense.io/62c477aa7b7db12cfffa5de3/6359397191c9da67f4034978_Webclip.png" rel="apple-touch-icon" /><link href="https://www.nutrisense.io/legal/privacy-policy" rel="canonical"/><meta name="facebook-domain-verification" content="lwqj14h8ux80tn8ls4wuxrx2v9l7fk" />
+<meta name="google-site-verification" content="0mYH19AU-f7-PoBYZp1R30mZ6F7lMly-UbB9aj-gKsY" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=5.0" />
+
+
+<!-- Preconnect and Prefetches -->
+<link rel="preconnect" href="https://assets.nutrisense.io/" />
+<link rel="preconnect" href="https://d1yu8kqvwue793.cloudfront.net/" />
+<link rel="preconnect" href="https://static.klaviyo.com/" />
+<link rel="preconnect" href="https://static-tracking.klaviyo.com/" />
+<link rel="preconnect" href="https://www.googletagmanager.com/" />
+<link rel="dns-prefetch" href="https://cdn-4.convertexperiments.com/" />
+
+<!-- SCRIPTS 
+---------------
+--------------->
+<!-- Core Bundle from Nutrisense Engineering -->
+<script>
+var urlSearchParams = new URLSearchParams(window.location.search);
+var localBundle = urlSearchParams.get("local_bundle");
+var specificBundle = urlSearchParams.get("bundle");
+var betaDistribution = "https://dk3x6ox06sdt3.cloudfront.net";
+var productionDistribution = "https://d1yu8kqvwue793.cloudfront.net";
+
+var releaseBundle = specificBundle || "latest";
+
+var buildFolder = specificBundle
+  ? ""
+  : window.location.hostname.includes("beta")
+  ? "beta/"
+  : "production/";
+
+var localScriptsBundlePath = "http://localhost:8080/v2.nutrisense.io/pages";
+var productionScriptsBundlePath = window.location.hostname.includes("beta")
+  ? `${betaDistribution}/${buildFolder}v2.nutrisense.io/pages`
+  : `${productionDistribution}/${buildFolder}v2.nutrisense.io/pages`;
+
+const appendBundle = (source, type) => {
+  const scriptTag = document.createElement("script");
+
+  if (type === 'checkout') {
+    scriptTag.defer = true;
+    scriptTag.type = "module";
+    scriptTag.crossOrigin = "anonymous";
+  }
+  
+  scriptTag.src = source;
+
+  document.head.append(scriptTag);
+};
+
+const fetchLatestBundle = async (host) => {
+  try {
+    const manifestUrl = `${host}/asset-manifest.json`;
+    const response = await fetch(manifestUrl, {
+      cache: "no-store",
+      method: "GET",
+    });
+    const manifest = await response.json();
+    const entry = manifest["index.html"];
+    if (entry && entry.file) {
+      appendBundle([host, entry.file].join("/"), "checkout");
+    } else {
+      document.querySelector(".overlay-message").style.display = "flex";
+    }
+  } catch (error) {
+    document.querySelector(".overlay-message").style.display = "flex";
+  }
+};
+
+document.addEventListener("DOMContentLoaded", async () => {
+  if (
+    window.location.pathname.includes("checkouts") ||
+    window.location.pathname.includes("checkout")
+  ) {
+    const localBundlePath = "http://localhost:8003";
+    const productionBundlePath = window.location.hostname.includes("beta")
+      ? `${betaDistribution}/${buildFolder}checkout`
+      : `${productionDistribution}/${buildFolder}checkout`;
+
+    const localCheckoutBundleSrc = `${localBundlePath}/index.local.bundle.js`;
+    const productionCheckoutBundleSrc = `${productionBundlePath}/index.${releaseBundle}.bundle.js`;
+
+    const checkoutScriptSrc = localBundle
+      ? localCheckoutBundleSrc
+      : productionCheckoutBundleSrc;
+
+    if (releaseBundle === "latest") {
+      await fetchLatestBundle(productionBundlePath);
+    } else {
+      appendBundle(checkoutScriptSrc, "checkout");
+    }
+  } else {
+    const localHeadBundleSrc = `${localScriptsBundlePath}/head.bundle.js`;
+    const productionHeadBundleSrc = `${productionScriptsBundlePath}/head.${releaseBundle}.bundle.js`;
+
+    const headScriptSrc = localBundle
+      ? localHeadBundleSrc
+      : productionHeadBundleSrc;
+
+    const headScript = document.createElement("script");
+
+    headScript.src = headScriptSrc;
+    headScript.defer = true;
+
+    document.head.append(headScript);
+  }
+});
+</script>
+<!-- END Core Bundle from Nutrisense Engineering -->
+
+<!-- [Attributes by Finsweet] Disable scrolling -->
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-scrolldisable@1/scrolldisable.js"></script>
+
+<!-- TrustBox script -->
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<!-- End TrustBox script -->
+
+<!-- Announcement Bar Countdown script at https://slater.app/8218/25453.js -->
+<!--🤙 https://slater.app/8218/25453.js-->
+<script>document.addEventListener("DOMContentLoaded", function() {function loadnscountdowns(e){let t=document.createElement("script");t.setAttribute("src",e),t.setAttribute("type","text/javascript"),document.body.appendChild(t),t.addEventListener("load",()=>{console.log("Slater loaded ns-countdowns.js: https://slater.app/8218/25453.js 🤙")}),t.addEventListener("error",e=>{console.log("Error loading file",e)})}let src=window.location.host.includes("webflow.io")?"https://slater.app/8218/25453.js":"https://assets.slater.app/slater/8218/25453.js?v=1.0";loadnscountdowns(src);})</script>
+
+<!-- END Announcement Bar Countdown script -->
+
+<!-- END SCRIPTS 
+--------------->
+
+<!-- CSS 
+---------------
+--------------->
+<!-- Font Quality -->
+<style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+  
+/* grecaptcha creates a parent div without id or any property and with display:block */
+div:has(&gt; div.grecaptcha-badge) {
+    display: none;
+}
+
+.grecaptcha-badge { visibility: hidden; }
+  
+/* publish warning */
+.amply_warning-message { display: none; }
+.w-editor .amply_warning-message { display: inherit !important }
+  
+  
+/* Cookiebot custom style */
+#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyEdgeMoreDetails{margin:1em 2em .5em 0!important}
+#CybotCookiebotDialog label{width:auto;display:inline}
+@media screen and (max-width:767px){
+  #CybotCookiebotDialog{transform:translate(-50%,10%)!important;max-height:max(40%,300px)!important}
+  #CybotCookiebotDialog #CybotCookiebotDialogBodyContent{max-height:105px!important}
+}  
+  
+</style>
+
+<!-- END CSS 
+---------------><META NAME="ROBOTS" CONTENT="INDEX"><!-- begin Convert Experiences code--><script type="text/javascript" src="//cdn-4.convertexperiments.com/js/10041508-10041641.js"></script><!-- end Convert Experiences code --><!-- source: Cloudflare Worker --><script type="text/javascript">window.userGeolocationCountryCode="JP";window.userGeolocationRegion="Tokyo"</script></head><body><div class="page-wrapper"><div class="global-styles w-embed"><style>
+	
+	/*-----LP BUILDER-----*/
+
+  .lp_rich-text-styled ul, .lp_rich-text-styled_minified ul {
+    /*list-style: none;*/
+  }
+
+  .lp_rich-text-styled ul li, .lp_rich-text-styled_minified ul li {
+    position: relative;
+    padding-left: 1.75rem;
+  }
+
+  .lp_rich-text-styled ul li::before {
+    content: '';
+    position: absolute;
+    top: 0.22rem;
+    left: 0;
+    margin-right: 0.5rem;
+    float: left;
+    width: 1.125rem;
+    height: 1.125rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(https://assets.nutrisense.io/62c477aa7b7db12cfffa5de3/677ec5c61390510cd5fd7a0b_checkmark-bullet.svg);
+  }
+
+
+
+/*-----GLOBAL STYLES-----*/
+
+
+  .wrap-balance {
+    text-wrap: balance;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  /* Hides scrollbar. Use it on elements with 'overflow: auto'. */
+  .has-no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+  /* Makes promo code field keep it's focused appearance when filled 
+  .form-field-promo-code:not(:placeholder-shown) {
+  background-color: rgba(190, 209, 171, 0.4);
+  border-color: #bed1ab;
+  }
+  */
+
+
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .overflow-clip {
+    overflow: clip;
+  }
+
+  img {
+    overflow: clip !important;
+  }
+
+  /* This code changes slider navigation on this page */
+
+  .w-slider-dot {
+    position: relative;
+    height: 2.22px;
+    width: 22.54px;
+    border-radius: 100px;
+  }
+
+  /* Makes clickable zone bigger */
+  .w-slider-dot::before {
+    content: "";
+    position: absolute;
+    width: 22.54px;
+    height: 24px;
+    top: -11px;
+    left: 0px;
+  }
+
+  .w-slider-dot.w-active {
+    height: 2.22px;
+    width: 22.54px;
+  }
+  .w-slider-nav.w-round&gt;div {
+    border-radius: 10px;
+  }
+
+
+  /* Snippet gets rid of top margin on first element in any rich text*/
+  .w-richtext&gt;:first-child {
+    margin-top: 0;
+  }
+
+  /* Snippet gets rid of bottom margin on last element in any rich text*/
+  .w-richtext&gt;:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Snippet makes all link elements listed below to inherit color from their parent */
+  a, 
+  .w-tab-link,
+  .w-nav-link,
+  .w-dropdown-btn,
+  .w-dropdown-toggle,
+  .w-dropdown-link
+  {
+    color: inherit;
+  }
+
+  /* Snippet prevents all click and hover interaction with an element */
+  .clickable-off {
+    pointer-events: none;
+  }
+
+  /* Snippet enables all click and hover interaction with an element */
+  .clickable-on{
+    pointer-events: auto;
+  }
+
+  /* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+  .div-square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  /*Hide focus outline for main content element*/
+  main:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+  }
+
+  /* Make sure containers never lose their center alignment*/
+  .container-medium, .container-small, .container-large {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  /*Reset selects, buttons, and links styles*/
+  .w-input, .w-select, a {
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+  }
+
+  /*Apply "..." after 3 lines of text */
+  .text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  /* Apply "..." after 2 lines of text */
+  .text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  /* Apply "..." at 100% width */
+  .truncate-width { 
+    width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+  }
+  /* Removes native scrollbar */
+  .no-scrollbar {
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; // Safari and Chrome
+  }
+
+
+
+
+
+
+
+
+
+  @media only screen and (min-width: 1560px) {
+    body {font-size: 15.6px;}
+  }
+
+  .container.is--hero, .cursor {
+    pointer-events: none;
+  }
+
+  .container.is--hero * {
+    pointer-events: auto;
+  }
+
+  .cursor_dot.show {
+    opacity: 1.0;
+  }
+  .cursor_dot.show .cursor_scale {
+    transform: scale(1.0);
+  }
+  .cursor_dot.show .cursor_audio {
+    opacity: 1.0;
+  }
+
+  .cursor_dot.alt .cursor_scale {
+    transform: scale(1.2);
+    opacity: 0.0;
+  }
+  .cursor_dot.alt .cursor_audio {
+    transition-duration: 0ms;
+    opacity: 0.0;
+  }
+  .cursor_dot.alt .cursor_two {
+    opacity: 1.0;
+  }
+
+  .truncate-20ch {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .is-inline-flex {
+    display: inline-flex;
+  }
+
+
+  .ns-button::after {
+    content: "→";
+    font-family: var(--font-family--ff1);
+  }
+
+  .ns-nav-link, .ns-logo {
+    color: inherit !important;
+  }
+
+  .announcement-frame {
+    animation: anno-bar-marquee 12s linear 5s infinite;
+    animation-timing-function: ease-in-out;
+    will-change: top;
+  }
+
+  @media screen and (max-width:767px) {
+    /* Announcement Bar Animation */
+    /*@keyframes anno-bar-marquee {
+      0%   { top:  0px;   }
+      45%  { top:  0px;   }
+      50%  { top:  -48px; }
+      95%  { top:  -48px; }
+      100% { top:  0px;   }
+    }
+  }*/
+
+  @media screen and (min-width:767px) {
+    /* Announcement Bar Animation */
+    /*@keyframes anno-bar-marquee {
+      0%   { top:  0px;   }
+      45%  { top:  0px;   }
+      50%  { top:  -30px; }
+      95%  { top:  -30px; }
+      100% { top:  0px;   }
+    }
+  }*/
+  
+  
+</style></div><div class="color-mode mode-beige position-sticky"><div><div class="announcement-mask w-dyn-list"><div role="list" class="announcement-frame w-dyn-items"><div style="color:#102f32;background-color:#eadbcb" role="listitem" class="w-dyn-item"><a style="background-color:#eadbcb;color:#102f32" href="https://www.nutrisense.io/quiz?code=SAVE33" class="ns-anno-bar w-inline-block"><div class="ns-anno-bar-content"><div class="ns-anno-text">33% off your CGM Program today</div><div data-w-id="41e12242-2a56-04b0-b8e5-bc98ba692af8" class="ns-anno-text ns-anno-link">Use code SAVE33</div></div></a><link rel="prefetch" href="https://www.nutrisense.io/quiz?code=SAVE33"/></div></div></div><div><div data-animation="over-right" class="navbar6_component w-nav" data-easing2="ease-in-out" fs-scrolldisable-element="smart-nav" data-easing="ease-in-out" data-collapse="medium" data-w-id="73a7e429-ddd2-e4b7-3752-8c631e426ccf" role="banner" data-no-scroll="1" data-duration="260"><div class="navbar6_container"><a href="/" class="navbar6_logo-link w-nav-brand"><img width="142" height="22" alt="Nutrisense Logo in Green" src="https://assets.nutrisense.io/62c477aa7b7db12cfffa5de3/673dfebca65d7c2a6f3d4493_ns-logo-green.svg" loading="lazy" class="navbar6_logo" /></a><nav role="navigation" class="navbar6_menu w-nav-menu"><div class="nav-scroll-wrap"><div class="navbar6_menu-left"><div data-delay="1200" data-hover="false" data-w-id="73a7e429-ddd2-e4b7-3752-8c631e426cd7" class="navbar6_menu-dropdown w-dropdown"><div class="navbar6_dropdown-toggle w-dropdown-toggle"><div>Shop</div><div class="dropdown-chevron w-embed"><svg width=" 100%" height=" 100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"/>
+</svg></div></div><nav class="navbar6_dropdown-list w-dropdown-list"><div class="navbar6_container"><div class="navbar6_dropdown-content"><div class="navbar6_dropdown-content-left"><div class="navbar6_dropdown-column"><div class="margin-bottom margin-xsmall"><h4 class="nav_list-heading">Products</h4></div><div class="navbar6_dropdown-link-list"><a href="/products/cgm-plans?intref=navbar" class="navbar6_dropdown-link w-inline-block"><div class="navbar6_icon-wrapper"><div class="icon-embed-xsmall-3 w-embed"><svg width="currentWidth" height="currentHeight" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.73 7.12L20.59 6.87C20.4094 6.56769 20.1547 6.31643 19.85 6.14L13.14 2.27C12.8362 2.09375 12.4913 2.00062 12.14 2H11.85C11.4987 2.00062 11.1538 2.09375 10.85 2.27L4.14 6.15C3.83697 6.32526 3.58526 6.57697 3.41 6.88L3.27 7.13C3.09375 7.43384 3.00062 7.77874 3 8.13V15.88C3.00062 16.2313 3.09375 16.5762 3.27 16.88L3.41 17.13C3.58979 17.4295 3.84049 17.6802 4.14 17.86L10.86 21.73C11.1623 21.9099 11.5082 22.0033 11.86 22H12.14C12.4913 21.9994 12.8362 21.9063 13.14 21.73L19.85 17.85C20.156 17.6787 20.4087 17.426 20.58 17.12L20.73 16.87C20.9041 16.5653 20.9971 16.221 21 15.87V8.12C20.9994 7.76874 20.9063 7.42384 20.73 7.12ZM11.85 4H12.14L18 7.38L12 10.84L6 7.38L11.85 4ZM13 19.5L18.85 16.12L19 15.87V9.11L13 12.58V19.5Z" fill="currentColor"></path>
+</svg></div></div><div class="navbar6_item-right"><div class="nav_link-title">CGM Program</div><p class="nav_link-description hide-mobile-landscape">Health progress through coaching &amp; glucose data</p></div></a><a href="/products/nutritionist-coaching?intref=navbar" class="navbar6_dropdown-link w-inline-block"><div class="navbar6_icon-wrapper"><div class="icon-embed-xsmall-3 w-embed"><svg width="currentWidth" height="currentHeight" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.73 7.12L20.59 6.87C20.4094 6.56769 20.1547 6.31643 19.85 6.14L13.14 2.27C12.8362 2.09375 12.4913 2.00062 12.14 2H11.85C11.4987 2.00062 11.1538 2.09375 10.85 2.27L4.14 6.15C3.83697 6.32526 3.58526 6.57697 3.41 6.88L3.27 7.13C3.09375 7.43384 3.00062 7.77874 3 8.13V15.88C3.00062 16.2313 3.09375 16.5762 3.27 16.88L3.41 17.13C3.58979 17.4295 3.84049 17.6802 4.14 17.86L10.86 21.73C11.1623 21.9099 11.5082 22.0033 11.86 22H12.14C12.4913 21.9994 12.8362 21.9063 13.14 21.73L19.85 17.85C20.156 17.6787 20.4087 17.426 20.58 17.12L20.73 16.87C20.9041 16.5653 20.9971 16.221 21 15.87V8.12C20.9994 7.76874 20.9063 7.42384 20.73 7.12ZM11.85 4H12.14L18 7.38L12 10.84L6 7.38L11.85 4ZM13 19.5L18.85 16.12L19 15.87V9.11L13 12.58V19.5Z" fill="currentColor"></path>
+</svg></div></div><div class="navbar6_item-right"><div class="nav_link-title">Nutritionist Coaching <span class="inline-label-green">Popular</span></div><p class="nav_link-description hide-mobile-landscape">Video calls with a specialized dietitian, covered by insurance</p></div></a><a href="/products/bring-your-own-sensor?intref=navbar" class="navbar6_dropdown-link w-inline-block"><div class="navbar6_icon-wrapper"><div class="icon-embed-xsmall-3 w-embed"><svg width="currentWidth" height="currentHeight" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.73 7.12L20.59 6.87C20.4094 6.56769 20.1547 6.31643 19.85 6.14L13.14 2.27C12.8362 2.09375 12.4913 2.00062 12.14 2H11.85C11.4987 2.00062 11.1538 2.09375 10.85 2.27L4.14 6.15C3.83697 6.32526 3.58526 6.57697 3.41 6.88L3.27 7.13C3.09375 7.43384 3.00062 7.77874 3 8.13V15.88C3.00062 16.2313 3.09375 16.5762 3.27 16.88L3.41 17.13C3.58979 17.4295 3.84049 17.6802 4.14 17.86L10.86 21.73C11.1623 21.9099 11.5082 22.0033 11.86 22H12.14C12.4913 21.9994 12.8362 21.9063 13.14 21.73L19.85 17.85C20.156 17.6787 20.4087 17.426 20.58 17.12L20.73 16.87C20.9041 16.5653 20.9971 16.221 21 15.87V8.12C20.9994 7.76874 20.9063 7.42384 20.73 7.12ZM11.85 4H12.14L18 7.38L12 10.84L6 7.38L11.85 4ZM13 19.5L18.85 16.12L19 15.87V9.11L13 12.58V19.5Z" fill="currentColor"></path>
+</svg></div></div><div class="navbar6_item-right"><div class="nav_link-title">Bring Your Own Sensor<span class="inline-label-yellow">NEW</span></div><p class="nav_link-description hide-mobile-landscape">Use the Nutrisense App with your current CGM</p></div></a></div></div></div><div class="navbar6_dropdown-content-right"><div class="navbar6_dropdown-content-wrapper z-index-1"><h4 class="nav_list-heading">Featured</h4><div class="w-dyn-list"><div role="list" class="navbar6_dropdown-blog-item-wrapper w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/blog/dr-mindy-pelz-interview" class="navbar6_blog-item w-inline-block"><div class="margin-bottom margin-xsmall"><div class="navbar6_blog-image-wrapper"><img loading="lazy" src="https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66df584b9a4405d7414c1086_thumbnail-image-01%20(1).webp" alt="" sizes="100vw" srcset="https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66df584b9a4405d7414c1086_thumbnail-image-01%20(1)-p-500.webp 500w, https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66df584b9a4405d7414c1086_thumbnail-image-01%20(1)-p-800.webp 800w, https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66df584b9a4405d7414c1086_thumbnail-image-01%20(1)-p-1080.webp 1080w, https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66df584b9a4405d7414c1086_thumbnail-image-01%20(1).webp 1545w" class="navbar6_blog-image" /></div></div><div class="navbar6_blog-content"><div class="margin-bottom margin-tiny"><div class="navbar_blog-title">Dr. Mindy Pelz Talks About Nutrisense, Hormonal Health, and Her New Book</div><div class="navbar_blog-title w-condition-invisible w-dyn-bind-empty"></div></div></div></a><a href="#" class="navbar6_blog-item w-inline-block w-condition-invisible"><div class="margin-bottom margin-xsmall"><div class="navbar6_blog-image-wrapper"><img loading="lazy" src="https://assets.nutrisense.io/624380709031623bfe4aee60/6243807090316262904aee69_Placeholder%20Image%20-%20Landscape.svg" alt="" class="navbar6_blog-image w-dyn-bind-empty" /></div></div><div class="navbar6_blog-content"><div class="margin-bottom margin-tiny"><div class="navbar_blog-title w-dyn-bind-empty"></div><div class="navbar_blog-title w-condition-invisible w-dyn-bind-empty"></div></div></div></a></div></div></div></div><div class="navbar6_dropdown-background-layer"></div></div></div></div></nav></div><div class="nav_hr"></div><div data-delay="1200" data-hover="false" data-w-id="73a7e429-ddd2-e4b7-3752-8c631e426d3b" class="navbar6_menu-dropdown w-dropdown"><div class="navbar6_dropdown-toggle w-dropdown-toggle"><div>Dietitians</div><div class="dropdown-chevron w-embed"><svg width=" 100%" height=" 100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"/>
+</svg></div></div><nav class="navbar6_dropdown-list w-dropdown-list"><div class="navbar6_container"><div class="navbar6_dropdown-content"><div class="navbar6_dropdown-content-left"><div class="navbar6_dropdown-column"><div class="margin-bottom margin-xsmall"><h4 class="nav_list-heading">About</h4></div><div class="navbar6_dropdown-link-list"><a href="/nutritionist?intref=navbar_dietitians" class="navbar6_dropdown-link w-inline-block"><div class="navbar6_icon-wrapper"><div class="icon-embed-xsmall-3 w-embed"><svg width="currentWidth" height="currentHeight" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.73 7.12L20.59 6.87C20.4094 6.56769 20.1547 6.31643 19.85 6.14L13.14 2.27C12.8362 2.09375 12.4913 2.00062 12.14 2H11.85C11.4987 2.00062 11.1538 2.09375 10.85 2.27L4.14 6.15C3.83697 6.32526 3.58526 6.57697 3.41 6.88L3.27 7.13C3.09375 7.43384 3.00062 7.77874 3 8.13V15.88C3.00062 16.2313 3.09375 16.5762 3.27 16.88L3.41 17.13C3.58979 17.4295 3.84049 17.6802 4.14 17.86L10.86 21.73C11.1623 21.9099 11.5082 22.0033 11.86 22H12.14C12.4913 21.9994 12.8362 21.9063 13.14 21.73L19.85 17.85C20.156 17.6787 20.4087 17.426 20.58 17.12L20.73 16.87C20.9041 16.5653 20.9971 16.221 21 15.87V8.12C20.9994 7.76874 20.9063 7.42384 20.73 7.12ZM11.85 4H12.14L18 7.38L12 10.84L6 7.38L11.85 4ZM13 19.5L18.85 16.12L19 15.87V9.11L13 12.58V19.5Z" fill="currentColor"></path>
+</svg></div></div><div class="navbar6_item-right"><div class="nav_link-title">Dietitians</div></div></a><a href="/nutritionist?intref=navbar_specializations#specialties" class="navbar6_dropdown-link w-inline-block"><div class="navbar6_icon-wrapper"><div class="icon-embed-xsmall-3 w-embed"><svg width="currentWidth" height="currentHeight" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.73 7.12L20.59 6.87C20.4094 6.56769 20.1547 6.31643 19.85 6.14L13.14 2.27C12.8362 2.09375 12.4913 2.00062 12.14 2H11.85C11.4987 2.00062 11.1538 2.09375 10.85 2.27L4.14 6.15C3.83697 6.32526 3.58526 6.57697 3.41 6.88L3.27 7.13C3.09375 7.43384 3.00062 7.77874 3 8.13V15.88C3.00062 16.2313 3.09375 16.5762 3.27 16.88L3.41 17.13C3.58979 17.4295 3.84049 17.6802 4.14 17.86L10.86 21.73C11.1623 21.9099 11.5082 22.0033 11.86 22H12.14C12.4913 21.9994 12.8362 21.9063 13.14 21.73L19.85 17.85C20.156 17.6787 20.4087 17.426 20.58 17.12L20.73 16.87C20.9041 16.5653 20.9971 16.221 21 15.87V8.12C20.9994 7.76874 20.9063 7.42384 20.73 7.12ZM11.85 4H12.14L18 7.38L12 10.84L6 7.38L11.85 4ZM13 19.5L18.85 16.12L19 15.87V9.11L13 12.58V19.5Z" fill="currentColor"></path>
+</svg></div></div><div class="navbar6_item-right"><div class="nav_link-title">Our Specializations</div></div></a><a href="/nutritionist-certification-glucose-course?intref=navbar" class="navbar6_dropdown-link w-inline-block"><div class="navbar6_icon-wrapper"><div class="icon-embed-xsmall-3 w-embed"><svg width="currentWidth" height="currentHeight" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.73 7.12L20.59 6.87C20.4094 6.56769 20.1547 6.31643 19.85 6.14L13.14 2.27C12.8362 2.09375 12.4913 2.00062 12.14 2H11.85C11.4987 2.00062 11.1538 2.09375 10.85 2.27L4.14 6.15C3.83697 6.32526 3.58526 6.57697 3.41 6.88L3.27 7.13C3.09375 7.43384 3.00062 7.77874 3 8.13V15.88C3.00062 16.2313 3.09375 16.5762 3.27 16.88L3.41 17.13C3.58979 17.4295 3.84049 17.6802 4.14 17.86L10.86 21.73C11.1623 21.9099 11.5082 22.0033 11.86 22H12.14C12.4913 21.9994 12.8362 21.9063 13.14 21.73L19.85 17.85C20.156 17.6787 20.4087 17.426 20.58 17.12L20.73 16.87C20.9041 16.5653 20.9971 16.221 21 15.87V8.12C20.9994 7.76874 20.9063 7.42384 20.73 7.12ZM11.85 4H12.14L18 7.38L12 10.84L6 7.38L11.85 4ZM13 19.5L18.85 16.12L19 15.87V9.11L13 12.58V19.5Z" fill="currentColor"></path>
+</svg></div></div><div class="navbar6_item-right"><div class="nav_link-title">Glucose Certification for Dietitians</div><p class="nav_link-description">Hands-on training to interpret CGM data, eligible for CPEUs</p></div></a></div></div><div class="navbar6_dropdown-column"><div class="margin-bottom margin-xsmall"><h4 class="nav_list-heading">Get started</h4></div><div class="navbar6_dropdown-link-list"><a href="https://members.nutrisense.io/video-calls?intref=navbar" class="navbar6_dropdown-link w-inline-block"><div class="navbar6_icon-wrapper"><div class="icon-embed-xsmall-3 w-embed"><svg width="currentWidth" height="currentHeight" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.73 7.12L20.59 6.87C20.4094 6.56769 20.1547 6.31643 19.85 6.14L13.14 2.27C12.8362 2.09375 12.4913 2.00062 12.14 2H11.85C11.4987 2.00062 11.1538 2.09375 10.85 2.27L4.14 6.15C3.83697 6.32526 3.58526 6.57697 3.41 6.88L3.27 7.13C3.09375 7.43384 3.00062 7.77874 3 8.13V15.88C3.00062 16.2313 3.09375 16.5762 3.27 16.88L3.41 17.13C3.58979 17.4295 3.84049 17.6802 4.14 17.86L10.86 21.73C11.1623 21.9099 11.5082 22.0033 11.86 22H12.14C12.4913 21.9994 12.8362 21.9063 13.14 21.73L19.85 17.85C20.156 17.6787 20.4087 17.426 20.58 17.12L20.73 16.87C20.9041 16.5653 20.9971 16.221 21 15.87V8.12C20.9994 7.76874 20.9063 7.42384 20.73 7.12ZM11.85 4H12.14L18 7.38L12 10.84L6 7.38L11.85 4ZM13 19.5L18.85 16.12L19 15.87V9.11L13 12.58V19.5Z" fill="currentColor"></path>
+</svg></div></div><div class="navbar6_item-right"><div class="nav_link-title">Book a video call</div><p class="nav_link-description">Most pay $0 out-of-pocket with insurance coverage</p></div></a><a href="/providers?intref=navbar" class="navbar6_dropdown-link w-inline-block"><div class="navbar6_icon-wrapper"><div class="icon-embed-xsmall-3 w-embed"><svg width="currentWidth" height="currentHeight" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.73 7.12L20.59 6.87C20.4094 6.56769 20.1547 6.31643 19.85 6.14L13.14 2.27C12.8362 2.09375 12.4913 2.00062 12.14 2H11.85C11.4987 2.00062 11.1538 2.09375 10.85 2.27L4.14 6.15C3.83697 6.32526 3.58526 6.57697 3.41 6.88L3.27 7.13C3.09375 7.43384 3.00062 7.77874 3 8.13V15.88C3.00062 16.2313 3.09375 16.5762 3.27 16.88L3.41 17.13C3.58979 17.4295 3.84049 17.6802 4.14 17.86L10.86 21.73C11.1623 21.9099 11.5082 22.0033 11.86 22H12.14C12.4913 21.9994 12.8362 21.9063 13.14 21.73L19.85 17.85C20.156 17.6787 20.4087 17.426 20.58 17.12L20.73 16.87C20.9041 16.5653 20.9971 16.221 21 15.87V8.12C20.9994 7.76874 20.9063 7.42384 20.73 7.12ZM11.85 4H12.14L18 7.38L12 10.84L6 7.38L11.85 4ZM13 19.5L18.85 16.12L19 15.87V9.11L13 12.58V19.5Z" fill="currentColor"></path>
+</svg></div></div><div class="navbar6_item-right"><div class="nav_link-title">Find your dietitian</div><p class="nav_link-description">Search dietitians by specialty, credentials, and more.</p></div></a><a href="https://members.nutrisense.io/video-calls/sign-in?intref=navbar_dietitians" class="navbar6_dropdown-link w-inline-block"><div class="navbar6_icon-wrapper"><div class="icon-embed-xsmall-3 w-embed"><svg width="currentWidth" height="currentHeight" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.73 7.12L20.59 6.87C20.4094 6.56769 20.1547 6.31643 19.85 6.14L13.14 2.27C12.8362 2.09375 12.4913 2.00062 12.14 2H11.85C11.4987 2.00062 11.1538 2.09375 10.85 2.27L4.14 6.15C3.83697 6.32526 3.58526 6.57697 3.41 6.88L3.27 7.13C3.09375 7.43384 3.00062 7.77874 3 8.13V15.88C3.00062 16.2313 3.09375 16.5762 3.27 16.88L3.41 17.13C3.58979 17.4295 3.84049 17.6802 4.14 17.86L10.86 21.73C11.1623 21.9099 11.5082 22.0033 11.86 22H12.14C12.4913 21.9994 12.8362 21.9063 13.14 21.73L19.85 17.85C20.156 17.6787 20.4087 17.426 20.58 17.12L20.73 16.87C20.9041 16.5653 20.9971 16.221 21 15.87V8.12C20.9994 7.76874 20.9063 7.42384 20.73 7.12ZM11.85 4H12.14L18 7.38L12 10.84L6 7.38L11.85 4ZM13 19.5L18.85 16.12L19 15.87V9.11L13 12.58V19.5Z" fill="currentColor"></path>
+</svg></div></div><div class="navbar6_item-right"><div class="nav_link-title">Login</div><p class="nav_link-description">Manage and schedule your video calls online</p></div></a></div></div></div><div class="navbar6_dropdown-content-right hide-tablet"><div class="navbar6_dropdown-background-layer"></div><div class="navbar6_dropdown-content-wrapper z-index-1"><h4 class="nav_list-heading">Featured</h4><div class="w-dyn-list"><div role="list" class="navbar6_dropdown-blog-item-wrapper w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/blog/fasted-cardio" class="navbar6_blog-item w-inline-block w-condition-invisible"><div class="margin-bottom margin-xsmall"><div class="navbar6_blog-image-wrapper"><img loading="lazy" src="https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66100eecb586edfdfd59e710_fasted-cardio-what-is-it-and-should-you-be-doing-it-2-65e5ad938ec7c.webp" alt="" sizes="100vw" srcset="https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66100eecb586edfdfd59e710_fasted-cardio-what-is-it-and-should-you-be-doing-it-2-65e5ad938ec7c-p-500.webp 500w, https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66100eecb586edfdfd59e710_fasted-cardio-what-is-it-and-should-you-be-doing-it-2-65e5ad938ec7c-p-800.webp 800w, https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66100eecb586edfdfd59e710_fasted-cardio-what-is-it-and-should-you-be-doing-it-2-65e5ad938ec7c-p-1080.webp 1080w, https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66100eecb586edfdfd59e710_fasted-cardio-what-is-it-and-should-you-be-doing-it-2-65e5ad938ec7c.webp 1365w" class="navbar6_blog-image" /></div></div><div class="navbar6_blog-content"><div class="margin-bottom margin-tiny"><div class="navbar_blog-title">Fasted Cardio: What Is It And Should You Be Doing It?</div><div class="navbar_blog-title w-condition-invisible w-dyn-bind-empty"></div></div></div></a><a href="/member-stories/bridget-fletcher" class="navbar6_blog-item w-inline-block"><div class="margin-bottom margin-xsmall"><div class="navbar6_blog-image-wrapper"><img loading="lazy" src="https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66b39b43a2f22b88e71f116b_thumbnail-image-01.webp" alt="" sizes="100vw" srcset="https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66b39b43a2f22b88e71f116b_thumbnail-image-01-p-500.webp 500w, https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66b39b43a2f22b88e71f116b_thumbnail-image-01-p-800.webp 800w, https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66b39b43a2f22b88e71f116b_thumbnail-image-01-p-1080.webp 1080w, https://assets.nutrisense.io/62e18da95149ec2ee0d87b5b/66b39b43a2f22b88e71f116b_thumbnail-image-01.webp 1545w" class="navbar6_blog-image" /></div></div><div class="navbar6_blog-content"><div class="margin-bottom margin-tiny"><div class="navbar_blog-title w-condition-invisible">Bridget Fletcher on Navigating Perimenopause &amp; Prediabetes with a Nutritionist</div><div class="navbar_blog-title">Bridget Fletcher&#x27;s Nutrisense Journey: &quot;I&#x27;m eating more than ever!&quot;</div></div></div></a></div></div></div></div></div></div></div></nav></div><div class="nav_hr"></div><a href="/blog?intref=navbar" class="navbar6_link w-nav-link">Journal</a><div class="nav_hr"></div><a href="https://members.nutrisense.io/video-calls/sign-in?intref=navbar_main" data-convert-login="variant-1" class="navbar6_link w-nav-link">Login</a><div class="nav_hr"></div></div><div class="navbar6_menu-right"><a href="/quiz" class="button-nav w-button">Take Our Quiz</a></div></div></nav><a href="/quiz" class="button-nav on-mobile w-button">Take Our Quiz</a><div class="navbar6_menu-button w-nav-button"><div class="menu-icon5"><div class="menu-icon1_line-top"></div><div class="menu-icon1_line-middle"><div class="menu-icon1_line-middle-inner"></div></div><div class="menu-icon1_line-bottom"></div></div></div></div></div></div></div></div><div id="promo-banner" class="promo-banner---bottom"><div id="promo-code-banner" class="promo-text is-text-size_0-875">Promo code <span id="promo-banner-promo-code" class="promo-text-bold">SPRING2022</span> will be automatically applied at checkout!</div></div><main class="main-wrapper"><div class="section-gc-hero"><div class="page-padding is--5"><div class="container _12-col"><div class="max-width-xlarge align-center"><div class="padding-top padding-xlarge text-align-center"><div class="w-embed"><p>Last Updated: Oct 25, 2024</p></div></div><div class="padding-top padding-xhuge"><h1 class="text-align-center text-color-green">Nutrisense Privacy Policy</h1><div class="margin-top margin-xxlarge"><div class="margin-bottom margin-xhuge"><div class="text-rich-text w-richtext"><p>This Privacy Policy applies to Nutrisense, Inc. and the independent medical practices, including SenseMD, P.A. and other independent medical practices managed with respect to non-clinical aspects by Nutrisense, Inc. (each a “Practice”) (together, “we,” “us” or “our”) and to our products and services, including our iOS app and www.nutrisense.io, as well as any other website that we may operate (collectively and together with any subdomains and the content and services therein, the “Site”), iOS mobile app (the “App”), features, or services (we own or operate and/or that links to this Privacy Policy (the foregoing is referred to in this Privacy Policy as the “Nutrisense Platform”). </p><p>Nutrisense is a technology company that provides the Nutrisense Platform to enable individuals to connect with licensed dietitians and other licensed healthcare providers and with the Practices and Practice-engaged providers, including physicians, employed by or otherwise engaged to provide services for or on behalf of a Practice, collectively referred to herein as “Providers.”  This Policy applies to Our collection, use and disclosure of Personal Information.  If a Practice accepts third-party payor or program reimbursement for services, Nutrisense is a Business Associate of the Practice as that term is defined in the Health Insurance Portability and Accountability Act of 1996, as amended (“HIPAA”).  Nutrisense, Inc. and each Practice understands that your privacy is important to you, and we work hard to earn and keep your trust.  This Privacy Policy (“Policy”) applies to your use of the Nutrisense Platform, and we encourage you to read the entire Privacy Policy to understand what Personal Information we collect and how we use your Personal Information.  The Nutrisense Platform and services and functionalities provided on the Nutrisense Platform (collectively, the “Service(s)”) is governed by this Privacy Policy and by our <a href="https://www.nutrisense.io/legal/terms-of-service">Terms of Service</a> (“Terms”).</p><h3>Consent and Modification</h3><p>We encourage you to read this Policy carefully and to review it periodically, as your use of our Services constitutes consent to this Policy. We will periodically update this Policy, and any changes will be reflected here. If the changes are significant, we may provide a more prominent notice, and at our discretion may contact you directly with information on the same. If you do not agree with the practices described in this Policy, you should not use our Services or otherwise interact with Nutrisense. </p><p>If you have any questions about this Policy or how we use your Personal Information or other data, please feel free to contact us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ddadafb4abbcbea49db3a8a9afb4aeb8b3aeb8f3b4b2">[email&#160;protected]</a>. </p><h3>What Information We Collect and How We Collect It</h3><p>We collect the following categories of Personal Information in connection with the Services:</p><div class="w-embed"><style>
+table, th, td {
+  border: black 1px solid;
+  text-align: left;
+  vertical-align: top;
+}
+
+th, td {
+  padding: 12px;
+}
+.tr-header-row {
+  background-color: rgba(0,0,0,0.12);
+}
+</style>
+<table>
+  <tr class="tr-header-row">
+    <th>Category</th>
+  	<th>Examples</th>
+    <th>Collected</th>
+  </tr>
+  <tr>
+    <td>Identifiers</td>
+  	<td>First and last name, postal address, email address, telephone number, date of birth, government-issued identification records, IP address.</td>
+    <td>YES</td>
+  </tr>
+  <tr>
+    <td>Health Information</td>
+  	<td>Such health information as necessary to properly provide the Services, including but not limited to, blood glucose data, diabetes status, medications, and pre-existing conditions.</td>
+    <td>YES</td>
+  </tr>
+  <tr>
+    <td>Commercial information</td>
+  	<td>Financial account details; health insurance information (such as provider, member ID, and group number); records of personal property, products, or services purchased, obtained, or considered, and/or other purchasing or consuming histories or tendencies.</td>
+    <td>YES</td>
+  </tr>
+  <tr>
+    <td>Geolocation data</td>
+  	<td>Physical location or movements.</td>
+    <td>YES</td>
+  </tr>
+  <tr>
+    <td>Inferences drawn from other Personal Information</td>
+  	<td>Profile reflecting a person's preferences.</td>
+    <td>YES</td>
+  </tr>
+  <tr>
+    <td>Legally Protected Classifications</td>
+  	<td>Age, nationality, racial or ethnic origin, disabilities, and/or sex (including gender, pregnancy, and other related conditions).</td>
+    <td>YES</td>
+  </tr>
+  <tr>
+    <td>Biometric Information</td>
+  	<td>Physiological, behavioral, and biological characteristics, or activity patterns used to extract a similar identifier.</td>
+    <td>YES</td>
+  </tr>
+  <tr>
+    <td>Internet or similar network activity</td>
+  	<td>Browsing history, search history, information on your interaction with a website, device data and registration, social media account information, and similar.</td>
+    <td>YES</td>
+  </tr>
+</table></div><p>‍</p><p>We obtain the categories of Personal Information listed above from the following categories of sources:</p><p><em>  Directly from you</em>. For example, when you: </p><ul role="list"><li>register for our Services, or complete one of our questionnaires;</li><li>provide information via our App; </li><li>upload test results to Nutrisense; or </li><li>communicate with Nutrisense, such as when you correspond with a nutrition coach or customer support</li></ul><p>  <em>Indirectly from you</em>. For example, through inferences, we make from information we collect from you while providing our Services to you.</p><p>  <em>Directly and indirectly from activity on our App</em>.  For example, from App usage details that are collected automatically.</p><p>  <em>Integrations permitted by you</em>.  For example, if you enable integration with Apple Health or Google Fit, we will have access to such data as shared by those apps.</p><p>The information that you provide in each case will vary. In some cases, you may be able to provide Personal Information directly via email or free text boxes in our App. When providing your Personal Information, please provide only relevant information and do not provide unnecessary sensitive information, such as Social Security numbers, credit card information or other sensitive data, unless required for our Services. If you provide any additional Personal Information beyond what we require, such as in your communications with us, doing so is entirely your choice and at your own risk. We may retain the Personal Information that you choose to provide in those instances.</p><p>We also collect certain data about you automatically when you visit our Site or use our Services. This data may include your IP address, the time and date of your visit, your location, the pages and other content that you access, and the number of times you return to the Site. Collection may be performed either by our own software and tools or through our integrations with technology provided by third parties. We collect this information by using technologies such as: </p><p><em>Log Files:</em> A log file is a text file that resides on our servers, and which records pertinent information about your interactions with our Services at the time of access. Log file data is used primarily for diagnostic and auditing purposes. </p><p><em>Cookies:</em> A cookie is a small data file that resides on your device, and which allows us to recognize you as a user when you return using the same device or web browser. Cookie data is used to customize your experience when you use our Site. You can configure your web browser to warn you each time a cookie is being sent or to refuse cookies completely. However, if you opt to refuse cookies created by our Site, you accept that your ability to use our Services may be impaired or limited, up to and including loss of access to certain Services, until such time as you accept these cookies.</p><p><em>Embedded Scripts: </em>An embedded script is programming code (particularly JavaScript) that collects information about your interactions with our Site. The code is temporarily downloaded onto your device, from our server or a third-party service provider, and is deactivated or deleted when you disconnect from our Site. You can configure your web browser to disable the use of embedded scripts. However, if you opt to disable embedded scripts which we incorporate into our Site, you accept that your ability to use our Services may be impaired or limited, up to and including loss of access to certain Services, until such time as you enable these embedded scripts.</p><p><em>Pixels</em>: Our website uses tracking pixels to collect information about your interactions with our site and emails. This technology helps us gather data such as your IP address, browser type, and your visit details to analyze site usage, personalize your experience, and enhance our marketing efforts. Information collected through tracking pixels is used to optimize our advertising campaigns and improve the content provided to you.</p><p>We may also use other technologies that collect similar information for security and fraud detection purposes.  </p><p>We disclose individually identifiable information about you to third parties only pursuant to your written authorization or as otherwise permitted or required by applicable laws.</p><h3>Use of Information</h3><p>We use the Personal Information and other data that you provide primarily as necessary to provide our Services, including, but not limited to: </p><ul role="list"><li>providing you with a personalized experience when you use our App;</li><li>facilitating consultation with a telemedicine nutritionist or clinician;</li><li>contacting you with information and notices related to our Services;</li><li>to provide you with effective customer service;</li><li>contacting you with special offers and other information we believe will be of interest to you;</li><li>better understanding your needs and interests;</li><li>security, credit or fraud prevention purposes;</li><li>improving the content, functionality, and usability of the App;</li><li>improving our Services; </li><li>contributing to research in the field of metabolic health;</li><li>improving our marketing and promotional efforts; and</li><li>any other purpose identified in an applicable privacy notice, click-through agreement, or other agreement or communication between you and us.</li></ul><p>We will use and retain your Personal Information for as long as necessary to provide our Services and otherwise for our legitimate business purposes, subject, as required by applicable law, to your directions to us regarding your privacy preferences. </p><p>We may aggregate or otherwise anonymize the data we collect for purposes of analytics, research, marketing, and other legitimate business interests.  Personal Information or information that can identify you as an individual or reasonably be used to identify you will not be disclosed in any such aggregated or anonymized data set. </p><h3>Sharing Information</h3><p>We share your Personal Information as necessary to provide the Services, including with our nutrition coaches and, if and as applicable, third-party physicians network to provide telemedicine services and issue prescriptions, third-party pharmacies to fill such prescriptions, and third-party providers to facilitate processing of insurance for video calls with nutritionists and physicians. </p><p>We also share your Personal Information with third-party vendors who provide services that are necessary for the intended use of our Services.  A current list (subject to change) of such third-party vendors is as follows:</p><div class="w-embed"><table border="1">
+  <thead>
+    <tr>
+      <th>Third Party</th>
+      <th>Use of Data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AWS</td>
+      <td>Backend services</td>
+    </tr>
+    <tr>
+      <td>Berry Street</td>
+      <td>Nutritionist Calls</td>
+    </tr>
+    <tr>
+      <td>BetterStack</td>
+      <td>Application logging</td>
+    </tr>
+    <tr>
+      <td>BugSnag</td>
+      <td>Mobile, web, backend errors logging</td>
+    </tr>
+    <tr>
+      <td>Convert</td>
+      <td>Hashed customer data tracking</td>
+    </tr>
+    <tr>
+      <td>Datadog</td>
+      <td>Application logging</td>
+    </tr>
+    <tr>
+      <td>Dexcom</td>
+      <td>Glucose data</td>
+    </tr>
+    <tr>
+      <td>Dovetail</td>
+      <td>User research</td>
+    </tr>
+    <tr>
+      <td>Easyship</td>
+      <td>Shipment processing</td>
+    </tr>
+    <tr>
+      <td>Formly</td>
+      <td>User surveys/quizzes</td>
+    </tr>
+    <tr>
+      <td>Getunleash</td>
+      <td>Feature flag management</td>
+    </tr>
+    <tr>
+      <td>GiftUp</td>
+      <td>Credit card and payment processing for gift cards</td>
+    </tr>
+    <tr>
+      <td>Gmail</td>
+      <td>Internal and Member communications</td>
+    </tr>
+    <tr>
+      <td>Google</td>
+      <td>Mapping, analytics and underlying application infrastructure</td>
+    </tr>
+    <tr>
+      <td>GreatQuestion</td>
+      <td>User research and surveys</td>
+    </tr>
+    <tr>
+      <td>Healthie</td>
+      <td>EMR for nutritionist and telemedicine calls</td>
+    </tr>
+    <tr>
+      <td>Heroku</td>
+      <td>Backend hosting</td>
+    </tr>
+    <tr>
+      <td>Intercom</td>
+      <td>Live in-app chat</td>
+    </tr>
+    <tr>
+      <td>Klaviyo</td>
+      <td>Email campaigns / newsletters</td>
+    </tr>
+    <tr>
+      <td>Lookback.io</td>
+      <td>User research</td>
+    </tr>
+    <tr>
+      <td>Microsoft</td>
+      <td>Azure GPT4</td>
+    </tr>
+    <tr>
+      <td>Mixpanel</td>
+      <td>Usage analytics</td>
+    </tr>
+    <tr>
+      <td>NativeForms</td>
+      <td>User surveys</td>
+    </tr>
+    <tr>
+      <td>Northbeam</td>
+      <td>Registration and Purchase Attribution Data analysis</td>
+    </tr>
+    <tr>
+      <td>Profitwell</td>
+      <td>Retention and payment recovery</td>
+    </tr>
+    <tr>
+      <td>Refersion</td>
+      <td>Referral crediting for partners</td>
+    </tr>
+    <tr>
+      <td>SayMine</td>
+      <td>Data Privacy Request Management</td>
+    </tr>
+    <tr>
+      <td>Segment</td>
+      <td>Data Pipeline for in-app analytics and Reverse ETL</td>
+    </tr>
+    <tr>
+      <td>Semrush</td>
+      <td>Site traffic/keyword analysis</td>
+    </tr>
+    <tr>
+      <td>SproutSocial</td>
+      <td>Organic social media engagement analysis</td>
+    </tr>
+    <tr>
+      <td>Stripe</td>
+      <td>Credit card processing and subscription management</td>
+    </tr>
+    <tr>
+      <td>Thrive</td>
+      <td>Physicians network</td>
+    </tr>
+    <tr>
+      <td>Truepill</td>
+      <td>Order fulfillment</td>
+    </tr>
+    <tr>
+      <td>TryTerra</td>
+      <td>Health apps integrations</td>
+    </tr>
+    <tr>
+      <td>Typeform</td>
+      <td>User surveys</td>
+    </tr>
+    <tr>
+      <td>Webflow</td>
+      <td>Site hosting/ User data capture</td>
+    </tr>
+    <tr>
+      <td>Zendesk</td>
+      <td>Email-based customer support; ticketing for customers and leads</td>
+    </tr>
+  </tbody>
+</table></div><p>When you grant us permission to do so, we will share your Personal Information with third parties to support your wellness efforts.  As an example, if you work with a private nutritionist service with whom we have a relationship, we can make a feed of your CGM data and other Personal Information available to such third-party.</p><p>In connection with any clinical research or clinical research trial in which Nutrisense is participating or otherwise facilitating, your Personal Information may be shared with any sponsor or principal investigator of such clinical research or clinical research trial.  </p><p>We will not otherwise disclose your Personal Information to any third party except as necessary for a legitimate use as described in this Policy, in connection with a bona fide legal dispute (where the information is relevant and in response to a valid, compulsory legal process), or as otherwise required by law.</p><p>We do not sell, trade, share, or rent your Personal Information to unaffiliated third parties. </p><p>In the event of a merger, acquisition, bankruptcy, or other sale or disposition of all or a portion of Nutrisense assets, we may disclose Personal Information to the acquiring party(s). In that case, the successor’s use of your Personal Information will continue to be subject to this Policy unless a court orders otherwise or the successor provides notice that your Personal Information will be subject to their own privacy policy. If you submit any Personal Information after such a transfer, that information will be subject to the successor’s privacy policy.</p><h3>Your Choices and Accuracy of Your Personal Information</h3><p>You always have the choice whether or not to provide Personal Information to Nutrisense. As indicated above, some of our Services require that you register an Account but doing so is at your discretion. If you choose not to provide required Personal Information, you can still use any portion of our Services that do not require Personal Information. </p><p>If you do provide us with Personal Information, we want to make sure it remains accurate and up to date. You can use the features available through your Account to modify or remove certain information related to your Account. If you need to correct or update any other part(s) of your Personal Information, you can also submit a change request directly by emailing us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f98a8c8989968b8db9978c8d8b908a9c978a9cd79096">[email&#160;protected]</a>. Please be sure to include sufficient details to allow us to make the necessary changes.   </p><p>If you are a resident of California you may have other choices and rights with respect to your Personal Information. Please see our California Privacy section below for more details.</p><h3>Third-Party Websites </h3><p>Our Services may contain links to, or otherwise allow you to interact with, certain third-party websites, mobile applications, and services that are not owned or controlled by Nutrisense (each a &quot;Third Party Service&quot;). We are not responsible for the privacy practices or the content of these Third Party Services, and we encourage you to read the terms and conditions and privacy policy of any such Third Party Service that you choose to use. </p><h3>Information Security</h3><p>Nutrisense uses commercially reasonable security and backup measures to protect the information submitted to us. No method of transmission over the Internet or method of electronic storage and security is 100% secure, though. While we always strive to protect your Personal Information, we cannot guarantee its absolute security. We encourage all our users to retain copies of all uploaded information on their own systems, to adhere to all corporate security policies or guidelines pertinent to your situation, and to practice personal habits of digital security. </p><h3>Children’s Privacy</h3><p>The Site and Services are not directed to nor intended for children under the age of 18 and we do not knowingly collect any Personal Information from children under the age of 18 without parental consent. If we learn that a child under the age of 18 has provided us with Personal Information, or that such Personal Information has otherwise been inadvertently collected, we will delete it in accordance with applicable law.   </p><h3>California Privacy</h3><p>California residents have additional rights regarding the privacy and disclosure of Personal Information, including, but not limited to a right to request that Nutrisense not sell their Personal Information. Nutrisense does not sell your Personal Information, and we use and disclose Personal Information solely in accordance with this Policy. </p><p>California residents are also specifically entitled to exercise the following rights with respect to Personal Information:</p><ul role="list"><li>Right to Know. You have the right to request what Personal Information we collect, use, disclose, and/or sell, as applicable.‍</li><li>Right to Delete. You have the right to request that we delete the Personal Information that we have collected about you.  (To be clear, we can delete the data that we store – not data stored by third parties.  You’ll need to reach out to those third parties (listed above) for assistance removing your records from their services.)</li><li>‍Right to Opt-out of the Sale of Personal Information. You have the right to request to be opted-out from the sale of your Personal Information; however, as set forth above, we do not sell Personal Information.‍</li><li>Right to Non-Discrimination. You have the right not to receive discriminatory treatment by us for the exercise of the privacy rights described above.</li></ul><p>You may also authorize someone to exercise the above rights on your behalf. If you have provided us information on your minor child, you may exercise the above rights on behalf of your minor child.</p><p>The above rights are subject to our being able to reasonably verify your identity (or the identity of someone exercising these rights on your behalf) and authority to make these requests by providing verifiable information such as the following:</p><ul role="list"><li>Provide sufficient information that allows us to reasonably verify you are the person about whom we collected Personal Information, or an authorized representative of such person.</li><li>Describe your request with sufficient detail that allows us to sufficiently evaluate and respond to it. We cannot respond to your request if we cannot verify your identity or authority to make the request and confirm the Personal Information requested relates to you.</li></ul><p>To exercise your rights, submit your request to us via email at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2d5d5f445b4c4e546d4358595f445e48435e48034442">[email&#160;protected]</a>.  </p><p>We will respond to authorized and verified requests as soon as practicable and as required by law. In addition, the above rights are subject to various exclusions and exceptions under the law, and under certain circumstances, we may be unable to implement your request. We will advise you of any reason for denying or restricting a request.</p><h3><em>California Do Not Track Notice</em></h3><p>California law requires that we disclose how we respond to “do not track” signals.  At this time, we do not respond to “do not track” signals. </p><h3>Other States’ Privacy</h3><p>Other states are now joining California in adopting their own privacy laws.  Most of these laws do not apply to Nutrisense.  But, if you reside in a state with such a law which is applicable to Nutrisense and would like to invoke any right you have under such law, please submit your request to us via email at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d3a3a1baa5b2b0aa93bda6a7a1baa0b6bda0b6fdbabc">[email&#160;protected]</a>. </p><h3>Consent to Transfer</h3><p>Nutrisense is operated in the United States. If you are outside of the United States, please be aware that any information we collect will be transferred to and processed in the United States. By using our Services, or otherwise providing us with Personal Information, you understand and consent to this transfer, processing, and storage of your information in the United States, a jurisdiction in which the privacy laws may not be as comprehensive as, or conflict with, those in the country where you reside and/or are a citizen. </p><div class="w-embed"><a id="consumer-health-data"></a></div><h3>Consumer Health Data Privacy Policy</h3><p>This Consumer Health Data Privacy Policy applies to the collection, use, and sharing of Consumer Health Data as defined by applicable state law, such as the <strong>Washington My Health My Data Act</strong>. It does not apply to protected health information governed by HIPAA. The policy supplements our general Privacy Policy, and in case of a conflict, the Consumer Health Data Privacy Policy will control it as long as it complies with applicable state law.</p><p>We collect Consumer Health Data from various sources, including information you provide directly, data collected automatically, data we generate from other sources, and information obtained from third parties. This data may include personal details, demographic information, health data, and usage activity. We use this data for purposes such as delivering services, improving products, and communicating marketing offers. We may share your Consumer Health Data with affiliates, service providers, or as required by law. You have rights regarding your Consumer Health Data, including access, correction, deletion, and withdrawal of consent, which can be exercised through our privacy center.</p><h3>Questions or Comments</h3><p>If you have any questions or comments about this Policy, the practices, or use of the Site, please feel free to contact us by email at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="55262025253a2721153b2021273c26303b26307b3c3a">[email&#160;protected]</a>. </p><h3><strong>‍</strong></h3><p>Our mailing address is below:</p><p>2810 N Church St #55508 <br/>Wilmington, DE, 19802-4447</p><p><a href="https://www.nutrisense.io/legal/privacy-policy">www.nutrisense.io/legal/privacy-policy</a></p><p>Privacy Officer</p><p><a href="/cdn-cgi/l/email-protection#94e4e6fde2f5f7edd4fae1e0e6fde7f1fae7f1bafdfb"><span class="__cf_email__" data-cfemail="4d3d3f243b2c2e340d2338393f243e28233e28632422">[email&#160;protected]</span></a></p></div></div></div></div></div></div></div></div><div class="section-gc-hero hide-all-devices"><div class="page-padding"><div class="margin-top margin-xhuge"><div class="container _12-col"><div class="max-width-xlarge align-center"><div class="padding-top padding-xlarge"><p class="text-align-center">Last Updated: March 21, 2022</p></div><div class="padding-top padding-xhuge"><h1 class="text-align-center text-color-green">Privacy Policy. United States</h1><div class="margin-top margin-xxlarge"><div class="margin-bottom margin-xhuge"><div class="text-rich-text w-richtext"><p>Nutrisense, Inc. (referred to herein as “Nutrisense”, “we”, “our”, or “us”) and its affiliates recognizes the importance of protecting the personal information we may collect from visitors, users and any other individual or entity (“Users”, “you”, or “your”). This Privacy Policy applies to the data collection and privacy practices of Nutrisense, and when we collect personal information through your use of the websites, nutrisense.io, nutrisense.com nutrisense.co, nutrisense.us, and other Nutrisense-related sites, software, hardware and applications accessible on or by any top-level Nutrisense domain owned by us, including our mobile application (each, the “Application” or “App” and collectively the “Applications” or “Apps”), through our social media pages that we control, and through email messages that we may send to you (collectively, the “Services”). Please note that this Privacy Policy excludes services that state that they are offered under a different privacy policy.</p><p>Our Privacy Policy explains: (1) what information we collect; (2) why we collect it; (3) how we use that information; (4) how we may share it; (5) the choices we offer, including how to access and update information; (6) and the measures we take to keep your information safe. Specifically, our Privacy Policy covers the following topics:</p><p>Please familiarize yourself with our privacy practices. By using the Apps or Services, you signify your acceptance of this Privacy Policy. If you do not agree to this Privacy Policy, please do not use the Apps or Services.</p><p>Irrespective of which country you live in, you authorize us to transfer, store, and use your information in the United States, and any other country where we operate. In some of these countries, the privacy and data protection laws and rules regarding when government authorities may access data may vary from those in the country where you live. Learn more about our data transfer operations in the “International Transfer” section below. If you do not agree to the transfer, storage and use of your information in the United States, and any other country where we operate, please do not use the Applications or Services.</p><p>If you have any questions or comments about this Privacy Policy, please submit a request to <a href="/cdn-cgi/l/email-protection#5222203b2433312b123c2726203b21373c21377c3b3d"><span class="__cf_email__" data-cfemail="bececcd7c8dfddc7fed0cbcaccd7cddbd0cddb90d7d1">[email&#160;protected]</span></a>.</p><p>‍</p><h2>When this Privacy Policy Applies</h2><p>Our Privacy Policy applies to all of the Services offered by Nutrisense or use our Applications, but excludes services that have separate privacy policies that do not incorporate this Privacy Policy.</p><p>Our Privacy Policy does not apply to services offered by other companies or individuals, including products or sites that may be displayed to you, or other sites linked from our Applications or Services. Our Privacy Policy does not cover the information practices of other companies and organizations who advertise our Services, and who may use cookies, pixel tags and other technologies to serve and offer relevant ads.</p><p>‍</p><h2>Terms of Service</h2><p>By accessing or using the Applications in any manner, you also agree to be bound by Nutrisense’ Terms of Service (the “Agreement”). Please read the Agreement carefully. If you do not accept all of the terms and conditions contained in or incorporated by reference into the Agreement, please do not use the Application.</p><p>‍</p><h2>Information We Collect</h2><p>‍</p><p>We collect information, including Personal Information, to provide better services to all our Users. We use the term “Personal Information” to refer to any information that identifies or can be used to identify you. Common examples of Personal Information include: full name, email address, digital identity, such as a login name or handle, information about your device, and certain metadata.</p><p>“Sensitive Personal Information” refers to a smaller subset of Personal Information which is considered more sensitive to the individual, such as race, biometric information, physical health information, or gender.</p><p>‍</p><p>When you use our Services, we collect Personal Information in the following ways:<br/></p><ul role="list"><li>Information You Give to Us</li><li>Website</li></ul><p>As you evaluate whether Nutrisense is the right technology for you, you may choose to provide us with Personal Information about yourself, including your name and email address by completing forms on our website, or when creating and signing into your account on our Applications. On our Website, we will also collect financial data such as payment card details and bank account numbers in order to process transactions for certain services.</p><p>In some instances, you may elect to provide us with location and address information. You may also provide us with Personal Information about yourself when you report a problem or have a question about our services.</p><p>The Applications offer interactive and social features that permit you to submit content and communicate with us. You may provide Personal Information to us when you post information in these interactive and social features. Please note that your postings in these areas of the Applications may be publicly accessible or accessible to other Users.</p><ul role="list"><li>Mobile Application</li></ul><p>Certain information is required when creating an account to use our Services on the mobile application, such as your name, email address, and password.</p><p>In addition, in order to improve your experience with the Services, you may choose to provide additional information such as your gender, birthday, height, weight, country location, race, fitness level, sporting activities, eating habits, historical biometric data, and other fitness information. You can choose not to provide certain information, but then you may not be able to register for the Nutrisense or take advantage of some features of the Services.</p><p>When your device syncs with Nutrisense’ Application, certain data recorded on your device is transferred from your device to our servers.</p><p>Some of this information may be shared with the Apple Health, Google and Andriod Health applications if you were to enable sharing with the Apple Health information. Please note that Apple’s privacy policy governs the processing of any information stored on the Apple Health application</p><ul role="list"><li>Information We Obtain from Your Use of Our Services</li></ul><p>We collect certain information automatically, such as your operating system version, browser type, and internet service provider. We also collect information about your interaction with the Services, such as creating or logging into your account, or opening or interacting with the Services on Your mobile device. When you use our Application, we automatically collect and store this information in service logs. This includes: details of how you used our Application; Internet protocol address; cookies that uniquely identify your browser, the referring web page and pages visited. We may also collect and process information about your actual location. The information we collect automatically is statistical data and may or may not include Personal Information, but we may maintain it or associate it with Personal Information we collect in other ways or receive from third parties.</p><ul role="list"><li>Social Networking</li></ul><p>When using our Services or when using certain third-party social networking services (for example, Facebook, Twitter, LinkedIn, Youtube, Instagram, TikTok and Pinterest) (each a “Social Network”), you may have the option to connect your Nutrisense information or activity with that Social Network and its users, and to access certain of your Social Network information, as disclosed to you at the time you consent to the connection. Information we may share with a Social Network may include, but is not limited to, technical information about your Nutrisense activity. Information we may access about you, with your consent, from a Social Network, may include, but is not limited to, your basic Social Network information, your location data, your lists of contacts, friends and followers, and certain information about your activities on the Social Network. If you permit a connection between a Social Network and Nutrisense, we and that Social Network may be able to identify you and to associate information received pursuant to that connection with information we already have about you. We recommend that you familiarize yourself with the privacy policy and privacy control options of any Social Network with which you choose to share information or to connect a Nutrisense Service.</p><ul role="list"><li>Cookies and Similar Technologies</li></ul><p>We and our partners use various technologies to collect and store information when you visit one of our services, and this may include using cookies or similar technologies to identify your browser or device. We also use these technologies to collect and store information when you interact with services from our partners, such as advertising services. Our third-party advertising and analytics partners include Google and similar partners.</p><p>The technologies we use for this automatic data collection may include:</p><p><strong>Cookies.</strong></p><p>A cookie is a small file placed on the hard drive of your computer. You may refuse to accept browser cookies by activating the appropriate setting on your browser. However, if you select this setting you may be unable to access certain parts of our services. Unless you have adjusted your browser setting so that it will refuse cookies, our system will issue cookies when you direct your browser to our services. For more information about our use of cookies, including details on how to opt-out of certain cookies, please see our Cookie Policy.</p><p><strong>Web Beacons.</strong></p><p>Pages of our services or our e-mails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags and single-pixel gifs) that permit us, for example, to count Users who have visited those pages or opened an e-mail and for other related website statistics (for example, recording the popularity of certain website content and verifying system and server integrity).</p><p><strong>Clickstream Data.</strong></p><p>Clickstream data is information collected by our computers when you request Web pages from the Applications. Clickstream data may include information such as the page served, the time spent viewing the page, source of the request, type of browser making the request, the preceding page viewed and similar information. Clickstream data permits us to analyze how visitors arrive at the Applications, what type of content is popular, what type of visitors in the aggregate are interested in particular kinds of content on the Applications.</p><h3><strong>Information Collected Related to California Residents</strong></h3><p>During the last twelve (12) months, we have collected the following categories of personal information from consumers.</p></div><div class="table_privacy"><div id="w-node-_12d461e6-1628-19a9-3903-02bfc52139e5-0c13c327" class="borders_privacy is-position-relative"><h1 id="w-node-_12d461e6-1628-19a9-3903-02bfc52139e6-0c13c327" class="is-text-size-custom-4_privacy">Category</h1><div class="is-position-absolute top-left corner-box"><div class="corner-box"></div></div><div class="is-position-absolute top-right corner-box"><div class="corner-box"></div></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc52139ec-0c13c327" class="borders_privacy is-position-relative"><h1 id="w-node-_12d461e6-1628-19a9-3903-02bfc52139ed-0c13c327" class="is-text-size-custom-4_privacy">Type of Identifiers We Collect</h1><div class="is-position-absolute top-right corner-box"><div class="corner-box"></div></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc52139f1-0c13c327" class="borders_privacy-right is-position-relative"><h1 id="w-node-_12d461e6-1628-19a9-3903-02bfc52139f2-0c13c327" class="is-text-size-custom-4_privacy">Collected</h1><div class="is-position-absolute top-right corner-box"><div class="corner-box"></div></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc52139f6-0c13c327" class="borders_privacy"><p class="paragraph-privacy">A. Identifiers</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc52139f9-0c13c327" class="borders_privacy"><p class="paragraph-privacy">First and last name, postal address, unique personal identifier, online identifier, Internet Protocol address, email address.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc52139fc-0c13c327" class="borders_privacy-right"><p class="paragraph-privacy">YES</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc52139ff-0c13c327" class="borders_privacy"><p class="paragraph-privacy">B. Personal information categories listed in the California Customer Records statute (Cal.Civ. Code § 1798.80(e)).</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a02-0c13c327" class="borders_privacy"><p class="paragraph-privacy">A name, physical characteristics ordescription, address, telephone number,education, employment, employmenthistory and disciplinary action,professional memberships, employeereference checks, trade unionmembership, credit card number, debitcard number, or any other financialinformation, medical information.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a05-0c13c327" class="borders_privacy-right"><p class="paragraph-privacy">YES</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a08-0c13c327" class="borders_privacy"><p class="paragraph-privacy">C. Protected classification characteristics under California or federal law.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a0b-0c13c327" class="borders_privacy"><p class="paragraph-privacy">Age, nationality, racial or ethnic origin marital status, medical condition, physical or mental disability, sex (including gender, gender identity, gender expression, pregnancy or childbirth and related medical conditions), sexual orientation.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a0e-0c13c327" class="borders_privacy-right"><p class="paragraph-privacy">YES</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a11-0c13c327" class="borders_privacy"><p class="paragraph-privacy">D. Commercial information.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a14-0c13c327" class="borders_privacy"><p class="paragraph-privacy">Records of personal property, products or services purchased, obtained, or considered, or other purchasing or consuming histories or tendencies.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a17-0c13c327" class="borders_privacy-right"><p class="paragraph-privacy">YES</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a1a-0c13c327" class="borders_privacy"><p class="paragraph-privacy">E. Internet or other similar network activity.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a1d-0c13c327" class="borders_privacy"><p class="paragraph-privacy">Browsing history, search history, information on a consumer&#x27;s interaction with a website, application logs, device data and registration, social media account information or advertisement.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a20-0c13c327" class="borders_privacy-right"><p class="paragraph-privacy">YES</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a23-0c13c327" class="borders_privacy"><p class="paragraph-privacy">F. Biometric information.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a26-0c13c327" class="borders_privacy"><p class="paragraph-privacy">Physiological, behavioral, and biological characteristics, or activity patterns used to extract a template or other identifier or identifying information, such as, heartrate, height, weight, gait, or other physical patterns, and sleep, health, or exercise data.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a29-0c13c327" class="borders_privacy-right"><p class="paragraph-privacy">YES</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a2c-0c13c327" class="borders_privacy"><p class="paragraph-privacy">G. Geolocation Data</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a2f-0c13c327" class="borders_privacy"><p class="paragraph-privacy">Physical location or movements.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a32-0c13c327" class="borders_privacy-right"><p class="paragraph-privacy">YES</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a35-0c13c327" class="borders_privacy"><p class="paragraph-privacy">H. Sensory data.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a38-0c13c327" class="borders_privacy"><p class="paragraph-privacy">Audio, electronic, visual, thermal, olfactory, or similar information.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a3b-0c13c327" class="borders_privacy-right"><p class="paragraph-privacy">NO</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a3e-0c13c327" class="borders_privacy"><p class="paragraph-privacy">I. Professional or employment-related information.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a41-0c13c327" class="borders_privacy"><p class="paragraph-privacy">Current or past job history or performance evaluations; disciplinary action, professional memberships, employee reference checks, and trade union membership.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a44-0c13c327" class="borders_privacy-right"><p class="paragraph-privacy">NO</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a47-0c13c327" class="borders_privacy"><p class="paragraph-privacy">J. Inferences drawn from other personal information.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a4a-0c13c327" class="borders_privacy"><p class="paragraph-privacy">Profile reflecting a person&#x27;s preferences, behavior, and attitudes.</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a4d-0c13c327" class="borders_privacy-right"><p class="paragraph-privacy">YES</p></div></div><div class="text-rich-text w-richtext"><p>We obtain the categories of Personal Information listed above from the following categories of sources:</p><ul role="list"><li>Directly from our customers or their agents.</li><li>Indirectly from our customers or their agents. For example, through information we collect from our clients in the course of providing Services to them.</li><li>Directly and indirectly from activity on our website (www.nutrisense.io) or applications. For example, from website usage details that are collected automatically. In addition, like many companies, we use “cookies” which are small text files a website can use to recognize repeat users, facilitate the user’s ongoing access to and use of the site and to track usage behavior of, for example, the webpages you visit.</li><li>From social media websites, such as Facebook, Twitter, LinkedIn, YouTube, Instagram, TikTok and Pinterest.</li><li>From third parties that assist us in providing certain transactions and services, even though it appears that you may not have left our Site.</li></ul><h3>How We Use Personal Information We Collect</h3><p>We use your Personal Information in ways that are compatible with the purposes for which it was collected or authorized by you, including for the following purposes:</p><ul role="list"><li>To present, operate or improve the Application and Services, including analysis of Application activity;</li><li>To inform you about Services and products available from Nutrisense;</li><li>To authorize access to our Applications and Services;</li><li>To validate your identity or verify communications from you;</li><li>To offer and administer programs;</li><li>To customize or tailor your experience of the Services;</li><li>To communicate about, and administer your participation in, special programs, surveys, contests, online campaigns, online programs, sweepstakes, prize draws and other offers or promotions, and to deliver pertinent emails;</li><li>To send you confirmations, updates, security alerts, and support and administrative messages and otherwise facilitate your use of, and our administration and operation of, the Services;</li><li>For marketing purposes, including but not limited to, facilitating interest-based advertising, creating custom audiences to target online and mobile advertising, sending integrated marketing messages across channels and devices, personalizing email marketing that we send to you, sending you other promotional materials, and notifying you about special promotions, offers, events or opportunities that may be of interest to you;</li><li>To improve our customer service, conduct customer satisfaction, market research, and quality assurance reviews;</li><li>To respond to and support users regarding their use of the Applications and Services;</li><li>To process applications for employment that you submit through the Applications;</li><li>To administer general recordkeeping;</li><li>To comply with all applicable legal requirements;</li><li>To perform data analysis and testing;</li><li>To use statistical information that we collect in any way permitted by law, including from third parties in connection with their commercial and marketing efforts;</li><li>To enforce our Terms of Use and other agreements;</li><li>To investigate possible fraud or other violations of our Terms of Use or this Privacy Policy and/or attempts to harm our Users;</li><li>To resolve disputes;</li><li>To otherwise fulfill the purpose for which the information was provided.</li><li>We and our service providers may use IP addresses to understand the locations from which our Users are accessing the Services. Except where prohibited by applicable law or regulation, we may combine information collected through one source with information obtained through other resources. We also may supplement the information we collect with information obtained from third parties. We will treat any information that we combine with your personal information as Personal Information pursuant to this Privacy Policy.</li><li>We use information collected from cookies and other technologies, to improve your User experience and the overall quality of our services. We may use your Personal Information to see which web pages you visit at our Applications, which website you visited before coming to our Site, and where you go after you leave our Applications. We can then develop statistics that help us understand how our visitors use our Applications and how to improve it. We may also use the information we obtain about you in other ways for which we provide specific notice at the time of collection.</li><li>We will ask for your consent or otherwise update this policy/inform you before using information for a purpose other than those set out in this Privacy Policy.</li></ul><p>‍</p><h3>Our Legal Basis for Collecting Personal Information</h3><p>We have set out below, in a table format, a description of all the ways we plan to use your Personal Information, and which of the legal bases we rely on to do so. We have also identified what our legitimate interests are where appropriate.</p></div><div class="table_privacy"><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a98-0c13c327" class="borders_privacy is-position-relative"><h1 class="is-text-size-custom-4_privacy">Purpose/Activity</h1><div class="is-position-absolute top-left corner-box"><div class="corner-box"></div></div><div class="is-position-absolute top-right corner-box"><div class="corner-box"></div></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213a9f-0c13c327" class="borders_privacy is-position-relative"><h1 id="w-node-_12d461e6-1628-19a9-3903-02bfc5213aa0-0c13c327" class="is-text-size-custom-4_privacy">Type of Data</h1><div class="is-position-absolute top-right corner-box"><div class="corner-box"></div></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213aa4-0c13c327" class="borders_privacy-right is-position-relative"><h1 id="w-node-_12d461e6-1628-19a9-3903-02bfc5213aa5-0c13c327" class="is-text-size-custom-4_privacy">Lawful basis for processing including basis of legitimate interest</h1><div class="is-position-absolute top-right corner-box"><div class="corner-box"></div></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213aa9-0c13c327" class="borders_privacy"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Manage payments, fees and charges</li><li>Collect and recover money owed to us</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213ab0-0c13c327" class="borders_privacy"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Identity (ie data which identifies you)</li><li>Contact (ie your contact details)</li><li>Financial (ie your payment details)</li><li>Transaction (ie the services that you are purchasing)</li><li>Marketing and Communications (ie your direct marketing preferences)</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213abd-0c13c327" class="borders_privacy-right"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Performance of a contract with you; and/or</li><li>Necessary for our legitimate interests (effectively managing our business operations)</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213ac4-0c13c327" class="borders_privacy"><p class="paragraph-privacy">To provide you with analytical information about your workout through the use of our apps</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213ac7-0c13c327" class="borders_privacy"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Identity (ie data which identifies you)</li><li>Health data (ie data gathered by the sensor for example, your glucose levels)</li><li>Race data (ie your ethnicity)</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213ad0-0c13c327" class="borders_privacy-right"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Performance of a contract with you; and/or</li><li>To the extent that information we collect is special category of personal data, we rely on your explicit consent to process the data</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213ad7-0c13c327" class="borders_privacy"><div class="paragraph-privacy w-richtext"><p>To manage our relationship with you which will include:</p><ul role="list"><li>Notifying you about changes to our terms or privacy notice</li><li>Asking you to leave a review or take a survey</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213ae0-0c13c327" class="borders_privacy"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Identity (ie data which identifies you)</li><li>Contact (ie your contact details)</li><li>Profile (ie your profile as a user of the service)</li><li>Marketing and Communications (ie your direct marketing preferences)</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213aeb-0c13c327" class="borders_privacy-right"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Performance of a contract with you; and/or</li><li>Necessary to comply with a legal obligation</li><li>Necessary for our legitimate interests (to keep our records updated and to study how customers use our products/services) or consent in some limited instances.</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213af4-0c13c327" class="borders_privacy"><p class="paragraph-privacy">To enable you to partake in an event, prize draw, competition or complete a survey</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213af7-0c13c327" class="borders_privacy"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Identity (ie data which identifies you)</li><li>Contact (ie your contact details)</li><li>Profile (ie your profile as a user of the service)</li><li>Usage (ie metrics on your use of the sensor and application)</li><li>Marketing and Communications (ie your direct marketing preferences)</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b04-0c13c327" class="borders_privacy-right"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Performance of a contract with you; and/or</li><li>Necessary for our legitimate interests (to study how customers use our products/services, to develop them and grow our business); and/or</li><li>Consent (in some limited instances)</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b0d-0c13c327" class="borders_privacy"><p class="paragraph-privacy">To administer and protect our business and this website (including troubleshooting, data analysis, testing, system maintenance, support, reporting and hosting of data)</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b10-0c13c327" class="borders_privacy"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Identity (ie data which identifies you)</li><li>Contact (ie your contact details)</li><li>Technical (ie data related to your use of the sensor or application)</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b19-0c13c327" class="borders_privacy-right"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Necessary for our legitimate interests (for running our business, provision of administration and IT services, network security, to prevent fraud and in the context of a business reorganization or group restructuring exercise); and/or</li><li>Necessary to comply with a legal obligation</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b20-0c13c327" class="borders_privacy"><p class="paragraph-privacy">To deliver relevant website content and advertisements to you and measure or understand the effectiveness of the advertising we serve to you</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b23-0c13c327" class="borders_privacy"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Identity (ie data which identifies you)</li><li>Contact (ie your contact details)</li><li>Profile (ie your profile as a user of the service)</li><li>Usage (ie metric son your use of the sensor and application)</li><li>Marketing and Communications (ie your direct marketing preferences)</li><li>Technical (ie data related to your use of the sensor or application)</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b32-0c13c327" class="borders_privacy-right"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Necessary for our legitimate interests (to study how customers use our products/services, to develop them, to grow our business and to inform our marketing strategy); and/or</li><li>Consent</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b39-0c13c327" class="borders_privacy"><p class="paragraph-privacy">To use data analytics to improve our website, products/services, marketing, customer relationships and experiences</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b3c-0c13c327" class="borders_privacy"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Technical (ie data related to your use of the sensor or application)</li><li>Usage (ie metrics on your use of the sensor and application)</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b43-0c13c327" class="borders_privacy-right"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Necessary for our legitimate interests (to define types of customers for our products and services, to keep our website updated and relevant, to develop our business and to inform our marketing strategy); and/or</li><li>Consent</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b4a-0c13c327" class="borders_privacy"><p class="paragraph-privacy">To make suggestions and recommendations to you about goods or services that may be of interest to you</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b4d-0c13c327" class="borders_privacy"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Identity (ie data which identifies you)</li><li>Contact (ie your contact details)</li><li>Technical (ie data related to your use of the sensor or application)</li><li>Usage (ie metrics on your use of the sensor and application)</li><li>Profile (ie your profile as a user of the service)</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b5a-0c13c327" class="borders_privacy-right"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Necessary for our legitimate interests (to develop our products/services and grow our business); and/or</li><li>Consent</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b61-0c13c327" class="borders_privacy"><p class="paragraph-privacy">To evaluate potential employee candidates and conduct hiring decisions</p></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b64-0c13c327" class="borders_privacy"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Employment history(ie previous places you have worked)</li><li>Educational background (ie details about your educational qualifications)</li><li>Professional memberships (ie details about your professional memberships)</li><li>Trade union membership</li><li>Employee reference checks</li></ul></div></div><div id="w-node-_12d461e6-1628-19a9-3903-02bfc5213b71-0c13c327" class="borders_privacy-right"><div class="paragraph-privacy w-richtext"><ul role="list"><li>Necessary to comply with a legal obligation; and/or</li><li>To the extent that information we collect is special category of personal data, we rely on your explicit consent to process the data</li></ul></div></div></div><div class="text-rich-text w-richtext"><p>Provided that, in each circumstance, we will weigh the necessity of our processing for the purpose against your privacy and confidentiality interests, including taking into account your reasonable expectations, the impact of processing, and any safeguards which are or could be put in place. In all circumstances, we will limit such processing for our legitimate business interest to what is necessary for its purposes.</p><h3>Your Failure to Provide Personal Information</h3><p>Your provision of Personal Information is required in order to use certain Services and programs. In some instances, if you fail to provide such Personal Information, you may not be able to access and use our Services, or parts of our Services.</p><h3>Our Retention of Your Personal Information</h3><p>We use and retain your Personal Information for as long as necessary to fulfill the purpose for which it is being processed, to carry out legitimate business interests, as well as on the basis of applicable legal requirements (such as applicable statutes of limitation).</p><p>After expiry of the applicable retention periods, your Personal Information will be deleted. If there is any data that we are unable, for technical reasons, to delete entirely from our systems, we will put in place appropriate measures to prevent any further use of such data.</p><h3>Right to Delete Your Data.</h3><p>1. If you are a resident of California, you may request the deletion of your Personal Information by clicking on the link below. Once we receive and confirm your verifiable consumer request, we will delete (and direct our service providers to delete) your Personal Information from our records, unless an exception applies.</p><p><a href="/privacy-center">Nutrisense Privacy Request Form</a></p><p>‍</p><h3>Sharing Personal Information</h3><p>Nutrisense may disclose your Personal Information to commercial providers for a business purpose. When we disclose Personal Information for these reasons, we enter into a contract that describes the purpose and requires the recipient to both keep that Personal Information confidential and not use it for any purpose except for the purposes set forth in the contract. We may also share fully anonymized statistical data with our partners.</p><p>We disclose your Personal Information for a business purpose to the following categories of third parties:</p><ul role="list"><li>Our affiliates;</li><li>Service providers and other third parties we use to support our business, including without limitation those performing core services (such as billing, credit card processing, customer support services, customer relationship management, accounting, auditing, administering sweepstakes, surveys, advertising and marketing, analytics, email and mailing services, data storage, and security) related to the operation of our business and/or the Services, and making certain functionalities to our Users;</li><li>Commercial sensor providers;</li><li>Enterprise accounts;</li><li>Third parties to whom you or your agents authorize us to disclose your Personal Information in connection with the services we provide to you.</li></ul><p>We may disclose your Personal Information for legal reasons. Specifically, we will share Personal Information with companies, organizations or individuals outside of Nutrisense if we have a good-faith belief that access, use, preservation or disclosure of the information is reasonably necessary to:</p><ul role="list"><li>Fulfill any purpose for which you provide it;</li><li>Meet any applicable law, regulation, legal process or enforceable governmental request;</li><li>Enforce applicable Terms of Service, including investigation of potential violations;</li><li>Detect, prevent, or otherwise address fraud, security or technical issues;</li><li>Protect against harm to the rights, property, assets or safety of Nutrisense, our Users or the public, content found on the Services, or to protect the Services from unauthorized use or misuse, as required or permitted by law;</li><li>Facilitate a business transfer, such as to a buyer or other successor in the event of merger, acquisition, consolidation, divestiture, change in control, dissolution or other sale or transfer of some or all of Nutrisense&#x27; assets, whether as a going concern or as part of bankruptcy, liquidation or similar proceeding, in which Personal Information held by Nutrisense about its Users will be among the assets to be transferred, and any such successor may use your information for the same purposes set forth in the Privacy Policy.</li><li>For any other purpose disclosed when you provide the information; and,</li><li>When we obtain your consent to do so.</li></ul><p>We attempt to notify you about legal demands for your Personal Information when appropriate in our judgment, unless prohibited by law or court order or when the request is an emergency. We may dispute such demands when we believe, in our discretion, that the requests are overbroad, vague or lack proper authority, but we do not promise to challenge every demand.</p><h3>Sale of Personal Information</h3><p>We do not sell any Personal Information.</p><h3>Your Privacy Choices</h3><p>You may have certain rights relating to your Personal Information, subject to local data protection law. Whenever you use our services, we aim to provide you with choices about how we use your Personal Information. Subject to applicable law, you may obtain a copy of Personal Information we maintain about you. In addition, if you believe that Personal Information we maintain about you is inaccurate, subject to applicable law, you may have the right to request that we correct or amend the information by contacting us as indicated in the “How to Contact Us” section below. To help protect your privacy and maintain security, we will take steps to verify your identity before granting you access to the information.</p><h3>Privacy Rights Specific to California Residents</h3><p>Under the California Consumer Privacy Act, California residents have specific rights regarding their personal information. This section describes Californians’ rights and explains how California residents can exercise those rights.</p><p>Below we further outline specific rights which California residents may have under the California Consumer Privacy Act.</p><ul role="list"><li><strong>Right to Access Your Data.</strong> You have the right to request that we disclose certain information to you about our collection, use and disclosure of your Personal Information over the past twelve (12) months. Any disclosures we provide will only cover the 12- month period preceding the receipt of your request. The response we provide will also explain the reasons we cannot comply with a request, if applicable.</li><li><strong>Right to Data Portability.</strong> You have the right to a “portable” copy of your Personal Information that you have submitted to us. Generally, this means you have a right to request that we move, copy or transmit your Personal Information stored on our servers or information technology environment to another service provider’s servers or information technology environment.</li><li><strong>Right to Delete Your Data.</strong> You have the right to request that we delete any of your Personal Information that we collected from you and retained, subject to certain exceptions. Once we receive and confirm your verifiable consumer request, we will delete (and direct our service providers to delete) your Personal Information from our records, unless an exception applies.</li><li><strong>Right to Non-Discrimination for the Exercise of Your Privacy Rights.</strong> You have the right not to receive discriminatory treatment by us for exercising your privacy rights conferred by the California Consumer Privacy Act.</li></ul><h3>Exercising Your Rights</h3><p>If you are a California resident who chooses to exercise your rights, you can submit a request via the <a href="/privacy-center">Nutrisense Privacy Request Form</a>.</p><h3>Our Response to Your Request</h3><p>Upon receiving your request, we will confirm receipt of your request by sending you an email confirmation of receipt. To help protect your privacy and maintain security, we may take steps to verify your identity before granting you access to the information. In some instances, such as a request to delete personal information, we may first separately confirm that you would like for us to in fact delete your personal information before acting on your request.</p><p>We will respond to your request within forty-five (45) days. If we require more time, we will inform you of the reason and extension period in writing. If you have an account with us, we will deliver our written response to that account. If you do not have an account with us, we will deliver our written response by mail or electronically, at your option.</p><p>In some cases our ability to uphold these rights for you may depend upon our obligations to process Personal Data for security, safety, fraud prevention reasons, compliance with regulatory or legal requirements, listed below, or because processing is necessary to deliver the services you have requested. Where this is the case, we will inform you of specific details in response to your request.</p><p>We may deny your deletion request if retaining the information is necessary for us or our service providers to:</p><ol start="" role="list"><li>Complete the transaction for which we collected the Personal Information, provide a good or service that you requested, take actions reasonably anticipated within the context of our ongoing business relationship with you, or otherwise perform our contract with you;</li><li>Detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity, or prosecute those responsible for such activities;</li><li>Debug products to identify and repair errors that impair existing intended functionality;</li><li>Exercise free speech, ensure the right of another consumer to exercise their free speech rights, or exercise another right provided for by law;</li><li>Comply with the California Electronic Communications Privacy Act (Cal. Penal Code § 1546 seq. );</li><li>Engage in public or peer-reviewed scientific, historical, or statistical research in the public interest that adheres to all other applicable ethics and privacy laws, when the information&#x27;s deletion may likely render impossible or seriously impair the research&#x27;s achievement, if you previously provided informed consent;</li><li>Enable solely internal uses that are reasonably aligned with consumer expectations based on your relationship with us;</li><li>Comply with a legal obligation; or</li><li>Make other internal and lawful uses of that information that are compatible with the context in which you provided it</li></ol><p>‍</p><h3>Our Opt-in/Opt-out Policy</h3><p>By providing an email address on the Nutrisense Applications or Services, you agree that we may contact you in the event of a change in this Privacy Policy, to provide you with any Service-related notices, or to provide you with information about our events, invitations, or related educational information.</p><p>For purposes of this Privacy Policy, “opt-in” is generally defined as any affirmative action by a User to submit or receive information, as the case may be.</p><p>We currently provide the following opt-out opportunities:</p><ol start="" role="list"><li>At any time, you can follow a link provided in offers, newsletters or other email messages (except for e-commerce confirmation or service notice emails) received from us to unsubscribe from the service.</li></ol><p>Notwithstanding anything else in this Privacy Policy, please note that we always reserve the right to contact you in the event of a change in this Privacy Policy, or to provide you with any service-related notices.</p><p>‍</p><h3>Third Party Links</h3><p>The Applications may contain links to webpages operated by parties other than Nutrisense. We do not control such websites and are not responsible for their contents or the privacy policies or other practices of such websites. Our inclusion of links to such websites does not imply any endorsement of the material on such websites or any association with their operators. Further, it is up to the User to take precautions to ensure that whatever links the User selects or software the User downloads (whether from this Site or other websites) is free of such items as viruses, worms, trojan horses, defects and other items of a destructive nature. These websites and services may have their own privacy policies, which the User will be subject to upon linking to the third party’s website. Nutrisense strongly recommends that each User review the third party’s terms and policies.</p><p>‍</p><h3>How We Protect Personal Information</h3><p>Nutrisense maintains administrative, technical and physical safeguards designed to protect the user&#x27;s Personal Information and other information against accidental, unlawful or unauthorized destruction, loss, alteration, access, disclosure or use. For example, we and/or our service providers use commercially reasonable security measures such as encryption, firewalls, and Secure Socket Layer software (SSL) or hypertext transfer protocol secure (HTTPS) to protect Personal Information.</p><p>Although we take reasonable steps designed to protect your Personal Information, please be advised that no security system or means of transmitting data over the Internet can be guaranteed to be entirely secure (including without limitation with respect to computer viruses, malicious software and hacker attacks). We cannot and do not guarantee or warrant the security of your Personal Information or any information you disclose or transmit to us. We are not responsible for the acts of those who gain unauthorized access, and we make no warranty, express, implied or otherwise, that we will prevent such access, and we are not responsible for any damages or liabilities relating to any such incidents to the fullest extent permitted by law. Where required under law, we will notify you of any such loss, misuse or alteration of Personal Information that may affect you so that you can take the appropriate actions.</p><p>For your own privacy protection, we urge you to keep all passwords confidential. We also recommend that you do not include sensitive information such as passwords, social security numbers or payment information, in any emails that you send to us. If you become aware of any breach of the terms of this Privacy Policy or of the security of the Services, please notify us by email at <a href="/cdn-cgi/l/email-protection#e090928996818399a08e9594928993858e9385ce898f"><strong><span class="__cf_email__" data-cfemail="6a1a18031c0b09132a041f1e1803190f04190f440305">[email&#160;protected]</span></strong></a>.</p><p>‍</p><h3>Children’s Privacy</h3><p>The Applications and Services are not designed or intended to be used by anyone under the age of 16. If you are under the age of 16 (or a minor in the jurisdiction in which you are accessing our Applications or Services), do not use the Services, or make purchases via the Services, use any interactive features of the Services, or post any Personal Information to our Applications or submit any Personal Information via the Services. We do not knowingly or intentionally gather Personal Information about children who are under the age of 16. If a child has provided us with Personal Information, a parent or guardian of that child may contact us to have the information deleted from our records. If you believe that we might have any information from a child under age 16 in the applicable jurisdiction, please contact us at <a href="/cdn-cgi/l/email-protection#a3d3d1cad5c2c0dae3cdd6d7d1cad0c6cdd0c68dcacc"><strong><span class="__cf_email__" data-cfemail="d3a3a1baa5b2b0aa93bda6a7a1baa0b6bda0b6fdbabc">[email&#160;protected]</span></strong></a>. If we learn that we have inadvertently collected the Personal Information of a child under 16, or equivalent minimum age depending on jurisdiction, we will take steps to delete the information as soon as possible and cease the use of that information in accordance with applicable law.</p><p>‍</p><h3>Direct Marketing and “Do Not Track” Signals</h3><p>Nutrisense does not track its users over time and across third party websites to provide targeted advertising and therefore does not respond to Do Not Track (DNT) signals. However, some third-party sites do keep track of your browsing activities when they serve you content, which enables them to tailor what they present to you. If you are visiting such sites, your browser may include controls to block and delete cookies, web beacons and similar technologies, to allow you to opt out of data collection through those technologies.</p><p>California residents are entitled to contact us to request information about whether we have disclosed Personal Information to third parties for the third parties’ direct marketing purposes. Under the California “Shine the Light” law, California residents may opt-out of our disclosure of Personal Information to third parties for their direct marketing purposes. You may choose to opt- out of the sharing of your Personal Information with third parties for marketing purposes. To make such a request you should send an email to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3040425946515349705e4544425943555e43551e595f">[email&#160;protected]</a> with the subject heading “California Privacy Rights,” In your request, please attest to the fact that you are a California resident and provide a current California address for our response. Please be aware that not all information sharing is covered by the California privacy rights requirements and only information on covered sharing will be included in our response. We reserve our right not to respond to requests submitted to addresses other than the addresses specified in this paragraph.</p><p>‍</p><h3>Changes to this Privacy Policy</h3><p>Our Privacy Policy may change from time to time. We will not reduce your rights under this Privacy Policy without your consent. We will post any privacy policy changes on this page and, if the changes are significant, we will provide a more prominent notice (including, for certain services or programs, email notification or privacy policy changes). We will also keep prior versions of this Privacy Policy in an archive for your review.</p><p>‍</p><h3>How to Contact Us</h3><p>If you have any questions, comments or concerns about this Privacy Policy, or if you would like to exercise the choices discussed above, please contact us:</p><p>Via e-mail: <a href="/cdn-cgi/l/email-protection#4f3f3d26392e2c360f213a3b3d263c2a213c2a612620"><strong><span class="__cf_email__" data-cfemail="87f7f5eef1e6e4fec7e9f2f3f5eef4e2e9f4e2a9eee8">[email&#160;protected]</span></strong></a></p><p>‍</p></div></div></div></div></div></div></div></div></div></main><div class="text-color-beige"><footer class="footer_v2_wrapper"><div class="footer_v2_styles w-embed"><style>
+	.footer_v2_top-border {
+  	background: currentColor;
+  }
+
+	.footer_v2_cta {
+  	background: currentColor;
+  }
+</style></div><footer class="footer3_component"><div class="footer_v2_top-border"></div><div class="page-padding"><div class="container-large"><div class="padding-vertical padding-xxlarge footer-padding"><div class="padding-bottom padding-xxlarge"><div class="w-layout-grid footer3_top-wrapper"><div class="footer3_left-wrapper"><div class="margin-bottom margin-medium"><a href="#" blocks-non-deletable="true" class="footer3_logo-link w-nav-brand"><div class="footer-logo w-embed"><svg width="104" height="60" viewBox="0 0 104 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.6859 32.1906V58.7941H0V1.8026H10.6859V5.58719C10.6859 7.92473 10.4633 10.2623 9.46147 13.1564C9.43928 13.223 9.41659 13.29 9.39383 13.3573C9.07425 14.3022 8.74148 15.2861 9.57278 15.4939C10.2003 15.7031 10.533 15.0279 10.7556 14.5762C10.7699 14.5472 10.7838 14.519 10.7972 14.4921C13.0234 8.92653 20.2587 0.912109 30.4993 0.912109C43.6341 0.912109 51.6485 8.25866 51.6485 24.9554V58.7941H40.9626V27.1816C40.9626 13.9355 35.2857 10.2623 27.8279 10.2623C19.5908 10.2623 10.6859 18.6106 10.6859 32.1906ZM103.668 40.6503C103.668 52.2267 94.2061 59.6846 78.6225 59.6846C63.1502 59.6846 54.3566 51.5588 53.8001 38.9806H64.2633C64.3747 43.3218 67.9366 50.3344 79.0678 50.3344C89.9763 50.3344 92.9817 45.9932 92.9817 42.32C92.9817 37.1996 88.1953 35.6413 75.1719 34.3055C60.2561 32.7472 55.5811 25.9572 55.5811 18.4993C55.5811 9.92834 63.3729 0.912109 78.9565 0.912109C93.3156 0.912109 101.107 9.14916 101.887 19.8351H91.4233C91.0894 16.1618 88.6406 10.2623 78.6225 10.2623C69.6063 10.2623 66.267 13.9355 66.267 17.7201C66.267 21.3934 68.3819 23.8423 80.7374 25.178C96.0984 26.8477 103.668 31.3001 103.668 40.6503Z" fill="white"/>
+</svg></div></a></div><div class="social-icon-wrapper"><a fb="" href="https://www.facebook.com/nutrisenseio" class="social-icon-link_block w-inline-block"><img src="https://assets.nutrisense.io/62c477aa7b7db12cfffa5de3/632b8d8d894d66027c029341_facebook-icon.svg" loading="lazy" alt="Facebook Logo" class="icon-1x1-small" /></a><a href="https://www.instagram.com/nutrisenseio" class="social-icon-link_block w-inline-block"><img src="https://assets.nutrisense.io/62c477aa7b7db12cfffa5de3/632b8d9ddc4b8c9de207a636_instagram-icon.svg" loading="lazy" ig="" alt="Instagram Logo" class="icon-1x1-small" /></a><a href="https://twitter.com/nutrisense" class="social-icon-link_block w-inline-block"><img src="https://assets.nutrisense.io/62c477aa7b7db12cfffa5de3/67c08684142aa80a45fdf26b_x-icon.svg" loading="lazy" twitter="" alt="" class="icon-1x1-small" /></a><a href="https://www.tiktok.com/@nutrisense" class="social-icon-link_block w-inline-block"><img src="https://assets.nutrisense.io/62c477aa7b7db12cfffa5de3/632b8db296efc84be7791e5e_tiktok-icon.svg" loading="lazy" tiktok="" alt="TikTok Logo" class="icon-1x1-small" /></a><a href="https://www.linkedin.com/company/19156404" class="social-icon-link_block w-inline-block"><img src="https://assets.nutrisense.io/62c477aa7b7db12cfffa5de3/632b8da9a6038687229d1959_linkedin-icon.svg" loading="lazy" alt="LinkedIn Logo" class="icon-1x1-small" /></a></div></div><div class="w-layout-grid footer3_menu-wrapper"><div class="footer3_link-list"><div class="footer_link-list-title">Products</div><a href="/products/cgm-plans" class="footer3_link">CGM Program</a><a href="/products/nutritionist-coaching" class="footer3_link">Dietitian Coaching</a><a href="/providers" class="footer3_link">Find Dietitians</a><a href="/products/bring-your-own-sensor" class="footer3_link">CGM App Membership</a></div><div class="footer3_link-list"><div class="footer_link-list-title">Explore</div><a href="/blog" class="footer3_link">Journal</a><a href="https://members.nutrisense.io/video-calls/sign-in" class="footer3_link">Login | Dietitian Coaching</a><a href="/what-is-a-cgm" class="footer3_link">What is a CGM?</a><a href="/what-is-a-cgm/cost" class="footer3_link">CGM Cost</a><a href="/what-is-a-cgm/benefits/without-diabetes" class="footer3_link">CGM without Diabetes</a><a href="/what-is-a-cgm/benefits/diet-and-weight-loss" class="footer3_link">CGM for Weight Loss</a><a href="/what-is-a-cgm/how-to/app" class="footer3_link">Nutrisense App</a><a href="/faq" class="footer3_link">FAQs</a></div><div class="footer3_link-list"><div class="footer_link-list-title">Company</div><a href="/about" class="footer3_link">About Us</a><a href="https://www.careers-page.com/nutrisense" class="footer3_link">Careers</a><a href="/contact" class="footer3_link">Contact Us</a><a href="/nutritionist" class="footer3_link">Our Nutritionists</a><a href="/member-stories" class="footer3_link">Member Stories</a><a href="/nutrisense-reviews" class="footer3_link">Nutrisense Reviews</a><a href="/partner" class="footer3_link">Become Our Partner</a><a href="/healthcare-worker/discount" class="footer3_link">Healthcare Workers</a></div></div></div></div><div class="line-divider-white"></div><div class="padding-top padding-medium"><div class="footer3_bottom-wrapper"><div class="footer3_credit-text">©2025 by Nutrisense. All rights reserved.</div><div class="footer_bottom-right-wrap"><div class="footer_bottom-flex"><p>This site and the information contained therein is exclusively intended for maintaining and encouraging healthy lifestyle choices such as promoting or maintaining a healthy weight, encouraging healthy eating, assist with weight loss goals, and managing stress with CGM-guided wellness coaching. The Nutrisense Team and our professional associates will not provide any information related to the diagnosis, cure, mitigation, prevention, or treatment of any disease or medical condition of the body. If you desire such information, please consult your healthcare provider.</p><div class="w-layout-grid footer3_legal-list"><a href="https://support.nutrisense.io" class="footer3_legal-link">Help Center</a><a href="https://www.nutrisense.io/legal/terms-of-service" class="footer3_legal-link">Terms of Use</a><a href="https://www.nutrisense.io/legal/privacy-policy" class="footer3_legal-link">Privacy Policy</a><a href="https://www.nutrisense.io/legal/privacy-policy#consumer-health-data" class="footer3_legal-link">CHDP Policy</a><a href="https://www.nutrisense.io/privacy-center" class="footer3_legal-link">CCPA Opt-Out</a></div></div></div></div></div></div></div></div></footer></footer></div></div><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=62c477aa7b7db12cfffa5de3" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://assets.nutrisense.io/62c477aa7b7db12cfffa5de3/js/nutrisense-v2.schunk.57d5559d2f0cd9f8.js" type="text/javascript"></script><script src="https://assets.nutrisense.io/62c477aa7b7db12cfffa5de3/js/nutrisense-v2.4ab7e2b3.1a068d2910646c39.js" type="text/javascript"></script><script>
+if (
+  !window.location.pathname.includes("checkout-test") &&
+  !window.location.pathname.includes("checkouts") &&
+  !window.location.pathname.includes("checkout")
+) {
+  var localFooterBundleSrc = `${localScriptsBundlePath}/footer.bundle.js`;
+  var productionFooterBundleSrc = `${productionScriptsBundlePath}/footer.${releaseBundle}.bundle.js`;
+
+  var script = document.createElement("script");
+  script.src = localBundle ? localFooterBundleSrc : productionFooterBundleSrc;
+  script.defer = true;
+
+  document.head.append(script);
+}
+</script>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8347dae7071e440b91a4ae24e28bbc49"}'></script><!-- End Cloudflare Web Analytics --></body></html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MFP API - MyFitnessPal Developer - User Authorization</title>
+  
+  <script type="text/javascript">
+    <!-- Google Tag Manager -->
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M9HTQ8');
+    <!-- End Google Tag Manager -->
+  </script>
+
+
+  <link rel="icon" href="/assets/images/favicon.ico?v=1">
+  <link href="/assets/css/main.css" rel="stylesheet">
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <a href="/" class="site-logo">
+        <h1>
+            <img class="site-logo-img" src="/assets/images/mfp-wordmark.svg" alt="MyFitnessPal" />
+        </h1>
+    </a>
+
+    <div class="site-nav-button">
+        <span class="site-nav-button-text">Menu</span>
+        <img class="site-nav-button-icon" src="/assets/images/menu.svg" alt="" height="20" width="20">
+    </div>
+
+    <nav class="site-nav">
+        <ul class="site-nav-list">
+            <li class="site-nav-item docs"><a href="/docs">DOCS</a></li>
+            <!-- li class="site-nav-item updatekey"><a href="/updatekey">Update your Key</a></li -->
+            <li class="site-nav-item blog"><a href="/blog">Blog</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+    <article class="content">
+      <section class="container two-cols">
+        <div class="sidebar col-1">
+          <div class="sidenav">
+
+  <h3>Architecture</h3>
+  <a href="/docs/about">About this API</a>
+  <a href="/docs/domains">Domains</a>
+  <a href="/docs/versioning">Versioning</a>
+  <a href="/docs/example-urls">Example URLs</a>
+  <h3>General</h3>
+  <a href="/docs/identifiers">Identifiers</a>
+  <a href="/docs/supported-data-formats">Supported Data Formats</a>
+  <a href="/docs/data-types">Data Types</a>
+  <h5>Requests</h5>
+    <a href="/docs/access-tokens">Access Token and Related Information</a>
+    <a href="/docs/localization">Localization</a>
+    <a href="/docs/get-request-query-param">GET Request Query Parameter</a>
+    <a href="/docs/collection-requests">Collection Requests</a>
+  <h5>Responses</h5>
+    <a href="/docs/content-type">Content Type</a>
+    <a href="/docs/response-codes">Response Codes</a>
+    <a href="/docs/response-body">Response Body</a>
+    <a href="/docs/error-responses">Error Responses</a>
+    <a href="/docs/standard-responses">Standard Responses</a>
+  <h3>Authentication and Authorization</h3>
+    <a href="/docs/partner-authentication">Partner Authentication</a>
+    <a href="/docs/user-authentication">User Authorization</a>
+    <h5>Authorization Code Grant (GET /oauth2/auth)</h5>
+      <a href="/docs/request-query-parameters">Request query parameters</a>
+      <a href="/docs/auth-example-1">Example 1: Requesting the diary scope</a>
+      <a href="/docs/auth-example-2">Example 2: Requesting all available scopes</a>
+      <a href="/docs/auth-response">Response</a>
+      <a href="/docs/auth-errors">Authorization Errors</a>
+    <h5>Access Token Request (POST /oauth2/token)</h5>
+      <a href="/docs/request-body-form-parameters">Request body form parameters</a>
+      <a href="/docs/post-response">Response</a>
+      <a href="/docs/access-token-errors">Access Token Errors</a>
+    <h5>Refreshing Access Tokens (POST /oauth2/token)</h5>
+      <a href="/docs/refresh-request-body-form-parameters">Request body form parameters</a>
+      <a href="/docs/refresh-post-response">Response</a>
+      <a href="/docs/refresh-token-errors">Refresh Token Errors</a>
+    <a href="/docs/making-requests">Making Requests</a>
+    <h5>Revoking Tokens (POST /oauth2/revoke)</h5>
+      <a href="/docs/revoke-request-body-form-parameters">Request body form parameters</a>
+      <a href="/docs/revoke-response">Response</a>
+  <h3>Users</h3>
+    <h5>Resources GET /users/:userId</h5>
+      <a href="/docs/example-response-no-fields-parameter">Example Response with no fields parameter</a>
+      <a href="/docs/example-response-with-fields-parameter">Example Response with fields elements</a>
+    <h5>Resources PATCH /users/:userId</h5>
+      <a href="/docs/patch-request-example">Request Example</a>
+  <h3>Measurements</h3>
+    <h5>Resources</h5>
+      <a href="/docs/measurements-get">GET /measurements/</a>
+      <a href="/docs/measurements-post">POST /measurements/</a>
+
+  <h3>Diary</h3>
+    <h5>Resources</h5>
+      <a href="/docs/diary-get">GET /diary/</a>
+      <a href="/docs/diary-post">POST /diary/</a>
+      <a href="/docs/diary-patch">PATCH /diary/</a>
+      <a href="/docs/diary-delete">DELETE /diary/</a>
+  <h3>Exercises</h3>
+    <h5>Resources</h5>
+      <a href="/docs/exercises-diary-get">GET /exercises/</a>
+  <h3>Subscriptions</h3>
+    <h5>Management</h5>
+      <a href="/docs/subscription-post">POST /subscription/</a>
+      <a href="/docs/subscription-get">GET /subscription/</a>
+      <a href="/docs/subscription-delete">DELETE /subscription/</a>
+    <h5>Notifications</h5>
+      <a href="/docs/subscription-request-body">Example Request Body</a>
+      <a href="/docs/subscription-design">Best Design Practices</a>
+  <h3>Appendix</h3>
+    <h5>Data Structures</h5>
+      <a href="/docs/appendix-data-structures-user">User</a>
+      <a href="/docs/appendix-data-structures-measured-value">Measured Value</a>
+      <a href="/docs/appendix-data-structures-user-profile">User Profile</a>
+      <a href="/docs/appendix-data-structures-account">Account</a>
+      <a href="/docs/appendix-data-structures-privacy-preferences">Privacy Preferences</a>
+      <a href="/docs/appendix-data-structures-goal-preferences">Goal Preferences</a>
+      <a href="/docs/appendix-data-structures-location-preferences">Location Preferences</a>
+      <a href="/docs/appendix-data-structures-diary-preferences">Diary Preferences</a>
+      <a href="/docs/appendix-data-structures-nutritional-contents">Nutritional Contents</a>
+      <a href="/docs/appendix-data-structures-exercise">Exercise</a>
+      <a href="/docs/appendix-data-structures-measurement">Measurement</a>
+      <a href="/docs/appendix-data-structures-diary">Diary</a>
+      <a href="/docs/appendix-data-structures-subscription">Subscription</a>
+    <h5>Error Codes</h5>
+      <a href="/docs/appendix-error-codes">Error Codes</a>
+    <h5>Migrating from MyFitnessPal API v1 to v2</h5>
+      <a href="/docs/appendix-migrate-log_cardio_exercise">v1 action: log_cardio_exercise</a>
+      <a href="/docs/appendix-migrate-remove_cardio_exercise">v1 action: remove_cardio_exercise</a>
+      <a href="/docs/appendix-migrate-log_weight">v1 action: log_weight</a>
+      <a href="/docs/appendix-migrate-log_expended_energy">v1 action: log_expended_energy</a>
+      <a href="/docs/appendix-migrate-get_food_summary">v1 action: get_food_summary</a>
+      <a href="/docs/appendix-migrate-get_cardio_exercises">v1 action: get_cardio_exercises</a>
+      <a href="/docs/appendix-migrate-get_weight">v1 action: get_weight</a>
+      <a href="/docs/appendix-migrate-fetch_user_info">v1 action: fetch_user_info</a>
+      <a href="/docs/appendix-migrate-subscribe_to_user_updates">v1 action: subscribe_to_user_updates</a>
+      <a href="/docs/appendix-migrate-unsubscribe_from_user_updates">v1 action: unsubscribe_from_user_updates</a>
+    <h5>Tracking all­day steps activity</h5>
+      <a href="/docs/appendix-tracking-all-day-steps">Tracking all-day steps activity</a>
+      <a href="/docs/appendix-tracking-recommended-approach">Recommended approach for tracking steps</a>
+      <a href="/docs/appendix-tracking-determining-daily-totals">Determining daily totals</a>
+      <a href="/docs/appendix-tracking-calorie-adjustments">Calorie Adjustments</a>
+    <h5>MyFitnessPal exercises and their identifiers</h5>
+      <a href="/docs/appendix-mfp-exercises-identifiers">MyFitnessPal exercises and their identifiers</a>
+    <h5>Full request and response examples</h5>
+      <a href="/docs/appendix-full-request-examples">POST and GET request and response</a>
+</div>
+
+        </div>
+        <div class="main col-2 documentation">
+          <h1 id="user-authorization">User Authorization</h1>
+
+<p>MyFitnessPal API user authorization is based on the OAuth 2.0 protocol. (See: <a href="http://oauth.net/2/">http://oauth.net/2/</a>​) In order to use the API to interact with a user’s MyFitnessPal account, these steps must be followed:</p>
+
+<ol>
+  <li>
+    <p>Obtain permission from the user to link their account to your application. To do this, create a link on your website to the Authorization Code Grant URL hosted by MyFitnessPal. When the user follows this link, they will be presented with the option to grant access to your application. (If they do not already have a session in MyFitnessPal, they will first be presented with a login form.)</p>
+  </li>
+  <li>
+    <p>If the user grants access to your application, the MyFitnessPal servers will redirect the user back to your site. Along with this redirect you will be passed an ​authorization code which represents the link between your application and the user.</p>
+  </li>
+  <li>
+    <p>Immediately exchange the authorization code for an access token and a refresh token from MyFitnessPal. As part of this request, you will pass along your ​client id​ and ​client secret​, which serve to authenticate your application to the MyFitnessPal API. MyFitnessPal will provide you with the c​lient id​ and ​client secret​ when you set up your API account.</p>
+  </li>
+  <li>
+    <p>The provided access token represents a fully authenticated token that must be used to make API requests on behalf of the linked user account. Every API request must contain a valid access token. The access token will expire after a certain period. A client app may request a new access token at any time using the refresh token. The refresh token remains valid until revoked by either your application or the user.</p>
+  </li>
+  <li>
+    <p>Once a user has authorized your app to make requests to the MyFitnessPal API on their behalf, you may use the API methods documented below, including the access token with each request.</p>
+  </li>
+</ol>
+
+<p>Each step in this process is described in more detail in the following sections.</p>
+
+        </div>
+      </section>
+    </article>
+    <footer class="site-footer">
+
+  <div class="site-footer-logo">
+    <img
+      class="site-footer-logo-img"
+      src="/assets/images/mfp-wordmark.svg"
+      alt="MyFitnessPal"
+    />
+  </div>
+
+  <nav class="site-footer-nav">
+    <a href="https://www.myfitnesspal.com/terms-of-service">Terms</a>
+    <a href="https://www.myfitnesspal.com/privacy-policy">Privacy</a>
+    <a href="/faq/">Support</a>
+    <a href="https://status.myfitnesspal.com/">Status</a>
+    <a href="mailto:partners@myfitnesspal.com">Licensing</a>
+  </nav>
+
+</footer>
+
+<script src="/assets/js/main.js"></script>
+
+  </body>
+</html>

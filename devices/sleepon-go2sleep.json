@@ -17,7 +17,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "No",
-          "long": "Bluetooth"
+          "long": "Bluetooth."
         },
         "API Access Security": {
           "short": "N/A",

@@ -1,0 +1,664 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Strava Developers</title>
+	<link rel='icon' type='image/png' href="/images/favicon-32x32.png" sizes='32x32'>
+	<link rel='icon' type='image/png' href="/images/favicon-96x96.png" sizes='96x96'>
+	<link rel='icon' type='image/png' href="/images/favicon-16x16.png" sizes='16x16'>
+
+    <script src="/snowplow.js"></script>
+
+    <link href="/bootstrap.min.css" rel="stylesheet">
+    <link href="/tether.min.css" rel="stylesheet">
+    <link href="/strava-developers.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+      <div class='container'>
+        <a class="navbar-brand" href="/">
+          <span class='strava-logo'><img src="/images/strava_logo_nav.png" alt="Strava"></span> <span class='strava-subbranding'>Developers</span>
+        </a>
+      </div>
+    </nav>
+
+<div class="container">
+  <div class="content">
+    <article>
+      <header>
+        <h1 class="title">Authentication</h1>
+      </header>
+      <section>
+        
+
+<p><br></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<p><a href="#introduction">Introduction</a>
+<br>
+<a href="#oauthoverview">OAuth Overview</a>
+<br>
+<a href="#requestingaccess">Requesting Access</a>
+<br>
+<a href="#detailsaboutrequestingaccess">Details About Requesting Access</a>
+<br>
+<a href="#tokenexchange">Token Exchange</a>
+<br>
+<a href="#refreshingexpiredaccesstokens">Refreshing Expired Access Tokens</a>
+<br>
+<a href="#accessingtheapiusinganaccesstoken">Accessing the API Using an Access Token</a>
+<br>
+<a href="#deauthorization">Deauthorization</a>
+<br>
+<a href="#howtogetsupport">How To Get Support</a>
+<br></p>
+
+<hr />
+
+<p><a name="introduction"></a></p>
+
+<p><br></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Strava uses <a href="https://github.com/Kong/mashape-oauth/blob/master/FLOWS.md#oauth-2-three-legged">OAuth2</a> for authentication to the V3 API. OAuth allows external applications to request authorization to a user’s data. It allows users to grant and revoke API access on a per-application basis and keeps users’ authentication details safe.</p>
+
+<p>All developers need to <a href="https://developers.strava.com/docs/getting-started/#account">register their application</a> before getting started. A registered application will be assigned a client ID and client secret. The secret is used for authentication and should never be shared.</p>
+
+<p><br></p>
+
+<p><a name="oauthoverview"></a></p>
+
+<p><br></p>
+
+<h2 id="oauth-overview">OAuth Overview</h2>
+
+<p>When OAuth is initiated, the user is prompted by the application to log in on the Strava website and to give consent to the requesting application. A user can opt out of the scopes requested by the application.</p>
+
+<p>After the user accepts or rejects the authorization request, Strava redirects the user to a URL specified by the application. If the user authorized the application, the URL query string will include an authorization code and the scope accepted by the user. Apps should check which scopes a user has accepted. Applications complete the authorization process by exchanging the authorization code for a refresh token and short-lived access token.</p>
+
+<p><em>Access tokens</em> are used by applications to obtain and modify Strava resources on behalf of the authenticated athlete. <em>Refresh tokens</em> are used to obtain new access tokens when older ones expire.</p>
+
+<p>Note that Google Sign-in will not work for applications using a mobile webview. See <a href="https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html">Google’s blog post</a> for further information and ways to work around that limitation.</p>
+
+<p><a href="https://developers.strava.com/docs/getting-started/#oauth">Step-by-step guide:</a>
+<br>
+<img align="bottom" style="padding:15px;" src="/images/getting-started-5.png"></p>
+
+<p><br></p>
+
+<p><a name="requestingaccess"></a></p>
+
+<p><br></p>
+
+<h2 id="requesting-access">Requesting Access</h2>
+
+<p>To initiate the flow, applications must redirect the user to Strava’s authorization page. The authorization endpoint is different for mobile and web applications.</p>
+
+<p><br></p>
+
+<h5 id="web-applications">Web applications</h5>
+
+<p>Redirect the user to <code>GET https://www.strava.com/oauth/authorize</code>.</p>
+
+<p><br></p>
+
+<h5 id="mobile-applications">Mobile applications</h5>
+
+<p>Our authentication flows are slightly different for Android and iOS due to App Store and Google Play Store guidelines and recommendations. Below you&rsquo;ll find code samples for both platforms. Here are some details about mobile OAuth:</p>
+
+<ul>
+<li>If a user does not have the Strava app installed, they should be redirected to mobile web to complete OAuth.</li>
+<li>Mobile OAuth supports refresh tokens and short-lived access tokens. Mobile OAuth does not support forever access tokens.</li>
+<li>Users must have version 75.0 or later of the Strava app installed in order to take advantage of mobile OAuth. Users without the Strava app or with an older app version will be brought to a web endpoint where they can authorize your app.</li>
+</ul>
+
+<p><br></p>
+
+<h6 id="android">Android</h6>
+
+<p>Android apps can use an Implicit Intent to redirect users to the <code>GET https://www.strava.com/oauth/mobile/authorize</code> endpoint. The Strava app should open automatically if the user has it installed.</p>
+
+<p>Sample code:</p>
+
+<pre><code>val intentUri = Uri.parse(&quot;https://www.strava.com/oauth/mobile/authorize&quot;)
+        .buildUpon()
+        .appendQueryParameter(&quot;client_id&quot;, &quot;1234321&quot;)
+        .appendQueryParameter(&quot;redirect_uri&quot;, &quot;https://www.yourapp.com&quot;)
+        .appendQueryParameter(&quot;response_type&quot;, &quot;code&quot;)
+        .appendQueryParameter(&quot;approval_prompt&quot;, &quot;auto&quot;)
+        .appendQueryParameter(&quot;scope&quot;, &quot;activity:write,read&quot;)
+        .build()
+
+val intent = Intent(Intent.ACTION_VIEW, intentUri)
+startActivity(intent)
+</code></pre>
+
+<p><br></p>
+
+<h6 id="ios">iOS</h6>
+
+<p>If the user does not have Strava installed, your app should use <code>SFAuthenticationSession</code> or <code>ASWebAuthenticationSession</code>, depending on which versions of iOS your app supports. If your app is linked on or after iOS 9.0, you must add <code>strava</code> in you app’s Info.plist file. It should be added under the <code>LSApplicationQueriesSchemes</code> key.  Failure to do this will result in a crash when calling <code>canOpenUrl:</code>.</p>
+
+<p>You should check first if your app can open the <code>appOAuthURLStravaScheme</code>. If it can, the Strava app is installed and should handle the authentication. You can proceed by opening that same URL.</p>
+
+<p>If your app is not able to open that URL, proceed with using the <code>webOAuthUrl</code>. You should use <code>SFAuthenticationSessions</code> or <code>ASWebAuthenticationSession</code> to prevent the user from leaving your application to authenticate. Ensure that the <code>callbackURLScheme</code> is a registered url scheme in your application.</p>
+
+<p>Sample code:</p>
+
+<pre><code class="language-swift">private var authSession: SFAuthenticationSession?
+
+let appOAuthUrlStravaScheme = URL(string: &quot;strava://oauth/mobile/authorize?client_id=1234321&amp;redirect_uri=YourApp%3A%2F%2Fwww.yourapp.com%2Fen-US&amp;response_type=code&amp;approval_prompt=auto&amp;scope=activity%3Awrite%2Cread&amp;state=test&quot;)!
+
+let webOAuthUrl = URL(string: &quot;https://www.strava.com/oauth/mobile/authorize?client_id=1234321&amp;redirect_uri= YourApp%3A%2F%2Fwww.yourapp.com%2Fen-US&amp;response_type=code&amp;approval_prompt=auto&amp;scope=activity%3Awrite%2Cread&amp;state=test&quot;)!
+
+@IBAction func authenticate() {
+    if UIApplication.shared.canOpenURL(appOAuthUrlstravaScheme) {
+        UIApplication.shared.open(appOAuthUrlstravaScheme, options: [:])
+    } else {
+        authSession = SFAuthenticationSession(url: webOAuthUrl, callbackURLScheme: &quot;YourApp://&quot;) { url, error in
+
+        }
+
+        authSession?.start()
+    }
+}
+</code></pre>
+
+<p><br></p>
+
+<p><a name="detailsaboutrequestingaccess"></a></p>
+
+<p><br></p>
+
+<h2 id="details-about-requesting-access">Details About Requesting Access</h2>
+
+<p>On both web and mobile the authorization page will prompt the user to grant your application access to their data. Scopes requested by the application are shown as checked boxes, but the user may opt out of any requested scopes. If an application relies on specific scopes to function properly, the application should make that clear before and after authentication.</p>
+
+<table class="parameters">
+  <tr>
+    <td width="200px">
+        <span class="parameter-name">client_id</span>
+      <br>
+      <span class="parameter-description">
+        required integer, in query
+      </span>
+    </td>
+    <td>
+        The application’s ID, obtained during registration.
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">redirect_uri</span>
+      <br>
+      <span class="parameter-description">
+        required string, in query
+      </span>
+    </td>
+    <td>
+        URL to which the user will be redirected after authentication. Must be within the callback domain specified by the application. <code>localhost</code> and <code>127.0.0.1</code> are white-listed.
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">response_type</span>
+      <br>
+      <span class="parameter-description">
+        required string, in query
+      </span>
+    </td>
+    <td>
+        Must be <code>code</code>.
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">approval_prompt</span>
+      <br>
+      <span class="parameter-description">
+        string, in query
+      </span>
+    </td>
+    <td>
+        <code>force</code> or <code>auto</code>, use <code>force</code> to always show the authorization prompt even if the user has already authorized the current application, default is <code>auto</code>.
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">scope</span>
+      <br>
+      <span class="parameter-description">
+        required string, in query
+      </span>
+    </td>
+    <td>
+      <p>
+        Requested scopes, as a comma delimited string, e.g. "activity:read_all,activity:write". Applications should request only the scopes required for the application to function normally. The scope activity:read is required for activity webhooks.
+      </p>
+      <ul>
+        <li><code>read</code>: read public segments, public routes, public profile data, public posts, public events, club feeds, and leaderboards</li>
+        <li><code>read_all</code>:read private routes, private segments, and private events for the user</li>
+        <li><code>profile:read_all</code>: read all profile information even if the user has set their profile visibility to Followers or Only You</li>
+        <li><code>profile:write</code>: update the user's weight and Functional Threshold Power (FTP), and access to star or unstar segments on their behalf</li>
+        <li><code>activity:read</code>: read the user's activity data for activities that are visible to Everyone and Followers, excluding privacy zone data</li>
+        <li><code>activity:read_all</code>: the same access as <code>activity:read</code>, plus privacy zone data and access to read the user's activities with visibility set to Only You</li>
+        <li><code>activity:write</code>: access to create manual activities and uploads, and access to edit any activities that are visible to the app, based on activity read access level</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">state</span>
+      <br>
+      <span class="parameter-description">
+        string, in query
+      </span>
+    </td>
+    <td>
+        Returned in the redirect URI. Useful if the authentication is done from various points in an app.
+    </td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p><a name="tokenexchange"></a></p>
+
+<p><br></p>
+
+<h2 id="token-exchange">Token Exchange</h2>
+
+<p>Strava will respond to the authorization request by redirecting the user agent to the <code>redirect_uri</code> provided.</p>
+
+<p>If access is denied, <code>error=access_denied</code> will be included in the query string.</p>
+
+<p>If access is accepted, <code>code</code> and <code>scope</code> parameters will be included in the query string. The <code>code</code> parameter contains the authorization code required to complete the authentication process. <code>code</code> is short lived and can only be used once. The application must now call the <code>POST https://www.strava.com/oauth/token</code> with its client ID and client secret to exchange the authorization code for a refresh token and short-lived access token.</p>
+
+<p>The <code>state</code> parameter will be always included in the response if it was initially provided by the application.</p>
+
+<p><br></p>
+
+<h6 id="request-parameters">Request Parameters</h6>
+
+<table class="parameters">
+  <tr>
+    <td width="200px">
+        <span class="parameter-name">client_id</span>
+      <br>
+      <span class="parameter-description">
+        required integer, in query
+      </span>
+    </td>
+    <td>
+        The application’s ID, obtained during registration.
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">client_secret</span>
+      <br>
+      <span class="parameter-description">
+        required string, in query
+      </span>
+    </td>
+    <td>
+        The application’s secret, obtained during registration.
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">code</span>
+      <br>
+      <span class="parameter-description">
+        required string, in query
+      </span>
+    </td>
+    <td>
+        The <code>code</code> parameter obtained in the redirect.
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">grant_type</span>
+      <br>
+      <span class="parameter-description">
+        required string, in query
+      </span>
+    </td>
+    <td>
+        The grant type for the request. For initial authentication, must always be "authorization_code".
+    </td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p><strong>Example cURL Request</strong></p>
+
+<pre><code>curl -X POST https://www.strava.com/api/v3/oauth/token \
+  -d client_id=ReplaceWithClientID \
+  -d client_secret=ReplaceWithClientSecret \
+  -d code=ReplaceWithCode \
+  -d grant_type=authorization_code
+</code></pre>
+
+<p><br></p>
+
+<h6 id="response-parameters">Response Parameters</h6>
+
+<p>A refresh token, access token, and access token expiration date will be issued upon successful authentication.</p>
+
+<p><br></p>
+
+<table class="parameters">
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">expires_at</span>
+      <br>
+      <span class="parameter-description">
+        integer
+      </span>
+    </td>
+    <td>
+        The number of seconds since the epoch when the provided access token will expire
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">expires_in</span>
+      <br>
+      <span class="parameter-description">
+        integer
+      </span>
+    </td>
+    <td>
+        Seconds until the short-lived access token will expire
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">refresh_token</span>
+      <br>
+      <span class="parameter-description">
+        string
+      </span>
+    </td>
+    <td>
+        The refresh token for this user, to be used to get the next access token for this user. Please expect that this value can change anytime you retrieve a new access token. Once a new refresh token code has been returned, the older code will no longer work.
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+        <span class="parameter-name">athlete</span>
+      <br>
+      <span class="parameter-description">
+        string
+      </span>
+    </td>
+    <td>
+        A summary of athlete information
+    </td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p><strong>Example Response</strong></p>
+
+<pre><code>{
+  &quot;token_type&quot;: &quot;Bearer&quot;,
+  &quot;expires_at&quot;: 1568775134,
+  &quot;expires_in&quot;: 21600,
+  &quot;refresh_token&quot;: &quot;e5n567567...&quot;,
+  &quot;access_token&quot;: &quot;a4b945687g...&quot;,
+  &quot;athlete&quot;: {
+    #{summary athlete representation}
+  }
+}
+</code></pre>
+
+<p><br></p>
+
+<p><a name="refreshingexpiredaccesstokens"></a></p>
+
+<p><br></p>
+
+<h2 id="refreshing-expired-access-tokens">Refreshing Expired Access Tokens</h2>
+
+<p>Access tokens expire six hours after they are created, so they must be refreshed in order for an application to maintain access to a user&rsquo;s resources. Every time you get a new access token, we return a new refresh token as well. If you need to make a request, we recommend checking to see if the short-lived access token has expired. If it has expired, request a new short-lived access token with the last received refresh token.</p>
+
+<p><br></p>
+
+<p><img align="bottom" style="padding:15px;" src="/images/authentication-2.png"></p>
+
+<p><br></p>
+
+<p>To refresh an access token, applications should call the <code>POST https://www.strava.com/oauth/token</code> endpoint, specifying <code>grant_type: refresh_token</code> and including the application&rsquo;s refresh token for the user as an additional parameter. If the application has an access token for the user that expires in more than one hour, the existing access token will be returned. If the application&rsquo;s access tokens for the user are expired or will expire in one hour (3,600 seconds) or less, a new access token will be returned. In this case, both the newer and older access tokens can be used until they expire.</p>
+
+<p>A refresh token is issued back to the application after all successful requests to the <code>POST https://www.strava.com/oauth/token</code> endpoint. The refresh token may or may not be the same refresh token used to make the request. Applications should persist the refresh token contained in the response, and always use the most recent refresh token for subsequent requests to obtain a new access token. Once a new refresh token is returned, the older refresh token is invalidated immediately.</p>
+
+<p><br></p>
+
+<h6 id="request-parameters-1">Request Parameters</h6>
+
+<table class="parameters">
+  <tr>
+    <td width="200px">
+        <span class="parameter-name">client_id</span>
+      <br>
+      <span class="parameter-description">
+        required integer, in query
+      </span>
+    </td>
+    <td>
+        The application’s ID, obtained during registration.
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">client_secret</span>
+      <br>
+      <span class="parameter-description">
+        required string, in query
+      </span>
+    </td>
+    <td>
+        The application’s secret, obtained during registration.
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">grant_type</span>
+      <br>
+      <span class="parameter-description">
+        required string, in query
+      </span>
+    </td>
+    <td>
+        The grant type for the request. When refreshing an access token, must always be "refresh_token".
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">refresh_token</span>
+      <br>
+      <span class="parameter-description">
+        required string, in query
+      </span>
+    </td>
+    <td>
+        The refresh token for this user, to be used to get the next access token for this user. Please expect that this value can change anytime you retrieve a new access token. Once a new refresh token code has been returned, the older code will no longer work.
+    </td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p><br></p>
+
+<p><strong>Example cURL Request</strong></p>
+
+<pre><code>curl -X POST https://www.strava.com/api/v3/oauth/token \
+  -d client_id=ReplaceWithClientID \
+  -d client_secret=ReplaceWithClientSecret \
+  -d grant_type=refresh_token \
+  -d refresh_token=ReplaceWithRefreshToken
+</code></pre>
+
+<p><br></p>
+
+<h6 id="response-parameters-1">Response Parameters</h6>
+
+<table class="parameters">
+  <tr>
+    <td width="200px">
+        <span class="parameter-name">access_token</span>
+      <br>
+      <span class="parameter-description">
+        string
+      </span>
+    </td>
+    <td>
+        The short-lived access token
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">expires_at</span>
+      <br>
+      <span class="parameter-description">
+        integer
+      </span>
+    </td>
+    <td>
+        The number of seconds since the epoch when the provided access token will expire
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">expires_in</span>
+      <br>
+      <span class="parameter-description">
+        integer
+      </span>
+    </td>
+    <td>
+        Seconds until the short-lived access token will expire
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      <span class="parameter-name">refresh_token</span>
+      <br>
+      <span class="parameter-description">
+        string
+      </span>
+    </td>
+    <td>
+        The refresh token for this user, to be used to get the next access token for this user. Please expect that this value can change anytime you retrieve a new access token. Once a new refresh token code has been returned, the older code will no longer work.
+    </td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p><strong>Example Response</strong></p>
+
+<pre><code>{
+  &quot;token_type&quot;: &quot;Bearer&quot;,
+  &quot;access_token&quot;: &quot;a9b723...&quot;,
+  &quot;expires_at&quot;:1568775134,
+  &quot;expires_in&quot;:20566,
+  &quot;refresh_token&quot;:&quot;b5c569...&quot;
+}
+</code></pre>
+
+<p><br></p>
+
+<h6 id="how-to-store-short-lived-access-tokens-and-refresh-tokens">How to Store Short-Lived Access Tokens and Refresh Tokens</h6>
+
+<ul>
+<li>Storing the scopes your athletes accept is great in case you get unexpected results (for example: why am I not getting activities for this user?)</li>
+<li>In general, we recommend storing short-lived access tokens and refresh tokens in separate tables</li>
+<li>Note: This is just a recommendation and may not be the best implementation given your use case.</li>
+</ul>
+
+<p><img align="bottom" style="padding:15px;" src="/images/authentication-3.png"></p>
+
+<p><br></p>
+
+<p><a name="accessingtheapiusinganaccesstoken"></a></p>
+
+<h2 id="accessing-the-api-using-an-access-token">Accessing the API Using an Access Token</h2>
+
+<p>Applications use unexpired access tokens to make resource requests to the Strava API on the user&rsquo;s behalf. Access tokens are required for all resource requests, and can be included by specifying the <code>Authorization: Bearer #{access_token}</code> header. For instance, using <a href="https://httpie.org/">HTTPie</a>:</p>
+
+<pre><code>$ http https://www.strava.com/api/v3/athlete 'Authorization: Bearer 83ebeabdec09f6670863766f792ead24d61fe3f9'
+</code></pre>
+
+<p><br></p>
+
+<h6 id="example-curl-request">Example cURL Request</h6>
+
+<pre><code>curl -G https://www.strava.com/api/v3/athlete -H &quot;Authorization: Bearer ReplaceWithAccessToken&quot;
+</code></pre>
+
+<p><br></p>
+
+<p><a name="deauthorization"></a></p>
+
+<p><br></p>
+
+<h2 id="deauthorization">Deauthorization</h2>
+
+<p>Applications can revoke access to an athlete’s data. This will invalidate all refresh tokens and access tokens that the application has for the athlete, and the application will be removed from the athlete&rsquo;s <a href="https://www.strava.com/settings/apps">apps settings page</a>. All requests made using invalidated tokens will receive a 401 Unauthorized response.</p>
+
+<p>The endpoint is <code>POST https://www.strava.com/oauth/deauthorize</code>.</p>
+
+<table class="parameters">
+  <tr>
+    <td width="200px">
+        <span class="parameter-name">access_token</span>
+      <br>
+      <span class="parameter-description">
+        required string, in query
+      </span>
+    </td>
+    <td>
+        Responds with the access tokens that were revoked.
+    </td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p><a name="howtogetsupport"></a></p>
+
+<p><br></p>
+
+<h2 id="how-to-get-support">How to Get Support</h2>
+
+<p>If you have questions, please check our <a href="https://communityhub.strava.com/t5/developer-discussions/bd-p/developer-discussions">developer community hub</a>. Remember, <strong>never</strong> share access tokens, refresh tokens, authorization codes, or your client secret in a public forum.</p>
+
+<p><br>
+<br></p>
+
+      </section>
+    </article>
+  </div>
+</div>
+    <script src="/jquery.min.js"></script>
+    <script src="/tether.min.js"></script>
+    <script src="/bootstrap.min.js"></script>
+    
+  </body>
+</html>
+

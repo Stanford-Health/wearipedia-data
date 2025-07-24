@@ -236,17 +236,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "Pedometer-walk",
-          "39",
-          "MAE"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "IPhone_Bariatrics.txt",
       "IPhone_Cardiology.txt",
@@ -327,94 +317,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "SPO2",
-          "0.81[@schroder2023applewatch],[@windisch2023accuracy]",
-          "daily (per min)"
-        ],
-        [
-          "HRV",
-          "10.8[@hernando2018validation],[@velmovitsky2023heartrate]",
-          "MAE"
-        ],
-        [
-          "HR",
-          "7.8[@falter2019accuracy],[@nuss2018accuracy]",
-          "MAE"
-        ],
-        [
-          "Pedometer-walk",
-          "27.0[@veerabhadrappa2018tracking],[@germini2022accuracy]",
-          "daily"
-        ],
-        [
-          "Pedometer-run",
-          "59.0",
-          "daily"
-        ]
-      ],
-      "nighttime": [
-        [
-          "HR",
-          "6.2",
-          "MAE"
-        ],
-        [
-          "SOL",
-          "10.6[@miller2022validation],[@roomkham2019sleepmonitoring]",
-          "MAE"
-        ],
-        [
-          "TST",
-          "23.8",
-          "MAE"
-        ],
-        [
-          "Stages",
-          "W/R",
-          "-"
-        ],
-        [
-          "Apnea",
-          "N",
-          "-"
-        ],
-        [
-          "Snoring",
-          "N",
-          "-"
-        ]
-      ],
-      "sensor_performance": [
-        [
-          "Apple Watch 5",
-          "9.6 MAE",
-          "29 MAE"
-        ],
-        [
-          "Apple Watch 6",
-          "8.5 MAE",
-          "22 MAE"
-        ],
-        [
-          "Apple Watch 7",
-          "8.2 MAE",
-          "20 MAE"
-        ],
-        [
-          "Apple Watch 8",
-          "9.5 MAE",
-          "20 MAE"
-        ],
-        [
-          "Apple Watch Ultra",
-          "7.7 MAE",
-          "20 MAE"
-        ]
-      ]
-    },
+    "api": {},
     "summaries": [
       "Apple_Watch_5_Cardiology.txt",
       "Apple_Watch_5_ChronicPainOrDiseases.txt",
@@ -447,34 +350,34 @@
       },
       "security": {
         "Wearable Connectivity": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "API Access Security": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         }
       },
       "privacy": {
         "Data Risk": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "HIPAA Compliance": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "De-identification (When Sharing)": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "Shares With Third Parties": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "Transparency in Third Party Sharing": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         }
       }
     },
@@ -534,32 +437,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "SPO2",
-          "0.73",
-          "MAE"
-        ],
-        [
-          "HR",
-          "13.2",
-          "MAE"
-        ],
-        [
-          "Pedometer-walk",
-          "45",
-          "MAE"
-        ],
-        [
-          "Pedometer-run",
-          "87",
-          "MAE"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": []
   },
   {
@@ -692,71 +570,6 @@
     ]
   },
   {
-    "name": "Dreem Headband",
-    "id": "dreem-headband",
-    "ordering_priority": 20,
-    "picture": "/assets/dreem-headband.png",
-    "description": "The Dreem Headband is a wearable sleep technology device designed to monitor, analyze, and improve sleep quality. It uses sensors to track brain activity, heart rate, and movement throughout the night, providing detailed insights into sleep patterns. The headband pairs with a smartphone app, offering users a comprehensive analysis of their sleep stages, including deep, light, and REM sleep. One of the key features of the Dreem Headband is its ability to provide real-time audio feedback through bone conduction, designed to enhance the quality of deep sleep. It also offers personalized sleep coaching programs based on the user's sleep data, aiming to improve sleep habits and overall sleep quality. This device is particularly useful for individuals experiencing sleep issues or those looking to optimize their sleep for better health and well-being. Its data-driven approach and non-invasive nature make it a valuable tool for personal sleep management.",
-    "tags": [
-      "EEG"
-    ],
-    "notebooks": [
-      {
-        "name": "dreem_headband_3.ipynb",
-        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/dreem_headband_3.ipynb"
-      }
-    ],
-    "link": "https://dreem.com/clinicaltrials",
-    "specs": {
-      "product_details": {
-        "Location": "Forehead",
-        "Price": "$129.95",
-        "Sensors": [],
-        "Battery": ""
-      },
-      "security": {
-        "Wearable Connectivity": {
-          "short": "Yes",
-          "long": "Wifi"
-        },
-        "API Access Security": {
-          "short": "N/A",
-          "long": "No public API is available."
-        }
-      },
-      "privacy": {
-        "Data Risk": {
-          "short": "No",
-          "long": "Data from the Dreem 3 includes EEG (electroencephalogram) data, which allows for the monitoring of brain waves, heart rate, respiratory rate, and movement during sleep. The device analyzes deep, light, and REM sleep stages, as well as wake periods. In addition to providing insights into overall sleep architecture, the Dreem 3 offers tools and techniques to help improve sleep, such as auditory stimulation to enhance deep sleep and smart alarms to wake users during the optimal sleep stage. <br />These data constitute a health data risk in the following categories: <br /> <br />- Physical activity data: Movements during sleep which might indicate disruptions, restless sleep, or potential sleep disorders <br />- Sleep data: Sleep stages (deep, light, REM), wake periods, and overall sleep architecture derived from EEG readings <br />- Physiological data: Heart rate, respiratory rate during sleep <br />- Predictive health insights: Recommendations for sleep improvement based on analyzed metrics, which may hint at sleep irregularities or potential sleep conditions"
-        },
-        "HIPAA Compliance": {
-          "short": "No",
-          "long": "Dreem 3 collects sleep stages, heart rate, breathing patterns, and brain activity. Users receive this data via the Dreem app, which offers insights into their sleep patterns and quality. Interactions with the Dreem platform and any communications with their support might be stored. <br />Data points like sleep stages, heart rate, and brain activity could be considered protected health information under HIPAA. <br />Dreem 3 is not HIPAA compliant."
-        },
-        "De-identification (When Sharing)": {
-          "short": "Yes",
-          "long": "Dreem 3 is a headband designed to monitor and improve sleep quality. It measures parameters such as brain activity, heart rate, and movement to provide detailed sleep insights.  Dreem's privacy policy states that data is encrypted both during transmission and while stored. The policy does not provide specific details regarding the use of differential privacy or other unique de-identification techniques applied to health data. In terms of sharing, Dreem's policy indicates that data may be shared with third parties in an anonymized form. However, the exact methods of de-identification or the specifics of what constitutes 'anonymized' are not clearly laid out. <br />For an up-to-date and detailed understanding of Dreem's data handling and privacy policies, it's recommended to refer directly to the company's official documentation."
-        },
-        "Shares With Third Parties": {
-          "short": "Yes",
-          "long": "Dreem 3 mentions that they 'may share personal data with third-party collaborators or service providers to enhance user experience, provide product support, and for research purposes.'"
-        },
-        "Transparency in Third Party Sharing": {
-          "short": "Yes",
-          "long": "Categories of third parties are disclosed as 'partners', 'affiliates', and 'service providers'. <br />No mentions of specific companies, organizations, or individuals are provided."
-        }
-      }
-    },
-    "api": {},
-    "summaries": [
-      "Dreem_Headband_3_Bariatrics.txt",
-      "Dreem_Headband_3_ChronicPainOrDiseases.txt",
-      "Dreem_Headband_3_Gastroenterology.txt",
-      "Dreem_Headband_3_Psychiatry.txt",
-      "Dreem_Headband_3_Somnology.txt"
-    ]
-  },
-  {
     "name": "Elite HRV",
     "id": "elite-hrv",
     "ordering_priority": 22,
@@ -781,34 +594,34 @@
       },
       "security": {
         "Wearable Connectivity": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "API Access Security": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         }
       },
       "privacy": {
         "Data Risk": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "HIPAA Compliance": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "De-identification (When Sharing)": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "Shares With Third Parties": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "Transparency in Third Party Sharing": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         }
       }
     },
@@ -845,7 +658,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "Yes",
-          "long": "Wifi or bluetooth"
+          "long": "Wifi or bluetooth."
         },
         "API Access Security": {
           "short": "Yes",
@@ -855,11 +668,11 @@
       "privacy": {
         "Data Risk": {
           "short": "No",
-          "long": "Data from the Fitbit Charge includes steps tracking, distance covered, heart rate monitoring, sleep tracking, calories burned, floors climbed, and active zone minutes. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Steps tracking, distance covered, calories burned, floors climbed, active zone minute <br />- Sleep data: Sleep trackin <br />- Physiological data: Heart rate monitoring"
+          "long": "Data from the Fitbit Charge includes steps tracking, distance covered, heart rate monitoring, sleep tracking, calories burned, floors climbed, and active zone minutes. These data constitute a health data risk in the following categories: Physical activity data (steps tracking, distance covered, calories burned, floors climbed, active zone minute); Sleep data (sleep tracking); physiological data (heart rate monitoring)."
         },
         "HIPAA Compliance": {
           "short": "No",
-          "long": "Google Fitbit Charge collects identity data such as email address, birth date, usernames, and user preferences. The device amasses activity data based on the user's physical activities, including steps, distance traveled, floors climbed, heart rate, blood oxygen levels (SpO2), sleep stages, skin temperature, stress management, and menstrual tracking. Technical data for product and service use, including GPS location, technical logs, device configuration, and app usage, are processed. <br />Heart rate, blood oxygen levels, skin temperature, sleep, and physiological measurement data could be considered protected health information under HIPAA. <br />Google Fitbit Sense is not HIPAA compliant."
+          "long": "Google Fitbit Charge collects identity data such as email address, birth date, usernames, and user preferences. The device amasses activity data based on the user's physical activities, including steps, distance traveled, floors climbed, heart rate, blood oxygen levels (SpO2), sleep stages, skin temperature, stress management, and menstrual tracking. Technical data for product and service use, including GPS location, technical logs, device configuration, and app usage, are processed. Heart rate, blood oxygen levels, skin temperature, sleep, and physiological measurement data could be considered protected health information under HIPAA. Google Fitbit Sense is not HIPAA compliant."
         },
         "De-identification (When Sharing)": {
           "short": "Yes",
@@ -871,63 +684,11 @@
         },
         "Transparency in Third Party Sharing": {
           "short": "No",
-          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement. <br />No mentions of specific companies, organizations, or individuals are provided."
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement. No mentions of specific companies, organizations, or individuals are provided."
         }
       }
     },
-    "api": {
-      "sensor_performance": [
-        [
-          "Fitbit Charge",
-          "13.3 MAE",
-          "54 MAE"
-        ],
-        [
-          "Fitbit Charge 5",
-          "8.4 MAE",
-          "47 MAE"
-        ],
-        [
-          "Fitbit Charge 6",
-          "7.2 MAE",
-          "33 MAE"
-        ]
-      ],
-      "daytime": [
-        [
-          "SPO2",
-          "0.64",
-          "daily (per min)"
-        ],
-        [
-          "HRV",
-          "9.2",
-          "MAE"
-        ],
-        [
-          "HR",
-          "7.2",
-          "MAE"
-        ],
-        [
-          "Pedometer-walk",
-          "39",
-          "daily (per min)"
-        ],
-        [
-          "Pedometer-run",
-          "48",
-          "daily (per min)"
-        ]
-      ],
-      "nighttime": [
-        [
-          "HR",
-          "6.8",
-          "MAE"
-        ]
-      ]
-    },
+    "api": {},
     "summaries": [
       "Fitbit_Charge_4_ChronicPainOrDiseases.txt",
       "Fitbit_Charge_4_Endocrinology.txt",
@@ -968,7 +729,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "Yes",
-          "long": "Wifi or bluetooth"
+          "long": "Wifi or bluetooth."
         },
         "API Access Security": {
           "short": "Yes",
@@ -978,11 +739,11 @@
       "privacy": {
         "Data Risk": {
           "short": "No",
-          "long": "Data from the Fitbit Sense includes steps tracking, distance covered, heart rate monitoring, sleep tracking, blood oxygen levels (SpO2) monitoring, stress tracking, skin temperature variation, and electrodermal activity (EDA) scanning. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Steps tracking, distance covered <br />- Sleep data: Sleep tracking <br />- Physiological data: Heart rate monitoring, blood oxygen levels (SpO2) monitoring, skin temperature variation <br />- Health status data: Stress tracking, electrodermal activity (EDA) scanning"
+          "long": "Data from the Fitbit Sense includes steps tracking, distance covered, heart rate monitoring, sleep tracking, blood oxygen levels (SpO2) monitoring, stress tracking, skin temperature variation, and electrodermal activity (EDA) scanning. These data constitute a health data risk in the following categories: Physical activity data (Steps tracking, distance covered); sleep data (sleep tracking); physiological data (heart rate monitoring, blood oxygen levels (SpO2) monitoring, skin temperature variation); health status data (stress tracking, electrodermal activity (EDA) scanning)."
         },
         "HIPAA Compliance": {
           "short": "No",
-          "long": "Google Fitbit Sense collects identity data such as email address, birth date, usernames, and user preferences. The device amasses activity data based on the user's physical activities, including steps, distance traveled, floors climbed, heart rate, blood oxygen levels (SpO2), sleep stages, skin temperature, stress management, and menstrual tracking. Technical data for product and service use, including GPS location, technical logs, device configuration, and app usage, are processed. <br />Heart rate, blood oxygen levels, skin temperature, sleep, and physiological measurement data could be considered protected health information under HIPAA.<br /> Google Fitbit Sense is not HIPAA compliant."
+          "long": "Fitbit Sense collects identity data such as email address, birth date, usernames, and user preferences. The device amasses activity data based on the user's physical activities, including steps, distance traveled, floors climbed, heart rate, blood oxygen levels (SpO2), sleep stages, skin temperature, stress management, and menstrual tracking. Technical data for product and service use, including GPS location, technical logs, device configuration, and app usage, are processed. Heart rate, blood oxygen levels, skin temperature, sleep, and physiological measurement data could be considered protected health information under HIPAA. Fitbit Sense is not HIPAA compliant."
         },
         "De-identification (When Sharing)": {
           "short": "Yes",
@@ -994,7 +755,7 @@
         },
         "Transparency in Third Party Sharing": {
           "short": "No",
-          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement. <br />No mentions of specific companies, organizations, or individuals are provided."
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement. No mentions of specific companies, organizations, or individuals are provided."
         }
       }
     },
@@ -1039,7 +800,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "Yes",
-          "long": "Wifi or bluetooth"
+          "long": "Wifi or bluetooth."
         },
         "API Access Security": {
           "short": "No",
@@ -1069,37 +830,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "SPO2",
-          "0.78",
-          "daily (per min)"
-        ],
-        [
-          "HRV",
-          "11.7",
-          "MAE"
-        ],
-        [
-          "HR",
-          "7.8",
-          "MAE"
-        ],
-        [
-          "Pedometer-walk",
-          "40",
-          "daily (per min)"
-        ],
-        [
-          "Pedometer-run",
-          "76",
-          "daily (per min)"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Garmin_Fenix_7S_Cardiology.txt",
       "Garmin_Fenix_7S_ChronicPainOrDiseases.txt",
@@ -1110,73 +841,6 @@
       "Garmin_Fenix_7S_Psychiatry.txt",
       "Garmin_Fenix_7S_Pulmonology.txt",
       "Garmin_Fenix_7S_Somnology.txt"
-    ]
-  },
-  {
-    "name": "Google Fit",
-    "id": "google-fit",
-    "ordering_priority": 15,
-    "picture": "/assets/google-fit.png",
-    "description": "Google Fit is a health-tracking smartphone app that consolidates data from various activities to help users monitor their fitness and wellness. It tracks steps, distance, calories burned, and heart rate, using sensors in the user's smartphone or connected wearable devices. The app also records workout sessions and supports different types of physical activities, from walking to cycling. A key feature of Google Fit is its focus on two metrics: Move Minutes and Heart Points. Move Minutes encourage users to increase daily activity, while Heart Points are earned for more intense activities, promoting cardiovascular health.  Google Fit integrates with other health apps and devices, providing a centralized platform for users to view their health data. This makes it a useful tool for those looking to maintain or improve their fitness levels, offering a simple and accessible way to track and understand their physical activity and health trends.",
-    "tags": [
-      "App"
-    ],
-    "notebooks": [
-      {
-        "name": "google-fit.ipynb",
-        "link": "https://colab.research.google.com/github/Stanford-Health/Wearible-notebooks/blob/main/notebooks/google_fit.ipynb"
-      }
-    ],
-    "link": "https://www.google.com/fit/",
-    "specs": {
-      "product_details": {
-        "Location": "N/A (Smartphone App)",
-        "Price": "N/A",
-        "Sensors": [],
-        "Battery": "N/A"
-      },
-      "security": {
-        "Wearable Connectivity": {
-          "short": "N/A",
-          "long": "N/A"
-        },
-        "API Access Security": {
-          "short": "Yes",
-          "long": "API is available through OAuth 2.0."
-        }
-      },
-      "privacy": {
-        "Data Risk": {
-          "short": "No",
-          "long": "Data from Google Fit includes 'physical activity data' (steps taken, 'distance traveled', 'calories burned', and 'activity type'), 'heart rate data', 'weight', 'sleep patterns', and other health metrics that might be provided by integrated third-party devices or apps. The platform provides an overview of 'Daily Activity', 'Heart Points' to measure more intense activity levels, and can even capture and log manual fitness sessions. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Tracking of steps, walking, running, cycling, and other manually inputted workouts <br />- Sleep data: Sleep duration and patterns if synced with compatible sleep trackers or apps <br />- Physiological data: Heart rate, and any additional metrics inputted by the user or synced from other devices <br />- Health status data: Weight trends, and any other body measurements provided by the user or linked devices/apps"
-        },
-        "HIPAA Compliance": {
-          "short": "No",
-          "long": "Google Fit collect data from various sources, including smartphones and wearables, to track physical activities, heart rate, sleep patterns, and other wellness metrics. <br />Data such as physical activity, heart rate, and sleep could be considered protected health information under HIPAA. <br />Google Fit is not HIPAA compliant."
-        },
-        "De-identification (When Sharing)": {
-          "short": "No",
-          "long": "Google Fit does not guarantee data de-identification to meet HIPAA standards. Sensitive data should not be used through Google Fit. Google fit specifies that the responsibility for data de-identification lies with the user and is not accountable for any breaches."
-        },
-        "Shares With Third Parties": {
-          "short": "No",
-          "long": "Google Fit mention that they may share information with third parties. Google's general privacy policy, which encompasses a broad range of their products including Google Fit, mentions sharing data with third-party partners, vendors, researchers, and other entities for purposes ranging from product improvements to personalized advertising. Broad and encompassing language within its policies might mean that users' health and activity data, even if anonymized or aggregated, could be accessible to various third-party entities."
-        },
-        "Transparency in Third Party Sharing": {
-          "short": "No",
-          "long": "Categories of third parties are disclosed as 'affiliates', 'external processing' entities, and 'legal reasons'. <br />No mentions of specific companies, organizations, or individuals are provided."
-        }
-      }
-    },
-    "api": {},
-    "summaries": [
-      "Google_Fit_Bariatrics.txt",
-      "Google_Fit_Cardiology.txt",
-      "Google_Fit_ChronicPainOrDiseases.txt",
-      "Google_Fit_GeneralPhysiology.txt",
-      "Google_Fit_Obstetrics.txt",
-      "Google_Fit_Oncology.txt",
-      "Google_Fit_Other.txt"
     ]
   },
   {
@@ -1199,34 +863,34 @@
       },
       "security": {
         "Wearable Connectivity": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "API Access Security": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         }
       },
       "privacy": {
         "Data Risk": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "HIPAA Compliance": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "De-identification (When Sharing)": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "Shares With Third Parties": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         },
         "Transparency in Third Party Sharing": {
-          "short": "",
-          "long": ""
+          "short": "N/A",
+          "long": "N/A"
         }
       }
     },
@@ -1332,7 +996,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "Yes",
-          "long": "Wifi or bluetooth"
+          "long": "Wifi or bluetooth."
         },
         "API Access Security": {
           "short": "Yes",
@@ -1362,79 +1026,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "HR",
-          "12.9",
-          "MAE"
-        ],
-        [
-          "Pedometer-walk",
-          "52",
-          "daily (per min)"
-        ],
-        [
-          "Pedometer-run",
-          "89",
-          "daily (per min)"
-        ]
-      ],
-      "nighttime": [
-        [
-          "SPO2",
-          "3.2",
-          "MAE"
-        ],
-        [
-          "HR",
-          "3.6",
-          "MAE"
-        ],
-        [
-          "SOL",
-          "9.1",
-          "MAE"
-        ],
-        [
-          "TST",
-          "19.97",
-          "MAE"
-        ],
-        [
-          "WASO",
-          "-3.4",
-          "MAE"
-        ],
-        [
-          "SE",
-          "0.3",
-          "MAE"
-        ],
-        [
-          "Stages",
-          "W/R",
-          "MAE"
-        ],
-        [
-          "Apnea",
-          "N",
-          "MAE"
-        ],
-        [
-          "Snoring",
-          "N",
-          "MAE"
-        ]
-      ],
-      "sensor_performance": [
-        [
-          "Oura Ring 3",
-          "28.2 MAE",
-          "63 MAE"
-        ]
-      ]
-    },
+    "api": {},
     "summaries": [
       "Oura_Ring_Gen_3_Bariatrics.txt",
       "Oura_Ring_Gen_3_Cardiology.txt",
@@ -1477,7 +1069,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "Yes",
-          "long": "Bluetooth or ANT+"
+          "long": "Bluetooth or ANT+."
         },
         "API Access Security": {
           "short": "Yes",
@@ -1507,17 +1099,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "HR",
-          "2.3",
-          "MAE"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Polar_H10_Bariatrics.txt",
       "Polar_H10_Cardiology.txt",
@@ -1560,7 +1142,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "No",
-          "long": "Bluetooth"
+          "long": "Bluetooth."
         },
         "API Access Security": {
           "short": "Yes",
@@ -1590,27 +1172,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "SPO2",
-          "0.91",
-          "MAE"
-        ],
-        [
-          "HRV",
-          "19.6",
-          "MAE"
-        ],
-        [
-          "HR",
-          "6.83",
-          "MAE"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Polar_Vantage_V2_Psychiatry.txt"
     ]
@@ -1641,7 +1203,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "Yes",
-          "long": "Bluetooth or ANT+"
+          "long": "Bluetooth or ANT+."
         },
         "API Access Security": {
           "short": "Yes",
@@ -1701,7 +1263,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "No",
-          "long": "Bluetooth"
+          "long": "Bluetooth."
         },
         "API Access Security": {
           "short": "N/A",
@@ -1731,22 +1293,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [],
-      "nighttime": [
-        [
-          "SPO2",
-          "5.4",
-          "MAE"
-        ],
-        [
-          "HR",
-          "8.4",
-          "MAE"
-        ]
-      ],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": []
   },
   {
@@ -1837,7 +1384,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "No",
-          "long": "Bluetooth"
+          "long": "Bluetooth."
         },
         "API Access Security": {
           "short": "Yes",
@@ -1867,17 +1414,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "HR",
-          "0.85",
-          "MAE"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": []
   },
   {
@@ -1910,7 +1447,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "Yes",
-          "long": "Bluetooth"
+          "long": "Bluetooth."
         },
         "API Access Security": {
           "short": "Yes",
@@ -1940,48 +1477,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "HRV",
-          "14.2",
-          "MAE"
-        ],
-        [
-          "HR",
-          "9.1",
-          "MAE"
-        ]
-      ],
-      "nighttime": [
-        [
-          "TST",
-          "8.2",
-          "MAE"
-        ],
-        [
-          "WASO",
-          "7.1",
-          "MAE"
-        ],
-        [
-          "Stages",
-          "W/R",
-          "MAE"
-        ],
-        [
-          "Apnea",
-          "N",
-          "-"
-        ],
-        [
-          "Snoring",
-          "N",
-          "-"
-        ]
-      ],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Whoop_Strap_4.0_Cardiology.txt",
       "Whoop_Strap_4.0_GeneralPhysiology.txt",
@@ -2017,7 +1513,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "Yes",
-          "long": "Wifi (mainly)"
+          "long": "Wifi (mainly)."
         },
         "API Access Security": {
           "short": "Yes",
@@ -2047,37 +1543,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [
-        [
-          "SPO2",
-          "0.92",
-          "MAE"
-        ],
-        [
-          "HRV",
-          "11.9",
-          "MAE"
-        ],
-        [
-          "HR",
-          "10.8",
-          "MAE"
-        ],
-        [
-          "Pedometer-walk",
-          "40",
-          "MAE"
-        ],
-        [
-          "Pedometer-run",
-          "58",
-          "MAE"
-        ]
-      ],
-      "nighttime": [],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Withings_Body+_GeneralPhysiology.txt",
       "Withings_Body+_Oncology.txt"
@@ -2111,7 +1577,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "No",
-          "long": "Bluetooth"
+          "long": "Bluetooth."
         },
         "API Access Security": {
           "short": "Yes",
@@ -2176,7 +1642,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "Yes",
-          "long": "Wifi (mainly)"
+          "long": "Wifi (mainly)."
         },
         "API Access Security": {
           "short": "Yes",
@@ -2206,37 +1672,7 @@
         }
       }
     },
-    "api": {
-      "daytime": [],
-      "nighttime": [
-        [
-          "SOL",
-          "15.9",
-          "MAE"
-        ],
-        [
-          "TST",
-          "30.2",
-          "MAE"
-        ],
-        [
-          "Stages",
-          "W/R",
-          "MAE"
-        ],
-        [
-          "Apnea",
-          "N",
-          ""
-        ],
-        [
-          "Snoring",
-          "N",
-          ""
-        ]
-      ],
-      "sensor_performance": []
-    },
+    "api": {},
     "summaries": [
       "Withings_Sleep_Cardiology.txt",
       "Withings_Sleep_ChronicPainOrDiseases.txt",

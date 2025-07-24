@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <!-- Fitbit Cookie Manager -->
+<script src="https://corporate-webapps.fitbit.com/corporate-web-libs/channels/prod/oneTrust_production/consent/cfddceb3-572a-45f4-8f2d-21ab97e004c4/OtAutoBlock.js" type="text/javascript" charset="UTF-8" integrity="sha256-+7z7ToCbV9KjMecylPgbzuWmsJYt00/hukBnfb2pItg=" crossorigin="anonymous"></script>
+
+<script src="https://corporate-webapps.fitbit.com/corporate-web-libs/channels/prod/oneTrust_production/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="cfddceb3-572a-45f4-8f2d-21ab97e004c4" integrity="sha256-2F5Ny1LOcUxxNuuVoydlMlIFpKq9tRkyvZAkxAC+Zl0=" crossorigin="anonymous"></script>
+
+<script type="text/javascript"> function OptanonWrapper() {} </script>
+<!-- End Fitbit Cookie Manager -->
+<meta http-equiv="Content-Security-Policy" content="default-src &apos;self&apos;; connect-src  *.algolia.net *.algolia.com *.algolianet.com https://fhs--uat.sandbox.my.salesforce-sites.com/ https://fhs.my.salesforce-sites.com corporate-webapps.fitbit.com api.fitbit.com *.google-analytics.com *.googletagmanager.com cdn.cookielaw.org *.doubleclick.net *.onetrust.com syndication.twitter.com; frame-src docs.google.com www.instagram.com platform.twitter.com syndication.twitter.com *.youtube.com *.google-analytics.com *.googletagmanager.com cdn.cookielaw.org *.doubleclick.net *.onetrust.com; script-src &apos;self&apos; &apos;unsafe-eval&apos; cdn.jsdelivr.net *.google-analytics.com ajax.googleapis.com *.googletagmanager.com cdn.cookielaw.org *.doubleclick.net *.onetrust.com platform.twitter.com platform.instagram.com cdn.syndication.twimg.com www.youtube.com &apos;sha256-oj9+1T68cR7Jkr8W7VKn0bEvYYJuIB5ZRTSOlgt9GSw=&apos; &apos;sha256-IgMQOOOedQeMPBl7lSreMVPmJvU62bc6l8HcsGXnbWc=&apos; &apos;sha256-grL1fzigmhYU6rCxzAlznoXD51f2fxNv9Q4Fbvd3xi8=&apos; *.fitbit.com; img-src &apos;self&apos; data: syndication.twitter.com *.twimg.com platform.twitter.com *.google-analytics.com *.googletagmanager.com cdn.cookielaw.org *.doubleclick.net *.onetrust.com www.gravatar.com *.google.com *.google.co.uk; style-src cdnjs.cloudflare.com &apos;self&apos; &apos;unsafe-inline&apos; platform.twitter.com *.youtube.com; font-src &apos;self&apos; cdnjs.cloudflare.com; child-src youtube.com;">
+<meta name="robots" content="noIndex">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="description" content="You&apos;ll fit in here. Using JavaScript, CSS, and SVG, developers now have a fast, easy way to build apps and clock faces for Fitbit OS.">
+<title>Authorization</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.css">
+<link rel="stylesheet" href="/styles/app-a858888fb3e3764883e4504e38aa4524.css">
+<meta name="google-site-verification" content="n0weR6PKsP7ScjgqbUNSslc4csqsgny9Cxjjxi7CA4M">
+
+<meta property="og:title" content="Fitbit Development: Authorization">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dev.fitbit.com/build/reference/web-api/authorization/">
+<meta property="og:description" content="You&apos;ll fit in here. Using JavaScript, CSS, and SVG, developers now have a fast, easy way to build apps and clock faces for Fitbit OS.">
+<meta property="og:image" content="https://dev.fitbit.com/opengraph.png">
+
+<!-- Fitbit Auto Cookie Blocking Script -->
+<script src></script>
+<!-- END Auto Cookie Blocking Script -->
+
+</head>
+
+<body>
+  <div class="row expanded row-header hide-for-print">
+  <div id="title-bar" class="expanded mobile-title-bar">
+  <div class="title-bar overview align-justify flex-container flex-dir-row-reverse" id="overview" data-magellan-target="overview" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+    <div class="float-right">
+      <div class="float-right" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+      </div>
+      <div class="search-icon-box float-right mobile-show">
+        <a href="#" class="search-button"><img src="/images/search-icon-ce72b3f26dca3833d10b930464c46d19.svg" alt="search" class="icon icon-search"></a>
+      </div>
+    </div>
+    <div class="title-bar-title">
+      <a href="/">
+        <img src="/images/fitbit-logo-5894e7f66b64ae9d05a1ef278c367c18.svg" alt="Fitbit" width="112">
+      </a>
+    </div>
+  </div>
+</div>
+<div class="mobile-sidenav-box expanded mobile-show">
+  <div class="mobile-sidenav-title">Authorization</div>
+  <div>
+    <img class="chevron-down" src="/images/chevron_down_black-8dae3183d2527940f30b31664da79f0d.svg" alt="chevron down">
+  </div>
+</div>
+
+<div class="expanded mobile-top-bar">
+  <div class="top-bar" id="responsive-menu">
+    <div class="top-bar-left">
+      <a href="/">
+        <img src="/images/fitbit-logo-5894e7f66b64ae9d05a1ef278c367c18.svg" alt="Fitbit" width="184">
+      </a>
+    </div>
+    <div class="top-bar-right">
+      <ul class="top-submenu medium-horizontal vertical dropdown menu" data-multi-open="false" data-responsive-menu="accordion medium-dropdown">
+        <li class><a href="/getting-started/" title="Getting Started">Getting Started</a></li><li class="has-submenu"><a href="/build/" title="Build">Build</a><ul class="submenu menu vertical" data-submenu><a href="/build/" title="Build" class="show-for-small-only show-for-medium-only">Overview</a><a href="/build/guides/" title="Guides">Guides</a><a href="/build/reference/" title="Reference">Reference</a><a href="/build/tutorials/" title="Tutorials">Tutorials</a><a href="/build/fitbit-studio/" title="Fitbit Studio">Fitbit Studio</a></ul></li><li class="has-submenu"><a href="/manage/" title="Manage">Manage</a><ul class="submenu menu vertical" data-submenu><a href="/manage/" title="Manage" class="show-for-small-only show-for-medium-only">Overview</a><a href="/manage/support/" title="Support">Support</a><a href="/apps/new/" target>Register An App</a>
+<a href="https://gam.fitbit.com" target="_blank">Gallery App Manager</a>
+<a href="/legal/app-gallery-guidelines/" target>App Gallery Guidelines</a>
+</ul></li><li class="has-submenu"><a href="/community/" title="Community">Community</a><ul class="submenu menu vertical" data-submenu><a href="/community/" title="Community" class="show-for-small-only show-for-medium-only">Overview</a><a href="/blog/" target>Developer Blog</a>
+<a href="https://community.fitbit.com/t5/SDK-Development/bd-p/sdk" target="_blank">Community Forum</a>
+<a href="https://twitter.com/fitbitdev" target="_blank">Twitter</a>
+<a href="/community/contributing/" title="Contributing to the Fitbit OS SDK">Contributing to the Fitbit OS SDK</a></ul></li>
+          <li><a href="#" class="search-button desktop-show"><img src="/images/search-icon-ce72b3f26dca3833d10b930464c46d19.svg" alt="search" class="icon icon-search"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="search-bar">
+  <div class="search-bar-icon">
+    <a href="#" class="close-search-box mobile-show">
+      <img class="close-search-button auto-shrink" src="/images/chevron-left-912dff8691d0ff2084124300699ee011.svg" alt="back">
+    </a>
+    <img class="search-icon" src="/images/search-icon-ce72b3f26dca3833d10b930464c46d19.svg" alt="search icon">
+    <a href="#"><img class="cancel-search-icon" src="/images/cancel-search-85d34fbe814dbe230b00a0fa5a764d3a.svg" alt="cancel search"></a>
+  </div>
+  <input class="columns" id="search-input" type="search">
+</div>
+</div>
+
+  
+
+  <div class="row expanded contentRow" data-equalizer data-equalize-on="medium">
+    
+      <div class="desktop-show small-12 medium-4 large-3 columns left-nav hide-for-print" data-equalizer-watch>
+        <div id="sidebar-left">
+  <div class="mobile-show">
+    <img class="close-nav-button" src="/images/close-45026d1b82a16816abbad5ca8e928a2c.svg" alt="close">
+  </div>
+  <nav class="sidebar-inner">
+    <h3>
+<a href="/build/reference/" class=" ">Reference</a>
+</h3>
+<ul class="menu vertical depth1">
+<li>
+<a href="/build/reference/device-api/" class=" ">Device API</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/companion-api/" class=" ">Companion API</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/settings-api/" class=" ">Settings API</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/" class=" parent-current">Web API</a>
+</li>
+<li class="divider"></li><ul class="menu vertical nested is-active depth2">
+<li>
+<a href="/build/reference/web-api/developer-guide/" class=" ">Developer Guide</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/active-zone-minutes-timeseries/" class=" ">Active Zone Minutes Time Series</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/activity/" class=" ">Activity</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/activity-timeseries/" class=" ">Activity Time Series</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/authorization/" class="current parent-current">Authorization</a>
+</li>
+<li class="divider"></li><ul class="menu vertical nested is-active depth3">
+<li>
+<a href="/build/reference/web-api/authorization/authorize/" class=" ">Authorize</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/authorization/client-credentials/" class=" ">Client Credentials</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/authorization/introspect/" class=" ">Introspect</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/authorization/oauth2-token/" class=" ">OAuth2 Token</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/authorization/refresh-token/" class=" ">Refresh Token</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/authorization/revoke-token/" class=" ">Revoke Token</a>
+</li>
+<li class="divider"></li></ul>
+<li>
+<a href="/build/reference/web-api/body/" class=" ">Body</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/body-timeseries/" class=" ">Body Time Series</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/breathing-rate/" class=" ">Breathing Rate</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/cardio-fitness-score/" class=" ">Cardio Fitness Score (VO2 Max)</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/devices/" class=" ">Devices</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/electrocardiogram/" class=" ">Electrocardiogram</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/friends/" class=" ">Friends</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/heartrate-timeseries/" class=" ">Heart Rate Time Series</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/heartrate-variability/" class=" ">Heart Rate Variability</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/intraday/" class=" ">Intraday</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/irregular-rhythm-notifications/" class=" ">Irregular Rhythm Notifications (IRN)</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/nutrition/" class=" ">Nutrition</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/nutrition-timeseries/" class=" ">Nutrition Time Series</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/sleep/" class=" ">Sleep</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/spo2/" class=" ">SpO2</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/subscription/" class=" ">Subscription</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/temperature/" class=" ">Temperature</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/user/" class=" ">User</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/troubleshooting-guide/" class=" ">Troubleshooting Guide</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/help/" class=" ">Web API Support</a>
+</li>
+<li class="divider"></li></ul>
+</ul>
+
+  </nav>
+</div>
+
+
+        &#xA0;
+      </div>
+      <div id="content" class="content small-12 medium-8 large-9 columns">
+        <div class="mobile-show small-12 medium-4 large-3 columns left-nav" data-equalizer-watch>
+          <div id="sidebar-left">
+  <div class="mobile-show">
+    <img class="close-nav-button" src="/images/close-45026d1b82a16816abbad5ca8e928a2c.svg" alt="close">
+  </div>
+  <nav class="sidebar-inner">
+    <h3>
+<a href="/build/reference/" class=" ">Reference</a>
+</h3>
+<ul class="menu vertical depth1">
+<li>
+<a href="/build/reference/device-api/" class=" ">Device API</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/companion-api/" class=" ">Companion API</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/settings-api/" class=" ">Settings API</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/" class=" parent-current">Web API</a>
+</li>
+<li class="divider"></li><ul class="menu vertical nested is-active depth2">
+<li>
+<a href="/build/reference/web-api/developer-guide/" class=" ">Developer Guide</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/active-zone-minutes-timeseries/" class=" ">Active Zone Minutes Time Series</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/activity/" class=" ">Activity</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/activity-timeseries/" class=" ">Activity Time Series</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/authorization/" class="current parent-current">Authorization</a>
+</li>
+<li class="divider"></li><ul class="menu vertical nested is-active depth3">
+<li>
+<a href="/build/reference/web-api/authorization/authorize/" class=" ">Authorize</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/authorization/client-credentials/" class=" ">Client Credentials</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/authorization/introspect/" class=" ">Introspect</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/authorization/oauth2-token/" class=" ">OAuth2 Token</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/authorization/refresh-token/" class=" ">Refresh Token</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/authorization/revoke-token/" class=" ">Revoke Token</a>
+</li>
+<li class="divider"></li></ul>
+<li>
+<a href="/build/reference/web-api/body/" class=" ">Body</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/body-timeseries/" class=" ">Body Time Series</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/breathing-rate/" class=" ">Breathing Rate</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/cardio-fitness-score/" class=" ">Cardio Fitness Score (VO2 Max)</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/devices/" class=" ">Devices</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/electrocardiogram/" class=" ">Electrocardiogram</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/friends/" class=" ">Friends</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/heartrate-timeseries/" class=" ">Heart Rate Time Series</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/heartrate-variability/" class=" ">Heart Rate Variability</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/intraday/" class=" ">Intraday</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/irregular-rhythm-notifications/" class=" ">Irregular Rhythm Notifications (IRN)</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/nutrition/" class=" ">Nutrition</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/nutrition-timeseries/" class=" ">Nutrition Time Series</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/sleep/" class=" ">Sleep</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/spo2/" class=" ">SpO2</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/subscription/" class=" ">Subscription</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/temperature/" class=" ">Temperature</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/user/" class=" ">User</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/troubleshooting-guide/" class=" ">Troubleshooting Guide</a>
+</li>
+<li class="divider"></li><li>
+<a href="/build/reference/web-api/help/" class=" ">Web API Support</a>
+</li>
+<li class="divider"></li></ul>
+</ul>
+
+  </nav>
+</div>
+
+
+          &#xA0;
+        </div>
+        <div class="searchIndex row article-box">
+          <article class="small-12 large-11 large-centered column columns-overview everything " data-equalizer-watch>
+            <h1>Authorization</h1>
+
+<p>The Authorization endpoints allow an application to onboard Fitbit users 
+who want to share their data with the specified application.  The application can 
+initiate the consent flow for new users, obtain the access token and refresh 
+tokens, validate the tokens, and revoke consent to the user.</p>
+
+<p>Fitbit supports OAuth 2.0.  The authorization models we support are 
+Authorization Code Grant Flow, Authorization Code Grant Flow with PKCE and 
+Implicit Grant Flow.  We recommend Authorization Code Grant Flow with PKCE, 
+and our examples demonstrate how to set it up. Client Credentials is 
+supported but does not allow the retrieval of user data.   It works only 
+with the Fitbit Commerce APIs.</p>
+
+<p>The endpoints available in this section are</p>
+<ul>
+<li><a href="/build/reference/web-api/authorization/authorize/">Authorize</a> initiates the 
+OAuth 2.0 authorization flow by presenting the consent screen to the Fitbit 
+user.</li>
+<li><a href="/build/reference/web-api/authorization/client-credentials/">Client Credentials</a> 
+initiates the Client Credentials Grant flow.  This authorization flow 
+does not support retrieving Fitbit user data.</li>
+<li><a href="/build/reference/web-api/authorization/introspect/">Introspect</a> allows the 
+application to retrieve the active state of an OAuth 2.0 token. </li>
+<li><a href="/build/reference/web-api/authorization/oauth2-token/">OAuth2 Token</a> 
+exchanges the authorization code for the initial access token and refresh token.</li>
+<li><a href="/build/reference/web-api/authorization/refresh-token/">Refresh Token</a> 
+creates a new  access token and refresh token for a user when the existing 
+access token has expired.</li>
+<li><a href="/build/reference/web-api/authorization/revoke-token/">Revoke Token</a> 
+disables a user&apos;s authorization and all associated tokens.</li>
+</ul>
+
+            <div class="section-nav flex-container align-justify"><div class="previous-page flex-container">  <a href="/build/reference/web-api/activity-timeseries/" target><img src="/images/next-4a798552f1301bc41839afd0a22e5e82.svg" alt="previous"></a>  <div class="next-page-link"><a href="/build/reference/web-api/activity-timeseries/" target>Activity Time Series</a></div></div><div class="next-page flex-container">  <div class="next-page-link"><a href="/build/reference/web-api/body/" target>Body</a></div>  <a href="/build/reference/web-api/body/" target><img src="/images/next-4a798552f1301bc41839afd0a22e5e82.svg" alt="next"></a></div></div>
+          </article>
+        </div>
+      </div>
+    
+  </div>
+
+  <footer class="row expanded" id="footer">
+  <div class="row">
+    <div class="row-legal">
+
+  <div class="legal-links column desktop-show-legal">
+    <div class="desktop-row">
+      
+          <div class="legal-item">
+            <a href="https://www.fitbit.com/terms">
+              Terms of Service
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="https://www.fitbit.com/legal/privacy">
+              Privacy Policy
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/platform-terms-of-service/">
+              Platform Terms
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/fitbit-user-data-and-developer-policy/">
+              Fitbit User Data and Developer Policy
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/controller-data-protection-terms/">
+              Controller Data Protection Terms
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/health-research-policy/">
+              Health Research Policy
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/app-distribution-agreement/">
+              App Distribution Agreement
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/brand-assets/">
+              Brand Assets
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/app-gallery-guidelines/">
+              App Gallery Guidelines
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="https://www.fitbit.com/legal/returns-and-warranty">
+              Returns &amp; Warranty
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="https://info.evidon.com/pub_info/13911?v=1&amp;nt=0&amp;nw=false">
+              Ad Choices
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/design-asset-license/">
+              Design Asset License
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/deprecation-policy/">
+              SDK Deprecation Policy
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/reporting-apps/">
+              Report Copyright &amp; Trademark Infringement
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="https://healthsolutions.fitbit.com/research-pledge/">
+              Research Pledge
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="https://healthsolutions.fitbit.com/wellnesspledge/">
+              Wellness Pledge
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="https://transparencyreport.google.com/report-downloads?lu=report-24">
+              Information about EU monthly active recipients
+            </a>
+          </div>
+          
+    </div>
+
+  </div>
+
+  <div class="legal-links row flex-container mobile-show-legal">
+    <div class="columns column-a flex-container">
+      
+          <div class="legal-item">
+            <a href="https://www.fitbit.com/terms">
+              Terms of Service
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="https://www.fitbit.com/legal/privacy">
+              Privacy Policy
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/platform-terms-of-service/">
+              Platform Terms
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/fitbit-user-data-and-developer-policy/">
+              Fitbit User Data and Developer Policy
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/controller-data-protection-terms/">
+              Controller Data Protection Terms
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/health-research-policy/">
+              Health Research Policy
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/app-distribution-agreement/">
+              App Distribution Agreement
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/brand-assets/">
+              Brand Assets
+            </a>
+          </div>
+          
+    </div>
+
+    <div class="columns column-b flex-container">
+      
+          <div class="legal-item">
+            <a href="/legal/app-gallery-guidelines/">
+              App Gallery Guidelines
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="https://www.fitbit.com/legal/returns-and-warranty">
+              Returns &amp; Warranty
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="https://info.evidon.com/pub_info/13911?v=1&amp;nt=0&amp;nw=false">
+              Ad Choices
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/design-asset-license/">
+              Design Asset License
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/deprecation-policy/">
+              SDK Deprecation Policy
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="/legal/reporting-apps/">
+              Report Copyright &amp; Trademark Infringement
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="https://healthsolutions.fitbit.com/research-pledge/">
+              Research Pledge
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="https://healthsolutions.fitbit.com/wellnesspledge/">
+              Wellness Pledge
+            </a>
+          </div>
+          
+          <div class="legal-item">
+            <a href="https://transparencyreport.google.com/report-downloads?lu=report-24">
+              Information about EU monthly active recipients
+            </a>
+          </div>
+          
+    </div>
+  </div>
+
+</div>
+  </div>
+  <div class="row">
+    <div class="row row-copyright">
+  <div class="column">
+    &#xA9; 2023 <a href="https://www.fitbit.com">Fitbit LLC</a> All rights reserved.
+  </div>
+</div>
+
+  </div>
+  <div class="row expanded">
+    <div class="row row-social expanded">
+  <div class="row">
+    <div class="column">
+      <ul class="menu">
+        <li>
+          <a href="https://twitter.com/fitbitdev/" target="_blank" class="socialbtn twitter" title="Twitter">
+            <img src="/images/Twitter_Color-3ed6d50c8062c9a8de8dc074b207d2af.svg" alt="Twitter">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/fitbit/" target="_blank" class="socialbtn github" title="Github">
+            <img src="/images/Github_Color-b9b718d716e2c9da9fd0702afeadf434.svg" alt="Github">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/fitbitdev" target="_blank" class="socialbtn youtube" title="YouTube">
+            <img src="/images/Youtube_Color-e7011ebd2dcf79cdf859df7ad310e0a7.svg" alt="YouTube">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  </div>
+</footer>
+
+    <script type="text/javascript" src="/scripts/jspm_packages/system-csp-production.src-b4cd40bdb01c02a2b9168721dda2a571.js"></script>
+    <script type="text/javascript" src="/scripts/systemjs-configs/config-6da540ca2666628294ece6bf4fba136a.js"></script>
+    <script type="text/javascript" data-main="[&quot;app.js&quot;]" src="/scripts/loadScripts-7ac17bda62b7693f7112fa6f8297556f.js"></script>
+
+
+</body>
+
+</html>
