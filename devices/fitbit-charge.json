@@ -22,7 +22,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "Yes",
-          "long": "Wifi or bluetooth"
+          "long": "Wifi or bluetooth."
         },
         "API Access Security": {
           "short": "Yes",
@@ -32,11 +32,11 @@
       "privacy": {
         "Data Risk": {
           "short": "No",
-          "long": "Data from the Fitbit Charge includes steps tracking, distance covered, heart rate monitoring, sleep tracking, calories burned, floors climbed, and active zone minutes. <br />These data constitute a health data risk in the following categories: <br />- Physical activity data: Steps tracking, distance covered, calories burned, floors climbed, active zone minute <br />- Sleep data: Sleep trackin <br />- Physiological data: Heart rate monitoring"
+          "long": "Data from the Fitbit Charge includes steps tracking, distance covered, heart rate monitoring, sleep tracking, calories burned, floors climbed, and active zone minutes. These data constitute a health data risk in the following categories: Physical activity data (steps tracking, distance covered, calories burned, floors climbed, active zone minute); Sleep data (sleep tracking); physiological data (heart rate monitoring)."
         },
         "HIPAA Compliance": {
           "short": "No",
-          "long": "Google Fitbit Charge collects identity data such as email address, birth date, usernames, and user preferences. The device amasses activity data based on the user's physical activities, including steps, distance traveled, floors climbed, heart rate, blood oxygen levels (SpO2), sleep stages, skin temperature, stress management, and menstrual tracking. Technical data for product and service use, including GPS location, technical logs, device configuration, and app usage, are processed. <br />Heart rate, blood oxygen levels, skin temperature, sleep, and physiological measurement data could be considered protected health information under HIPAA. <br />Google Fitbit Sense is not HIPAA compliant."
+          "long": "Google Fitbit Charge collects identity data such as email address, birth date, usernames, and user preferences. The device amasses activity data based on the user's physical activities, including steps, distance traveled, floors climbed, heart rate, blood oxygen levels (SpO2), sleep stages, skin temperature, stress management, and menstrual tracking. Technical data for product and service use, including GPS location, technical logs, device configuration, and app usage, are processed. Heart rate, blood oxygen levels, skin temperature, sleep, and physiological measurement data could be considered protected health information under HIPAA. Google Fitbit Sense is not HIPAA compliant."
         },
         "De-identification (When Sharing)": {
           "short": "Yes",
@@ -48,7 +48,7 @@
         },
         "Transparency in Third Party Sharing": {
           "short": "No",
-          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement. <br />No mentions of specific companies, organizations, or individuals are provided."
+          "long": "Categories of third parties are disclosed as 'service providers', 'partners', 'developers and publishers from whom you get a subscription' and 'others', with 'others' including national security institutions and law enforcement. No mentions of specific companies, organizations, or individuals are provided."
         }
       }
     },

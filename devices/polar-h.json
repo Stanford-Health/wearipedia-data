@@ -22,7 +22,7 @@
       "security": {
         "Wearable Connectivity": {
           "short": "Yes",
-          "long": "Bluetooth or ANT+"
+          "long": "Bluetooth or ANT+."
         },
         "API Access Security": {
           "short": "Yes",
